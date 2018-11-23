@@ -8,9 +8,11 @@ package retroshootingv2;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
+import javafx.scene.Cursor;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -18,8 +20,6 @@ import javafx.stage.Stage;
  * @author larossi
  */
 public class RetroShootingV2 extends Application {
-
-    public Boolean moveRight;
     
     @Override
     public void start(Stage primaryStage) {
@@ -27,16 +27,27 @@ public class RetroShootingV2 extends Application {
         double width = 1000;
         double speed = 1;
         SpaceShip s = new SpaceShip(width, height, speed);
-        
+        SpaceShipV2 s2 = new SpaceShipV2();
         Group root = new Group();
         
         Scene scene = new Scene(root, width, height);
         Decor d = new Decor(scene.getWidth(), scene.getHeight(), "0d0852");
         
+        scene.setCursor(Cursor.NONE);
+        
         root.getChildren().add(d);
-        root.getChildren().add(s);
+        //root.getChildren().add(s);
+        root.getChildren().add(s2);
         
         primaryStage.setTitle("LeRetroShootingDeLuisonEtLuisArmand");
+        
+        primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
+            d.setWidth((double)newVal);
+        });
+
+        primaryStage.heightProperty().addListener((obs, oldVal, newVal) -> {
+            d.setHeight((double)newVal);
+        });
         
         scene.setOnKeyPressed(new EventHandler<KeyEvent>(){
             @Override
@@ -75,6 +86,32 @@ public class RetroShootingV2 extends Application {
                         s.moveDown = false;
                         break;
                 }
+            }
+        });
+        
+        scene.setOnMouseMoved(new EventHandler<MouseEvent>(){
+            @Override
+            public void handle(MouseEvent event) {
+                s2.body.setX(event.getSceneX() - (s2.body.getFitWidth()/2));
+                s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
+            }
+        });
+        
+        scene.setOnMouseDragged(new EventHandler<MouseEvent>(){
+            @Override
+            public void handle(MouseEvent event) {
+                s2.body.setX(event.getSceneX() - (s2.body.getFitWidth()/2));
+                s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
+            }
+        });
+        
+        scene.setOnMousePressed(new EventHandler<MouseEvent>(){
+            @Override
+            public void handle(MouseEvent event) {
+                root.getChildren().add(
+                        new Bullet(event.getSceneX(), 
+                        s2.body.getY())
+                );
             }
         });
         
