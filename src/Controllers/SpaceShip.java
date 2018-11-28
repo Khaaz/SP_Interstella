@@ -1,19 +1,13 @@
-/*
+package Controllers;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package retroshootingv2;
 
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
-import retroshootingv2.IShip;
 
-/**
- *
- * @author larossi
- */
-public class SpaceShip extends Polygon implements IShip {
+public class SpaceShip extends Polygon {
     private double speed;
     public boolean moveRight = false;
     public boolean moveUp = false;

@@ -3,16 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package retroshootingv2;
 
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-/**
- *
- * @author larossi
- */
 public class SpaceShipV2 extends Parent {
     
     private int life;
@@ -22,7 +17,7 @@ public class SpaceShipV2 extends Parent {
     public SpaceShipV2() {
         this.life = 10;
         
-        this.skin = new Image("file:spaceship2.png");
+        this.skin = new Image("file:assets/spaceship2.png");
         this.body = new ImageView(this.skin);
         
         this.body.setFitWidth(100);
@@ -41,9 +36,9 @@ public class SpaceShipV2 extends Parent {
     
     public void changeSkin(String skin) {
         if (skin == "v1") {
-            this.setSkin(new Image("file:spaceship.png"));
+            this.setSkin(new Image("file:assets/spaceship.png"));
         } else {
-            this.setSkin(new Image("file:spaceship2.png"));
+            this.setSkin(new Image("file:assets/spaceship2.png"));
         }
         
     }

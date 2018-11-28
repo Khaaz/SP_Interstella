@@ -1,18 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package retroshootingv2;
+package Controllers;
 
 import javafx.scene.Scene;
 import javafx.scene.shape.Shape;
 
-/**
- *
- * @author larossi
- */
 public class MoveManager {
+
     public static void moveRight(Shape object, Scene s) {
         double speed = ((SpaceShip)object).getSpeed();
         double cur = object.getTranslateX();
@@ -50,7 +42,7 @@ public class MoveManager {
         object.setTranslateY(cur - speed);
     }
     public static void moveDown(Shape object, Scene s) {
-        double speed = ((SpaceShip)object).getSpeed();
+        double speed = ((SpaceShip) object).getSpeed();
         double cur = object.getTranslateY();
         if (cur == s.getHeight()) {
             return;
@@ -61,5 +53,4 @@ public class MoveManager {
         }
         object.setTranslateY(cur + speed);
     }
-    
 }

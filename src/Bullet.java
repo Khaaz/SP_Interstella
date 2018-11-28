@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package retroshootingv2;
 
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
@@ -22,7 +21,7 @@ public class Bullet extends Parent {
     // y = la ou on fait apparaitre bullet (avant du vaiseau)
     public Bullet(double x, double y) {
         
-        this.skin = new Image("file:Bullet.png");
+        this.skin = new Image("file:assets/bullet.png");
         this.body = new ImageView(this.skin);
         
         this.body.setFitWidth(20/3);

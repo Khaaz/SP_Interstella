@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package retroshootingv2;
-
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -15,12 +8,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-/**
- *
- * @author larossi
- */
-public class RetroShootingV2 extends Application {
-    
+import Controllers.*;
+
+public class Main extends Application {
+
     @Override
     public void start(Stage primaryStage) {
         double height = 800;
@@ -29,18 +20,18 @@ public class RetroShootingV2 extends Application {
         SpaceShip s = new SpaceShip(width, height, speed);
         SpaceShipV2 s2 = new SpaceShipV2();
         Group root = new Group();
-        
+
         Scene scene = new Scene(root, width, height);
         Decor d = new Decor(scene.getWidth(), scene.getHeight(), "0d0852");
-        
+
         scene.setCursor(Cursor.NONE);
-        
+
         root.getChildren().add(d);
         //root.getChildren().add(s);
         root.getChildren().add(s2);
-        
+
         primaryStage.setTitle("LeRetroShootingDeLuisonEtLuisArmand");
-        
+
         primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
             d.setWidth((double)newVal);
         });
@@ -48,7 +39,7 @@ public class RetroShootingV2 extends Application {
         primaryStage.heightProperty().addListener((obs, oldVal, newVal) -> {
             d.setHeight((double)newVal);
         });
-        
+
         scene.setOnKeyPressed(new EventHandler<KeyEvent>(){
             @Override
             public void handle(KeyEvent event) {
@@ -68,7 +59,7 @@ public class RetroShootingV2 extends Application {
                 }
             }
         });
-        
+
         scene.setOnKeyReleased(new EventHandler<KeyEvent>(){
             @Override
             public void handle(KeyEvent event) {
@@ -88,7 +79,7 @@ public class RetroShootingV2 extends Application {
                 }
             }
         });
-        
+
         scene.setOnMouseMoved(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
@@ -96,7 +87,7 @@ public class RetroShootingV2 extends Application {
                 s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
             }
         });
-        
+
         scene.setOnMouseDragged(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
@@ -104,17 +95,17 @@ public class RetroShootingV2 extends Application {
                 s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
             }
         });
-        
+
         scene.setOnMousePressed(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
                 root.getChildren().add(
-                        new Bullet(event.getSceneX(), 
-                        s2.body.getY())
+                        new Bullet(event.getSceneX(),
+                                s2.body.getY())
                 );
             }
         });
-        
+
         new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -132,7 +123,7 @@ public class RetroShootingV2 extends Application {
                 }
             }
         }.start();
-        
+
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -143,5 +134,5 @@ public class RetroShootingV2 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
