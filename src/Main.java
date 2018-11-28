@@ -1,8 +1,10 @@
+import Views.GameBG;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Cursor;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -19,18 +21,19 @@ public class Main extends Application {
         double speed = 1;
         SpaceShip s = new SpaceShip(width, height, speed);
         SpaceShipV2 s2 = new SpaceShipV2();
-        Group root = new Group();
+        GameBG d2 = new GameBG(width, height, "0d0852");
 
+        Group root = new Group();
         Scene scene = new Scene(root, width, height);
         Decor d = new Decor(scene.getWidth(), scene.getHeight(), "0d0852");
-
         scene.setCursor(Cursor.NONE);
 
-        root.getChildren().add(d);
+        root.getChildren().add(d2);
+        //root.getChildren().add(d);
         //root.getChildren().add(s);
-        root.getChildren().add(s2);
+        //root.getChildren().add(s2);
 
-        primaryStage.setTitle("LeRetroShootingDeLuisonEtLuisArmand");
+        primaryStage.setTitle("Interstella 5555");
 
         primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
             d.setWidth((double)newVal);
@@ -96,7 +99,7 @@ public class Main extends Application {
             }
         });
 
-        scene.setOnMousePressed(new EventHandler<MouseEvent>(){
+        /*scene.setOnMousePressed(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
                 root.getChildren().add(
@@ -104,7 +107,7 @@ public class Main extends Application {
                                 s2.body.getY())
                 );
             }
-        });
+        });*/
 
         new AnimationTimer() {
             @Override

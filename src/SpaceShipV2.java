@@ -17,7 +17,7 @@ public class SpaceShipV2 extends Parent {
     public SpaceShipV2() {
         this.life = 10;
         
-        this.skin = new Image("file:assets/spaceship2.png");
+        this.skin = new Image("file:assets/SpaceShip/spaceship2.png");
         this.body = new ImageView(this.skin);
         
         this.body.setFitWidth(100);
@@ -36,9 +36,9 @@ public class SpaceShipV2 extends Parent {
     
     public void changeSkin(String skin) {
         if (skin == "v1") {
-            this.setSkin(new Image("file:assets/spaceship.png"));
+            this.setSkin(new Image("file:assets/SpaceShip/spaceship.png"));
         } else {
-            this.setSkin(new Image("file:assets/spaceship2.png"));
+            this.setSkin(new Image("file:assets/SpaceShip/spaceship2.png"));
         }
         
     }
