@@ -1,4 +1,4 @@
 package Controllers.Scenes;
 
-public class SceneCredit {
+public class CreditScene {
 }

@@ -1,4 +1,4 @@
 package Controllers.Scenes;
 
-public class SceneGame {
+public class ScoreScene {
 }

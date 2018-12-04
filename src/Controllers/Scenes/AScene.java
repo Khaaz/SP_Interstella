@@ -1,10 +1,19 @@
 package Controllers.Scenes;
 
-import javafx.scene.Group;
+import Configuration.Config;
+import Views.Roots.ARoot;
 import javafx.scene.Scene;
 
-public class AScene extends Scene {
-    public AScene() {
-        super(new Group(), 20, 20);
+public abstract class AScene extends Scene {
+    public AScene(ARoot r) {
+        super(r, Config.width, Config.height);
+    }
+
+    public void resizeHeight(double height) {
+        ((ARoot)this.getRoot()).resizeBackgroundHeight(height);
+    }
+
+    public void resizeWidth(double width) {
+        ((ARoot)this.getRoot()).resizeBackgroundWidth(width);
     }
 }
