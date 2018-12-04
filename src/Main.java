@@ -14,11 +14,9 @@ import Controllers.*;
 
 public class Main extends Application {
 
-    public static AScene scene;
-
     @Override
     public void start(Stage primaryStage) {
-        this.scene = new GameScene();
+        AScene scene = new GameScene();
 
         primaryStage.setTitle("Interstella 5555");
 
@@ -26,11 +24,11 @@ public class Main extends Application {
         primaryStage.show();
 
         primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
-            this.scene.resizeHeight((double)newVal);
+            scene.resizeWidth((double)newVal);
         });
 
         primaryStage.heightProperty().addListener((obs, oldVal, newVal) -> {
-            this.scene.resizeWidth((double)newVal);
+            scene.resizeHeight((double)newVal);
         });
     }
 

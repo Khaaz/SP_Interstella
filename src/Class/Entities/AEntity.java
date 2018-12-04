@@ -6,19 +6,20 @@ import javafx.scene.image.ImageView;
 
 public class AEntity extends Parent {
 
-    private ImageView body;
+    public ImageView body;
     private Image skin;
 
     private int life;
     private int damages;
 
-    public AEntity(int life, int damages) {
+    public AEntity(int life, int damages, String skinPath) {
         super();
         this.life = life;
         this.damages = damages;
+        this.createBody(skinPath);
     }
 
-    private void formatImage(double width, double height) {
+    protected void formatImage(double width, double height) {
         this.body.setFitWidth(width);
         this.body.setFitHeight(height);
 
@@ -27,17 +28,15 @@ public class AEntity extends Parent {
         this.body.setCache(true);
     }
 
-    private void setSkin(Image i) {
-        this.skin = i;
-        this.body.setImage(this.skin);
+    private void createBody(String skin) {
+        this.skin = new Image(skin);
+        this.body = new ImageView(this.skin);
+        this.formatImage(150, 150);
+        this.getChildren().add(this.body);
     }
 
-    public void changeSkin(String skin) {
-        if (skin.equals("v1")) {
-            this.setSkin(new Image("file:assets/SpaceShip/spaceship.png"));
-        } else {
-            this.setSkin(new Image("file:assets/SpaceShip/spaceship2.png"));
-        }
-
+    public void setSkin(String skin) {
+        this.skin = new Image(skin);
+        this.body.setImage(this.skin);
     }
 }

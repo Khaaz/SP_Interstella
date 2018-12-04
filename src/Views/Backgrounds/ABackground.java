@@ -14,6 +14,7 @@ public abstract class ABackground extends Parent {
         this.body.setHeight(Config.height);
         this.body.setWidth(Config.width);
         this.body.setFill(Paint.valueOf(Config.BGColor));
+        this.getChildren().add(this.body);
     }
 
     public void resizeHeight(double height) {

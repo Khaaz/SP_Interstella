@@ -17,6 +17,6 @@ public abstract class ARoot extends Parent {
     }
 
     public void resizeBackgroundWidth(double width) {
-        this.background.resizeHeight(width);
+        this.background.resizeWidth(width);
     }
 }

@@ -1,9 +1,9 @@
 package Controllers.Scenes;
 
+import Class.Entities.AEntity;
 import Views.Roots.GameRoot;
 import javafx.event.EventHandler;
 import javafx.scene.Cursor;
-import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 
 public class GameScene extends AScene {
@@ -11,24 +11,29 @@ public class GameScene extends AScene {
         super(new GameRoot());
 
         this.setCursor(Cursor.NONE);
-        Parent root = this.getRoot();
+
+        AEntity Shep = ((GameRoot)this.getRoot()).Shep;
+
         /*this.setOnMouseMoved(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
-                s2.body.setX(event.getSceneX() - (s2.body.getFitWidth()/2));
-                s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
+                Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
+                Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
             }
-        });
+        });*/
 
-        this.setOnMouseDragged(new EventHandler<MouseEvent>(){
+        this.setOnMouseMoved(event -> onMouseMoved(Shep, event));
+        this.setOnMouseDragged(event -> onMouseMoved(Shep, event));
+
+        this.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                s2.body.setX(event.getSceneX() - (s2.body.getFitWidth()/2));
-                s2.body.setY(event.getSceneY() - (s2.body.getFitHeight()/2));
+                Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
+                Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
             }
         });
 
-        this.setOnMousePressed(new EventHandler<MouseEvent>(){
+        /*this.setOnMousePressed(new EventHandler<MouseEvent>(){
             @Override
             public void handle(MouseEvent event) {
                 root.getChildren().add(
@@ -37,5 +42,10 @@ public class GameScene extends AScene {
                 );
             }
         });*/
+    }
+
+    private void onMouseMoved(AEntity Shep, MouseEvent event) {
+        Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
+        Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
     }
 }

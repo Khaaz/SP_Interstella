@@ -1,7 +1,10 @@
 package Views.Backgrounds;
 
+import Configuration.Config;
+import javafx.scene.paint.Paint;
+
 public class MenuBG extends ABackground {
-    public MenuBG(double height, double width) {
-        super(height, width);
+    public MenuBG() {
+        super();
     }
 }
