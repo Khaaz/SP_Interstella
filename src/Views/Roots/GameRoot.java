@@ -11,4 +11,9 @@ public class GameRoot extends ARoot {
         this.Shep = new Shep();
         this.getChildren().add(this.Shep);
     }
+
+    @Override
+    public void resizeComponents() {
+        int i = 1 + 1;
+    }
 }

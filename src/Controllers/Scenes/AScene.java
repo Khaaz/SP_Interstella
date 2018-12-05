@@ -16,4 +16,6 @@ public abstract class AScene extends Scene {
     public void resizeWidth(double width) {
         ((ARoot)this.getRoot()).resizeBackgroundWidth(width);
     }
+
+    public abstract void onResize();
 }

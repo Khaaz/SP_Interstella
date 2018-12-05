@@ -1,11 +1,15 @@
 package Controllers.Scenes;
 
-import javafx.scene.Group;
-import javafx.scene.Scene;
+import Views.Roots.ARoot;
+import Views.Roots.MenuRoot;
 
-public class MenuScene extends Scene {
-    public MenuScene(Group menuBG) {
-        super(menuBG, 1000, 800);
+public class MenuScene extends AScene {
+    public MenuScene() {
+        super(new MenuRoot());
 
+    }
+
+    public void onResize() {
+        ((ARoot)this.getRoot()).resizeComponents();
     }
 }

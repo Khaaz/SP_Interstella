@@ -1,6 +1,7 @@
 package Controllers.Scenes;
 
 import Class.Entities.AEntity;
+import Views.Roots.ARoot;
 import Views.Roots.GameRoot;
 import javafx.event.EventHandler;
 import javafx.scene.Cursor;
@@ -47,5 +48,9 @@ public class GameScene extends AScene {
     private void onMouseMoved(AEntity Shep, MouseEvent event) {
         Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
         Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
+    }
+
+    public void onResize() {
+        ((ARoot)this.getRoot()).resizeComponents();
     }
 }
