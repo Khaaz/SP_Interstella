@@ -1,7 +1,5 @@
 package Views.Components;
 
-import Controllers.SceneManager;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 
 public class ButtonCpnt extends Button {
