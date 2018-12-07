@@ -1,5 +1,6 @@
 import Controllers.Scenes.AScene;
 import Controllers.Scenes.GameScene;
+import Controllers.Scenes.MenuScene;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -16,20 +17,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        AScene scene = new GameScene();
+        AScene sceneMenu = new MenuScene();
+
+        SceneManager.setup(primaryStage, sceneMenu);
 
         primaryStage.setTitle("Interstella 5555");
-
-        primaryStage.setScene(scene);
         primaryStage.show();
-
-        primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
-            scene.resizeWidth((double)newVal);
-        });
-
-        primaryStage.heightProperty().addListener((obs, oldVal, newVal) -> {
-            scene.resizeHeight((double)newVal);
-        });
     }
 
     //@Override
