@@ -20,18 +20,20 @@ public class MenuCpnt extends TilePane {
 
         this.setOrientation(Orientation.VERTICAL);
 
-        // Position inside tiole
+        // Position inside tile
         this.setAlignment(Pos.CENTER);
-        this.setTileAlignment(Pos.CENTER);
+        //this.setTileAlignment(Pos.CENTER);
 
         // Space between tiles
-        this.setVgap(150);
+        this.setVgap(50);
 
         // Buttons
-        Button button = new ButtonCpnt("Jouer");
-        Button button2 = new ButtonCpnt("Jouer2");
-        Button button3 = new ButtonCpnt("Jouer3");
+        Button button = new ButtonCpnt("JOUER");
+        Button button2 = new ButtonCpnt("Scores");
+        Button button3 = new ButtonCpnt("Quitter");
+
         button.setOnAction(event -> SceneManager.setScene(new GameScene()));
+        button3.setOnAction(event -> System.exit(0));
 
         this.getChildren().addAll(button, button2, button3);
     }

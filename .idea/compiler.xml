@@ -12,8 +12,8 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
-    <bytecodeTargetLevel target="11">
-      <module name="retroshooting" target="11" />
+    <bytecodeTargetLevel target="8">
+      <module name="retroshooting" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -49,7 +49,7 @@ public class Main extends Application {
         //root.getChildren().add(s);
         root.getChildren().add(s2);
 
-        primaryStage.setTitle("Interstella 5555");
+        //primaryStage.setTitle("Interstella 5555");
 
         primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
             d.setWidth((double)newVal);
