@@ -9,6 +9,8 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 import Controllers.*;
@@ -23,7 +25,10 @@ public class Main extends Application {
 
         primaryStage.setTitle("Interstella 5555");
         primaryStage.show();
+
     }
+
+
 
     //@Override
     public void start2(Stage primaryStage) {
@@ -44,7 +49,7 @@ public class Main extends Application {
         //root.getChildren().add(s);
         root.getChildren().add(s2);
 
-        primaryStage.setTitle("Interstella 5555");
+        //primaryStage.setTitle("Interstella 5555");
 
         primaryStage.widthProperty().addListener((obs, oldVal, newVal) -> {
             d.setWidth((double)newVal);
