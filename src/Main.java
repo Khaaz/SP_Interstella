@@ -30,7 +30,7 @@ public class Main extends Application {
 
 
 
-    //@Override
+    /*@Override
     public void start2(Stage primaryStage) {
         double height = 800;
         double width = 1000;
@@ -145,7 +145,7 @@ public class Main extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
+    }*/
 
     /**
      * @param args the command line arguments

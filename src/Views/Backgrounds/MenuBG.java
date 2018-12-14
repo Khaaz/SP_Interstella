@@ -1,10 +1,9 @@
 package Views.Backgrounds;
 
-import Configuration.Config;
-import javafx.scene.paint.Paint;
+import Configuration.Path;
 
 public class MenuBG extends ABackground {
     public MenuBG() {
-        super();
+        super(Path.menuBG);
     }
 }
