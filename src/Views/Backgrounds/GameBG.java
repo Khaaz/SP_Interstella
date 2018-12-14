@@ -5,7 +5,7 @@ import Configuration.Path;
 
 public class GameBG extends ABackground {
     public GameBG() {
-        super(Path.menuBG);
+        super(Path.gameBG);
     }
 }
 
