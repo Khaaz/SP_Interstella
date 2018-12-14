@@ -5,6 +5,8 @@ import Controllers.Scenes.GameScene;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
@@ -27,6 +29,9 @@ public class MenuCpnt extends TilePane {
         // Space between tiles
         this.setVgap(50);
 
+        Label titreMenu = new LabelCpnt("Interstella 5555 : The Game");
+
+
         // Buttons
         Button button = new ButtonCpnt("JOUER");
         Button button2 = new ButtonCpnt("Scores");
@@ -35,6 +40,6 @@ public class MenuCpnt extends TilePane {
         button.setOnAction(event -> SceneManager.setScene(new GameScene()));
         button3.setOnAction(event -> System.exit(0));
 
-        this.getChildren().addAll(button, button2, button3);
+        this.getChildren().addAll(titreMenu, button, button2, button3);
     }
 }
