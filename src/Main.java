@@ -30,8 +30,6 @@ public class Main extends Application {
 
     }
 
-
-
     /*@Override
     public void start2(Stage primaryStage) {
         double height = 800;
