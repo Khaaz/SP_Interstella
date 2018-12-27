@@ -1,7 +1,8 @@
 package Views.Roots;
 
-import Class.Entities.Shep;
+import Core.Entities.Shep;
 import Views.Backgrounds.GameBG;
+import Views.Components.IResizableElement;
 
 public class GameRoot extends ARoot {
     public Shep Shep;
@@ -14,6 +15,8 @@ public class GameRoot extends ARoot {
 
     @Override
     public void resizeComponents() {
-        int i = 1 + 1;
+        //for(IResizableElement elem : this.getChildren()) {
+        //    elem.resizeElement();
+        //}
     }
 }

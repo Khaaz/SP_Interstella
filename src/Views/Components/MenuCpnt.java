@@ -2,6 +2,7 @@ package Views.Components;
 
 import Controllers.SceneManager;
 import Controllers.Scenes.GameScene;
+import Core.Events.SceneSensor;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -12,7 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 
-public class MenuCpnt extends TilePane {
+public class MenuCpnt extends TilePane implements IResizableElement {
     public MenuCpnt() {
         super();
 
@@ -27,14 +28,27 @@ public class MenuCpnt extends TilePane {
         // Space between tiles
         this.setVgap(50);
 
+
         // Buttons
         Button button = new ButtonCpnt("JOUER");
         Button button2 = new ButtonCpnt("Scores");
         Button button3 = new ButtonCpnt("Quitter");
 
+
         button.setOnAction(event -> SceneManager.setScene(new GameScene()));
+        button2.setOnAction(event -> {
+            System.out.println("ok");
+            SceneSensor sensor = new SceneSensor();
+            sensor.fireSceneChanged("wtf");
+        });
+
         button3.setOnAction(event -> System.exit(0));
 
         this.getChildren().addAll(button, button2, button3);
+    }
+
+    @Override
+    public void resizeElement() {
+
     }
 }

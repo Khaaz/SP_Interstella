@@ -1,4 +1,4 @@
-package Class.Entities;
+package Core.Entities;
 
 import Configuration.Path;
 

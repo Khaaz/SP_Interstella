@@ -13,7 +13,7 @@ public class ButtonCpnt extends Button implements IResizableElement {
         this.setFont(Font.loadFont("file:assets/Fonts/Daft_Font.TTF", 50));
         this.setTextFill(Color.RED);
         this.setStyle("-fx-background-color: BLACK;");
-        //this.setLayoutX(SceneManager.getCurWidth() / 2 - this.getMinWidth() / 2);
+        //this.setLayoutX(ISceneListener.getCurWidth() / 2 - this.getMinWidth() / 2);
     }
 
     @Override

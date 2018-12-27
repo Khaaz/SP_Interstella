@@ -1,6 +1,6 @@
 package Controllers.Scenes;
 
-import Class.Entities.AEntity;
+import Core.Entities.AEntity;
 import Views.Roots.ARoot;
 import Views.Roots.GameRoot;
 import javafx.scene.Cursor;

@@ -1,4 +1,4 @@
-package Class.Entities;
+package Core.Entities;
 
 import javafx.scene.Parent;
 import javafx.scene.image.Image;

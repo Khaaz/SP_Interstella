@@ -1,4 +1,4 @@
-package Class.Entities;
+package Core.Entities;
 
 public class Sprite {
 }

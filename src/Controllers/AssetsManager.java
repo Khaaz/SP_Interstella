@@ -1,6 +1,6 @@
 package Controllers;
 
-import Class.Entities.AEntity;
+import Core.Entities.AEntity;
 
 import java.util.HashMap;
 

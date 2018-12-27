@@ -1,6 +1,7 @@
 import Controllers.Scenes.AScene;
 import Controllers.Scenes.GameScene;
 import Controllers.Scenes.MenuScene;
+import Core.Events.SceneManager2;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -25,6 +26,7 @@ public class Main extends Application {
 
         primaryStage.setTitle("Interstella 5555");
         primaryStage.show();
+        new SceneManager2();
 
     }
 
