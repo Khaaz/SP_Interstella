@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<?import Views.ButtonCpnt?>
+<?import Views.LabelCpnt?>
+
+<?import Views.TextFieldCpnt?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="GameOverController"
+           id="mainPane" stylesheets="@../../../dossiercss/gameover.css">
+
+
+    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+
+        <LabelCpnt fx:id="nbPointsScored" styleClass="labelGameOver" text="---"/>
+
+        <padding> <Insets bottom="180"/> </padding>
+
+        <TextFieldCpnt styleClass="menuButton" />
+
+        <ButtonCpnt styleClass="menuButton" text="Save Core.Class.Score"/>
+
+        <ButtonCpnt styleClass="menuButton" text="Menu"/>
+
+    </TilePane>
+
+</StackPane>

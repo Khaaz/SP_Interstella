@@ -5,10 +5,11 @@ import Views.Roots.ARoot;
 
 import javafx.scene.Group;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public abstract class AScene extends Scene {
-    public AScene(ARoot r) {
+    public AScene(Parent r) {
         super(r, CONFIG.width, CONFIG.height);
     }
 

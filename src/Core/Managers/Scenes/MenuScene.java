@@ -1,9 +1,9 @@
 package Core.Managers.Scenes;
 
-import Views.Roots.ARoot;
+import javafx.scene.Parent;
 
 public class MenuScene extends AScene {
-    public MenuScene(ARoot root) {
+    public MenuScene(Parent root) {
         super(root);
 
     }

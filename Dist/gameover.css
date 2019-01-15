@@ -1,0 +1,20 @@
+#mainPane{
+    -fx-background-image: url("../assets/Backgrounds/GameOverBackground.png");
+    -fx-background-size: stretch;
+}
+
+.labelGameOver{
+    -fx-text-fill : WHITE;
+}
+
+.menuButton{
+    -fx-text-fill : #a6acaf;
+    -fx-border-color : #a6acaf;
+    -fx-background-color: BLACK;
+}
+
+.menuButton:hover{
+    -fx-text-fill : BLACK;
+    -fx-border-color : BLACK;
+    -fx-background-color: #a6acaf;
+}

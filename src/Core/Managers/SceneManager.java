@@ -8,8 +8,11 @@ import Core.Managers.Scenes.*;
 
 import Views.Roots.ARoot;
 import Views.Roots.GameRoot;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 public class SceneManager {
@@ -27,9 +30,14 @@ public class SceneManager {
         this.scenes = new HashMap<>();
 
         // setup default scene
-        ARoot root = new GameRoot();
-        AScene sceneMenu = new GameScene(root);
-        this.setScene(sceneMenu);
+        try {
+            Parent mroot = FXMLLoader.load(getClass().getResource("../../Views/FXML/Menu.fxml"));
+            AScene sceneMenu = new MenuScene(mroot);
+            this.setScene(sceneMenu);
+        } catch (IOException e) {
+            //
+        }
+
     }
 
     public void start() {
@@ -60,11 +68,15 @@ public class SceneManager {
     }
 
     private void onSceneChange(SceneEvent event) {
-        AScene scene = this.getOrFetchScene(event.getType());
-        this.setScene(scene);
+        try {
+            AScene scene = this.getOrFetchScene(event.getType());
+            this.setScene(scene);
+        } catch (IOException e) {
+            //
+        }
     }
 
-    private AScene getOrFetchScene(SCENES s) {
+    private AScene getOrFetchScene(SCENES s) throws IOException {
         AScene scene = this.scenes.get(s);
         if (scene == null) {
             scene = this.createScene(s);
@@ -72,7 +84,7 @@ public class SceneManager {
         return scene;
     }
 
-    private AScene createScene(SCENES type) {
+    private AScene createScene(SCENES type) throws IOException {
         AScene scene;
         switch (type) {
             case GAMESCENE: {
@@ -82,7 +94,7 @@ public class SceneManager {
             }
             case MENUSCENE:
                 // load fxml and call new MenuScene
-                ARoot mroot = new GameRoot();
+                Parent mroot = FXMLLoader.load(getClass().getResource("../../..Views/Menu.fxml"));
                 scene = new MenuScene(mroot);
                 break;
             case SCORESCENE:
