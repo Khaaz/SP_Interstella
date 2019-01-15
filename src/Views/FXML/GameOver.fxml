@@ -15,13 +15,12 @@
 <?import javafx.scene.image.Image?>
 
 
-<?import Views.ButtonCpnt?>
-<?import Views.LabelCpnt?>
-
-<?import Views.TextFieldCpnt?>
+<?import Views.Components.ButtonCpnt?>
+<?import Views.Components.LabelCpnt?>
+<?import Views.Components.TextFieldCpnt?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="GameOverController"
-           id="mainPane" stylesheets="@../../../dossiercss/gameover.css">
+           id="mainPane" stylesheets="@../../../Dist/gameover.css">
 
 
     <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">

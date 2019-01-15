@@ -2,13 +2,6 @@
     -fx-background-image: url("../assets/Backgrounds/MenuBackground.png");
     -fx-background-size: stretch;
 }
-
-.labelScores{
-    -fx-text-fill : #a6acaf;
-    -fx-border-color : #a6acaf;
-    -fx-background-color: BLACK;
-}
-
 .menuButton{
     -fx-text-fill : #a6acaf;
     -fx-border-color : #a6acaf;
