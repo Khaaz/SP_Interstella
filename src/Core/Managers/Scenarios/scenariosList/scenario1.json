@@ -1,0 +1,19 @@
+{
+  "difficulty": 0,
+  "enemies": [
+    {
+      "type": 0,
+      "life": 10,
+      "damage": 10,
+      "trajectory": "2x+3",
+      "speed": 10
+    },
+    {
+      "type": 0,
+      "life": 10,
+      "damage": 10,
+      "trajectory": "2x+3",
+      "speed": 10
+    }
+  ]
+}

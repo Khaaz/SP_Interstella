@@ -1,17 +1,19 @@
 package Core.Events;
 
-import java.util.EventObject;
+import Constants.SCENES;
+import javafx.event.Event;
+import javafx.event.EventType;
 
-public class SceneEvent extends EventObject {
+public class SceneEvent extends Event {
 
-    private final String newScene;
+    private SCENES type;
 
-    public SceneEvent(Object o, String newScene) {
-        super(o);
-        this.newScene = newScene;
+    public SceneEvent(EventType<? extends Event> eventType, SCENES type) {
+        super(eventType);
+        this.type = type;
     }
 
-    public String getNewScene() {
-        return newScene;
+    public SCENES getType() {
+        return type;
     }
 }
