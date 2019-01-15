@@ -6,6 +6,8 @@ import Core.Events.EventCollection;
 import Core.Events.SceneEvent;
 import Core.Managers.Scenes.*;
 
+import Views.Roots.ARoot;
+import Views.Roots.GameRoot;
 import javafx.stage.Stage;
 
 import java.util.HashMap;
@@ -25,7 +27,8 @@ public class SceneManager {
         this.scenes = new HashMap<>();
 
         // setup default scene
-        AScene sceneMenu = new MenuScene();
+        ARoot root = new GameRoot();
+        AScene sceneMenu = new GameScene(root);
         this.setScene(sceneMenu);
     }
 
@@ -73,20 +76,24 @@ public class SceneManager {
         AScene scene;
         switch (type) {
             case GAMESCENE: {
-                scene = new GameScene();
+                ARoot groot = new GameRoot();
+                scene = new GameScene(groot);
                 break;
             }
             case MENUSCENE:
                 // load fxml and call new MenuScene
-                scene = new MenuScene();
+                ARoot mroot = new GameRoot();
+                scene = new MenuScene(mroot);
                 break;
             case SCORESCENE:
                 // load fxml and call new MenuScene
-                scene = new ScoreScene();
+                ARoot sroot = new GameRoot();
+                scene = new ScoreScene(sroot);
                 break;
             case CREDITSCENE:
                 // load fxml and call new MenuScene
-                scene = new CreditScene();
+                ARoot croot = new GameRoot();
+                scene = new CreditScene(croot);
                 break;
             case EXIT: {
                 scene = null;

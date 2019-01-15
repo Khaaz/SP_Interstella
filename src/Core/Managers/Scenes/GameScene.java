@@ -5,7 +5,7 @@ import Core.Managers.CollisionManager;
 import Core.Class.Entities.AEntity;
 import Core.Class.Entities.Shep;
 
-import old.Views.Roots.ARoot;
+import Views.Roots.ARoot;
 
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseEvent;
@@ -22,6 +22,8 @@ public class GameScene extends AScene {
 
         this.Shep = new Shep();
 
+        this.addElement(this.Shep);
+
         this.CollisionManager = new CollisionManager();
         this.ScenarioManager = new ScenarioManager();
 
@@ -29,16 +31,20 @@ public class GameScene extends AScene {
 
         this.setOnMouseMoved(event -> onMouseMoved(Shep, event));
         this.setOnMouseDragged(event -> onMouseMoved(Shep, event));
-
-        this.ScenarioManager = new ScenarioManager(this.Shep);
     }
+
+    /*
+    public void removeElement(AEntity e) {
+        ObservableList<Node> list = ((Group)this.getRoot()).getChildren();
+        Node n = list
+            .stream()
+            .filter(o -> o instanceof AEntity)
+            .filter(o -> ((AEntity)o).getID() == e.getID())
+            .findFirst();
+    }*/
 
     private void onMouseMoved(AEntity Shep, MouseEvent event) {
         Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
         Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
-    }
-
-    public void onResize() {
-        ((ARoot)this.getRoot()).resizeComponents();
     }
 }

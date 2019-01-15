@@ -1,13 +1,12 @@
-package old.Views.Backgrounds;
+package Views.Backgrounds;
 
-import old.Configuration.Config;
+import Constants.CONFIG;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 
 public abstract class ABackground extends Parent {
-    //private Rectangle body;
 
     private ImageView body;
     private Image skin;
@@ -17,12 +16,7 @@ public abstract class ABackground extends Parent {
 
         this.skin = new Image(imagePath);
         this.body = new ImageView(this.skin);
-        this.formatImage(Config.width, Config.height);
-
-        //this.body = new Rectangle();
-        //this.body.setHeight(Config.height);
-        //this.body.setWidth(Config.width);
-        //this.body.setFill(Paint.valueOf(Config.BGColor));
+        this.formatImage(CONFIG.width, CONFIG.height);
 
         this.getChildren().add(this.body);
     }

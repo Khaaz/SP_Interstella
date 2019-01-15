@@ -1,6 +1,6 @@
 package Core.Utility.JsonDeserialiser.Factory;
 
-import Core.Class.Entities.Enemies.AEnemy;
+import Core.Class.ConfigClass.EnemyConfig;
 import Core.Utility.JsonDeserialiser.Class.JsonEnemy;
 
 import java.util.ArrayList;
@@ -8,12 +8,12 @@ import java.util.List;
 
 public class EnemyFactory {
 
-    public static AEnemy createOneEnemy(JsonEnemy enemy) {
-        return new AEnemy();
+    public static EnemyConfig createOneEnemy(JsonEnemy enemy) {
+        return new EnemyConfig(enemy.type, enemy.posX, enemy.posY, enemy.trajectory);
     }
 
-    public static ArrayList<AEnemy> createEnemies(List<JsonEnemy> jsonEnemies) {
-        ArrayList<AEnemy> enemies = new ArrayList<>();
+    public static ArrayList<EnemyConfig> createEnemies(List<JsonEnemy> jsonEnemies) {
+        ArrayList<EnemyConfig> enemies = new ArrayList<>();
         for (JsonEnemy enemy : jsonEnemies) {
             enemies.add(EnemyFactory.createOneEnemy(enemy));
         }

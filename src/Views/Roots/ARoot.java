@@ -1,9 +1,9 @@
-package old.Views.Roots;
+package Views.Roots;
 
-import old.Views.Backgrounds.ABackground;
-import javafx.scene.Parent;
+import Views.Backgrounds.ABackground;
+import javafx.scene.Group;
 
-public abstract class ARoot extends Parent {
+public abstract class ARoot extends Group {
     private ABackground background;
 
     public ARoot(ABackground bg) {

@@ -2,18 +2,16 @@
   "difficulty": 0,
   "enemies": [
     {
-      "type": 0,
-      "life": 10,
-      "damage": 10,
-      "trajectory": "2x+3",
-      "speed": 10
+      "type": "enemy1",
+      "posX":  0,
+      "posY":  0,
+      "trajectory": "2x+3"
     },
     {
-      "type": 0,
-      "life": 10,
-      "damage": 10,
-      "trajectory": "2x+3",
-      "speed": 10
+      "type": "enemy1",
+      "posX":  0,
+      "posY":  0,
+      "trajectory": "2x+3"
     }
   ]
 }

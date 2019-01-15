@@ -1,15 +1,11 @@
 package Core.Managers.Scenes;
 
-import old.Views.Roots.ARoot;
-import old.Views.Roots.MenuRoot;
+
+import Views.Roots.ARoot;
 
 public class ScoreScene extends AScene {
-    public ScoreScene() {
-        super(new MenuRoot());
+    public ScoreScene(ARoot root) {
+        super(root);
 
-    }
-
-    public void onResize() {
-        ((ARoot)this.getRoot()).resizeComponents();
     }
 }

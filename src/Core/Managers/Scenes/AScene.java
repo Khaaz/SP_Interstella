@@ -1,7 +1,10 @@
 package Core.Managers.Scenes;
 
 import Constants.CONFIG;
-import old.Views.Roots.ARoot;
+import Views.Roots.ARoot;
+
+import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 
 public abstract class AScene extends Scene {
@@ -17,5 +20,11 @@ public abstract class AScene extends Scene {
         ((ARoot)this.getRoot()).resizeBackgroundWidth(width);
     }
 
-    public abstract void onResize();
+    protected void addElement(Node e) {
+        ((Group)this.getRoot()).getChildren().add(e);
+    }
+
+    public void onResize() {
+        ((ARoot)this.getRoot()).resizeComponents();
+    }
 }

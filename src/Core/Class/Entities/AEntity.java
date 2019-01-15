@@ -9,14 +9,28 @@ public class AEntity extends Parent {
     public ImageView body;
     private Image skin;
 
-    private int life;
-    private int damages;
+    private double life;
+    private double damages;
+    private double speed;
 
-    public AEntity(int life, int damages, String skinPath) {
+    public AEntity(String skinPath, double life, double damages, double speed) {
         super();
         this.life = life;
         this.damages = damages;
+        this.speed = speed;
         this.createBody(skinPath);
+    }
+
+    public double getLife() {
+        return life;
+    }
+
+    public double getDamages() {
+        return damages;
+    }
+
+    public double getSpeed() {
+        return speed;
     }
 
     protected void formatImage(double width, double height) {

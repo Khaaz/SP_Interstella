@@ -5,7 +5,7 @@ import Core.Class.Entities.Enemies.AEnemy;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AScenario {
+public abstract class AScenario {
     private int difficulty;
     private ArrayList<AEnemy> enemies;
 

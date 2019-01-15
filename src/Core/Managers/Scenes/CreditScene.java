@@ -1,15 +1,10 @@
 package Core.Managers.Scenes;
 
-import old.Views.Roots.ARoot;
-import old.Views.Roots.MenuRoot;
+import Views.Roots.ARoot;
 
 public class CreditScene extends AScene {
-    public CreditScene() {
-        super(new MenuRoot());
+    public CreditScene(ARoot root) {
+        super(root);
 
-    }
-
-    public void onResize() {
-        ((ARoot)this.getRoot()).resizeComponents();
     }
 }
