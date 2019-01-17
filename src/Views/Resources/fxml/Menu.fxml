@@ -5,10 +5,10 @@
 <?import javafx.scene.layout.*?>
 
 
-<?import Views.Components.ButtonCpnt?>
+<?import Views.Components.*?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.MenuController"
-           id="mainPane">
+           stylesheets="@../css/menu.css" id="mainPane">
 
     <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="1920.0">
 

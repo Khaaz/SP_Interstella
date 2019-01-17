@@ -20,7 +20,7 @@
 <?import Views.Components.TextFieldCpnt?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.GameOverController"
-           id="mainPane" stylesheets="@../../../Dist/gameover.css">
+           id="mainPane" stylesheets="@../css/gameover.css">
 
 
     <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">

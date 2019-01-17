@@ -39,11 +39,16 @@ public class SceneManager {
         // setup default scene
         try {
             this.loader.setLocation(getClass().getResource(PATH.menuViews));
+
             Parent mroot = this.loader.load();
             AScene sceneMenu = new MenuScene(mroot);
+
             this.setScene(sceneMenu);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            for (StackTraceElement err : e.getStackTrace()) {
+                System.out.println(err.toString());
+            }
         }
 
     }

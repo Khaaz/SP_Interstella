@@ -11,7 +11,7 @@ public class PATH {
     public static final String menuBG = PATH.asset + "Backgrounds/MenuBackground.png";
 
 
-    public static final String fxmlViews = "/Views/FXML/";
+    public static final String fxmlViews = "/Views/Resources/fxml/";
     public static final String menuViews = PATH.fxmlViews + "Menu.fxml";
     public static final String scoresViews = PATH.fxmlViews + "Scores.fxml";
 }
