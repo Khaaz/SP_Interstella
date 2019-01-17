@@ -1,6 +1,7 @@
 package Core.Managers;
 
 import Constants.CONFIG;
+import Constants.PATH;
 import Constants.SCENES;
 import Core.Events.EventCollection;
 import Core.Events.SceneEvent;
@@ -12,11 +13,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 
-import java.io.IOException;
+import java.io.FileInputStream;
+import java.io.IOException;;
 import java.util.HashMap;
 
 public class SceneManager {
     private Stage stage;
+
+    private FXMLLoader loader;
 
     private AScene curScene;
     private HashMap<SCENES, AScene> scenes;
@@ -29,13 +33,17 @@ public class SceneManager {
 
         this.scenes = new HashMap<>();
 
+        this.loader = new FXMLLoader();
+
+
         // setup default scene
         try {
-            Parent mroot = FXMLLoader.load(getClass().getResource("../../Views/FXML/Menu.fxml"));
+            this.loader.setLocation(getClass().getResource(PATH.menuViews));
+            Parent mroot = this.loader.load();
             AScene sceneMenu = new MenuScene(mroot);
             this.setScene(sceneMenu);
-        } catch (IOException e) {
-            //
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
     }
@@ -45,14 +53,14 @@ public class SceneManager {
         // ADAPTIVE SIZING
         this.stage.widthProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curWidth = (double)newVal;
-            this.curScene.resizeWidth(SceneManager.curWidth);
-            this.curScene.onResize();
+            //this.curScene.resizeWidth(SceneManager.curWidth);
+            //this.curScene.onResize();
         });
 
         this.stage.heightProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curHeight = (double)newVal;
-            this.curScene.resizeHeight(SceneManager.curHeight);
-            this.curScene.onResize();
+            //this.curScene.resizeHeight(SceneManager.curHeight);
+            //this.curScene.onResize();
         });
 
         // DYNAMIC SCENE CHANGE
@@ -94,12 +102,14 @@ public class SceneManager {
             }
             case MENUSCENE:
                 // load fxml and call new MenuScene
-                Parent mroot = FXMLLoader.load(getClass().getResource("../../..Views/Menu.fxml"));
+                this.loader.setLocation(getClass().getResource(PATH.menuViews));
+                Parent mroot = this.loader.load();
                 scene = new MenuScene(mroot);
                 break;
             case SCORESCENE:
                 // load fxml and call new MenuScene
-                ARoot sroot = new GameRoot();
+                this.loader.setLocation(getClass().getResource(PATH.scoresViews));
+                ARoot sroot = this.loader.load();
                 scene = new ScoreScene(sroot);
                 break;
             case CREDITSCENE:

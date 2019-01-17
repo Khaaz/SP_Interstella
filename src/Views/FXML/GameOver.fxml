@@ -19,7 +19,7 @@
 <?import Views.Components.LabelCpnt?>
 <?import Views.Components.TextFieldCpnt?>
 
-<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="GameOverController"
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.GameOverController"
            id="mainPane" stylesheets="@../../../Dist/gameover.css">
 
 

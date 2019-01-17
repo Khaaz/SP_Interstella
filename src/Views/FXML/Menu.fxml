@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import java.net.*?>
 <?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
 
 
 <?import Views.Components.ButtonCpnt?>
 
-<StackPane   xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="../../Controllers/MenuController"
-             id="mainPane" stylesheets="@../../../Dist/menu.css">
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.MenuController"
+           id="mainPane">
 
-
-    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="1920.0">
 
         <padding> <Insets bottom="100"/> </padding>
 
@@ -34,5 +23,6 @@
         <ButtonCpnt styleClass="menuButton" text="Quitter"/>
 
     </TilePane>
+
 
 </StackPane>
