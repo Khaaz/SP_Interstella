@@ -12,15 +12,19 @@
 
     <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
 
-        <LabelCpnt fx:id="nbPointsScored" styleClass="labelGameOver" text="---"/>
-
         <padding> <Insets bottom="180"/> </padding>
 
-        <TextFieldCpnt styleClass="menuButton" />
+        <LabelCpnt styleClass="labelGameOver" text="You scored"/>
 
-        <ButtonCpnt styleClass="menuButton" text="Save Core.Class.Score"/>
+        <LabelCpnt fx:id="nbPointsScored" styleClass="labelGameOver" id="GameOverPoints" text="---"/>
 
-        <ButtonCpnt styleClass="menuButton" text="Menu"/>
+        <LabelCpnt styleClass="labelGameOver" text="Points !"/>
+
+        <TextFieldCpnt fx:id="playerName" styleClass="menuButton" />
+
+        <ButtonCpnt fx:id="scoreSaving" styleClass="menuButton" text="Save Your Core"/>
+
+        <ButtonCpnt fx:id="menu" styleClass="menuButton" text="Menu"/>
 
     </TilePane>
 

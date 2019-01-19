@@ -38,7 +38,7 @@ public class SceneManager {
 
         // setup default scene
         try {
-            this.loader.setLocation(getClass().getResource(PATH.gameoverViews));
+            this.loader.setLocation(getClass().getResource(PATH.scoresViews));
 
             Parent mroot = this.loader.load();
             AScene sceneMenu = new MenuScene(mroot);

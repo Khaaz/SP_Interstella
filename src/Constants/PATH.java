@@ -15,4 +15,6 @@ public class PATH {
     public static final String menuViews = PATH.Views + "Menu.fxml";
     public static final String scoresViews = PATH.Views + "Scores.fxml";
     public static final String gameoverViews = PATH.Views + "GameOver.fxml";
+    public static final String pauseViews = PATH.Views + "Pause.fxml";
+
 }
