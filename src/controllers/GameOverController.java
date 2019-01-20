@@ -28,6 +28,8 @@ public class GameOverController extends AController implements Initializable, IR
     @FXML
     ButtonCpnt scoreSaving;
     @FXML
+    LabelCpnt tooLong;
+    @FXML
     ButtonCpnt menu;
 
     @Override
@@ -35,12 +37,25 @@ public class GameOverController extends AController implements Initializable, IR
         int nbPoints = GameOverModel.getNbPoints();
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
 
+        tooLong.setVisible(false);
+
         menu.setOnAction(e -> {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
             menu.fireEvent(eventGame);
         });
 
-        scoreSaving.setOnAction(e -> GameOverModel.saveScore(new Score(playerName.getText(),nbPoints)));
+        scoreSaving.setOnAction(e -> {
+            if(playerName.getText().length()< 3 || playerName.getText().length()> 20){
+                tooLong.setVisible(true);
+            }
+            else{
+                Score s = new Score(playerName.getText(),GameOverModel.getNbPoints());
+                GameOverModel.saveScore(s);
+                Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
+                menu.fireEvent(eventGame);
+            }
+
+        });
         nbPointsScored.textProperty().bind(nbpp);
 
 

@@ -7,5 +7,6 @@ public class TextFieldCpnt extends TextField {
     public TextFieldCpnt (){
 
         this.setFont(Font.loadFont("file:assets/Fonts/Daft_Font.TTF", 25));
+        this.setMaxWidth(300);
     }
 }
