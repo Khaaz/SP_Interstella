@@ -14,9 +14,10 @@ public class PATH {
     // VIEWS
     public static final String VIEWS = "/views/resources/fxml/";
     public static final String MENU_VIEWS = PATH.VIEWS + "Menu.fxml";
+    public static final String PAUSE_VIEWS = PATH.VIEWS + "Pause.fxml";
     public static final String SCORES_VIEWS = PATH.VIEWS + "Scores.fxml";
     public static final String GAMEOVER_VIEWS = PATH.VIEWS + "GameOver.fxml";
 
     // Scenario directory
-    public static final String SCENARIOS = "src/core/managers/scenarioManager/SCENARIOS/scenariosList/";
+    public static final String SCENARIOS = "src/core/managers/scenarioManager/scenarios/scenariosList/";
 }

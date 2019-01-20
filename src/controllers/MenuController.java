@@ -1,5 +1,9 @@
 package controllers;
 
+import constants.SCENES;
+import core.events.EventCollection;
+import core.events.SceneEvent;
+import javafx.event.Event;
 import views.components.ButtonCpnt;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -7,7 +11,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MenuController implements Initializable {
+public class MenuController extends AController implements Initializable {
     @FXML
     ButtonCpnt play;
     @FXML
@@ -20,11 +24,28 @@ public class MenuController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        play.setOnAction(e -> System.out.println("play!"));
-        scores.setOnAction(e -> System.out.println("scores!"));
-        credits.setOnAction(e -> System.out.println("credits!"));
-        quitter.setOnAction(e -> System.out.println("quitter!"));
+        play.setOnAction(e -> {
+            Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.GAMESCENE);
+            play.fireEvent(eventGame);
+        });
+        scores.setOnAction(e -> {
+            Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.SCORESCENE);
+            scores.fireEvent(eventGame);
+        });
+        credits.setOnAction(e -> {
+            Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.CREDITSCENE);
+            credits.fireEvent(eventGame);
+        });
+        quitter.setOnAction(e -> {
+            Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.EXIT);
+            quitter.fireEvent(eventGame);
+        });
 
+    }
+
+    @Override
+    public void refresh() {
+        //
     }
 
 }

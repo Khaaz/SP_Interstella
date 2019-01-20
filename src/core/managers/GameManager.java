@@ -23,17 +23,16 @@ public class GameManager {
     private ArrayList<ScenarioConfig> scenarioConfigs;
 
 
-    private final CollisionManager collisionManager;
+    private CollisionManager collisionManager;
     private ScenarioManager scenarioManager;
     private TimeManager timeManager;
 
     private int iteration;
     private long time;
 
-    public GameManager(ASprite shep) {
+    public GameManager() {
         this.load();
 
-        this.collisionManager = new CollisionManager(shep);
         this.scenarioManager = new ScenarioManager(this);
 
         // Create the time manager (count every mili second)
@@ -63,10 +62,16 @@ public class GameManager {
         return scenarioConfigs;
     }
 
+    public Boolean getRunning() {
+        return running;
+    }
+
     /**
      * Start the game Engine
      */
-    public void start() {
+    public void start(ASprite shep) {
+        this.collisionManager = new CollisionManager(shep);
+
         this.running = true;
         this.time = 0;
         this.iteration = 0;
@@ -74,22 +79,34 @@ public class GameManager {
         this.timeManager.start();
     }
 
-    public void pause() {
+    public Boolean pause() {
+        if (!this.running) {
+            return false;
+        }
         this.running = false;
         this.scenarioManager.pause();
         this.timeManager.pause();
+        return true;
     }
 
-    public void restart() {
+    public Boolean restart() {
+        if (this.running) {
+            return false;
+        }
         this.running = false;
         this.scenarioManager.restart();
         this.timeManager.restart();
+        return true;
     }
 
-    public void reset() {
-        this.running = false;
+    public Boolean reset() {
+        if (!this.running) {
+            return false;
+        }
+        this.running = true;
         this.scenarioManager = new ScenarioManager(this);
         this.time = 0;
+        return true;
     }
 
     private void incrementTime() {

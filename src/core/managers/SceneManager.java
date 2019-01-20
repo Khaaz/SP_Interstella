@@ -3,9 +3,10 @@ package core.managers;
 import constants.CONFIG;
 import constants.PATH;
 import constants.SCENES;
+import controllers.AController;
 import core.events.EventCollection;
 import core.events.SceneEvent;
-import controllers.Scenes.*;
+import controllers.scenes.*;
 
 import views.roots.ARoot;
 import views.roots.GameRoot;
@@ -14,13 +15,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 
-import java.io.IOException;;
+import java.io.IOException;
 import java.util.HashMap;
 
 public class SceneManager {
     private Stage stage;
 
-    private FXMLLoader loader;
+    private GameManager gameManager;
 
     private AScene curScene;
     private HashMap<SCENES, AScene> scenes;
@@ -33,23 +34,18 @@ public class SceneManager {
 
         this.scenes = new HashMap<>();
 
-        this.loader = new FXMLLoader();
+        FXMLLoader loader = new FXMLLoader();
 
 
         // setup default scene
         try {
-            this.loader.setLocation(getClass().getResource(PATH.MENU_VIEWS));
+            loader.setLocation(getClass().getResource(PATH.MENU_VIEWS));
 
-            Parent mroot = this.loader.load();
-            AScene sceneMenu = new MenuScene(mroot);
+            Parent root = loader.load();
+            AController controller = loader.getController();
+            AScene sceneMenu = new MenuScene(root, controller);
 
             this.setScene(sceneMenu);
-
-            /////// TEST //////
-            //ARoot groot = new GameRoot();
-            //AScene scene = new GameScene(groot);
-            //this.setScene(scene);
-            /////// TEST //////
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -122,6 +118,8 @@ public class SceneManager {
         AScene scene = this.scenes.get(s);
         if (scene == null) {
             scene = this.createScene(s);
+        } else {
+            scene.refresh();
         }
         return scene;
     }
@@ -134,52 +132,60 @@ public class SceneManager {
      */
     private AScene createScene(SCENES type) throws IOException {
         AScene scene;
+        FXMLLoader loader = new FXMLLoader();
+
         switch (type) {
             case MENUSCENE: {
                 // load fxml and call new MenuScene
-                this.loader.setLocation(getClass().getResource(PATH.MENU_VIEWS));
-                Parent mroot = this.loader.load();
-                scene = new MenuScene(mroot);
+                loader.setLocation(getClass().getResource(PATH.MENU_VIEWS));
+                scene = new MenuScene(loader.load(), loader.getController());
                 break;
             }
             case GAMESCENE: {
-                ARoot groot = new GameRoot();
-                scene = new GameScene(groot);
+                this.gameManager = new GameManager();
+                ARoot root = new GameRoot();
+                scene = new GameScene(root, this.gameManager);
+                break;
+            }
+            case PAUSESCENE: {
+                loader.setLocation(getClass().getResource(PATH.PAUSE_VIEWS));
+                scene = new PauseScene(loader.load(), loader.getController(), this.gameManager);
                 break;
             }
             case GAMEOVERSCENE: {
                 // load fxml and call new MenuScene
-                this.loader.setLocation(getClass().getResource(PATH.GAMEOVER_VIEWS));
-                ARoot goroot = this.loader.load();
-                scene = new ScoreScene(goroot);
+                loader.setLocation(getClass().getResource(PATH.GAMEOVER_VIEWS));
+                scene = new GameOverScene(loader.load(), loader.getController(), this.gameManager);
                 break;
             }
             case SCORESCENE: {
                 // load fxml and call new MenuScene
-                this.loader.setLocation(getClass().getResource(PATH.SCORES_VIEWS));
-                ARoot sroot = this.loader.load();
-                scene = new ScoreScene(sroot);
+                loader.setLocation(getClass().getResource(PATH.SCORES_VIEWS));
+                scene = new ScoreScene(loader.load(), loader.getController());
                 break;
             }
+            /*
             case CREDITSCENE: {
                 // load fxml and call new MenuScene
-                ARoot croot = new GameRoot();
-                scene = new CreditScene(croot);
+                this.loader.setLocation(getClass().getResource(PATH.CREDI_VIEWS));
+                scene = new CreditScene(loader.load(), controller);
                 break;
             }
+            */
             case EXIT: {
                 scene = null;
                 break;
             }
             default: {
-                scene = null;
+                loader.setLocation(getClass().getResource(PATH.MENU_VIEWS));
+                scene = new MenuScene(loader.load(), loader.getController());
             }
         }
         this.scenes.put(type, scene);
         return scene;
     }
 
-    /**
+    /**&
      * Set the scene as the current scene in cache and for the application
      * @param scene scene to setup
      */
