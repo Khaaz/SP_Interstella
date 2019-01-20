@@ -1,12 +1,13 @@
 package views.components;
 
+import constants.PATH;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 
 public class TextFieldCpnt extends TextField {
     public TextFieldCpnt (){
 
-        this.setFont(Font.loadFont("file:assets/Fonts/Daft_Font.TTF", 25));
+        this.setFont(Font.loadFont(PATH.FONT, 25));
         this.setMaxWidth(300);
     }
 }

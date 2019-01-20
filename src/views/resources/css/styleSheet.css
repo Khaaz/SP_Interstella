@@ -1,20 +1,20 @@
 #GameOverPane{
-    -fx-background-image: url("../../../../../../assets/Backgrounds/GameOverBackground.png");
+    -fx-background-image: url("../../../../../../assets/backgrounds/GameOverBackground.png");
     -fx-background-size: stretch;
 }
 
 #MenuPane{
-    -fx-background-image: url("../../../../../../assets/Backgrounds/MenuBackground.png");
+    -fx-background-image: url("../../../../../../assets/backgrounds/MenuBackground.png");
     -fx-background-size: stretch;
 }
 
 #PausePane{
-    -fx-background-image: url("../../../../../../assets/Backgrounds/GamePausedBackground.png");
+    -fx-background-image: url("../../../../../../assets/backgrounds/GamePausedBackground.png");
     -fx-background-size: stretch;
 }
 
 #ScoresPane{
-    -fx-background-image: url("../../../../../../assets/Backgrounds/ScoresBackground.png");
+    -fx-background-image: url("../../../../../../assets/backgrounds/ScoresBackground.png");
     -fx-background-size: stretch;
 }
 

@@ -5,6 +5,6 @@ import core.objects.entities.AEntity;
 
 public abstract class AItem extends AEntity {
     public AItem() {
-        super(PATH.enemy);
+        super(PATH.enemy, 100, 100);
     }
 }
