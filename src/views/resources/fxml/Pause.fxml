@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<?import views.components.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.PauseController"
+           id="mainPane" stylesheets="@../css/pause.css">
+
+
+    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+
+        <padding> <Insets bottom="350"/> </padding>
+
+        <LabelCpnt styleClass="labelGamePause" text="Score :"/>
+
+        <LabelCpnt fx:id="currPoints" styleClass="labelPause" id="Points" text="---"/>
+
+        <ButtonCpnt fx:id="resume" styleClass="menuButton" text="Resume"/>
+
+        <ButtonCpnt fx:id="menu" styleClass="menuButton" text="Menu"/>
+
+    </TilePane>
+
+</StackPane>

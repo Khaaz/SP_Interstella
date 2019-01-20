@@ -1,8 +1,8 @@
-import Constants.CONFIG;
+import constants.CONFIG;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import Core.managers.SceneManager;
+import core.managers.SceneManager;
 
 public class Main extends Application {
 

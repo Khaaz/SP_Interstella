@@ -1,6 +1,6 @@
 package old.Views.Backgrounds;
 
-import Views.Backgrounds.ABackground;
+import views.backgrounds.ABackground;
 import old.Configuration.Path;
 
 public class MenuBG extends ABackground {
