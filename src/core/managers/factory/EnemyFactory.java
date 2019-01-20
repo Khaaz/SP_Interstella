@@ -2,7 +2,7 @@ package core.managers.factory;
 
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
-import core.objects.sprites.entities.enemies.AEnemy;
+import core.objects.entities.sprites.enemies.AEnemy;
 import core.utility.Instantiator;
 
 import java.util.ArrayList;

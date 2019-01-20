@@ -1,7 +1,8 @@
 package core.managers.scenarioManager;
 
 import constants.CONFIG;
-import core.managers.CollisionManager;
+import core.managers.InstanceManager;
+import core.managers.collisionManager.CollisionManager;
 import core.managers.GameManager;
 import core.managers.factory.ScenarioFactory;
 import core.managers.scenarioManager.scenarios.Scenario;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 public class ScenarioManager {
 
     private final GameManager gameManager;
-    private final CollisionManager collisionManager;
+    private final InstanceManager instanceManager;
     private final ScenarioDifficultyManager difficultyManager;
 
 
@@ -58,7 +59,7 @@ public class ScenarioManager {
     public ScenarioManager(GameManager gameManager) {
 
         this.gameManager = gameManager;
-        this.collisionManager = gameManager.getCollisionManager();
+        this.instanceManager = gameManager.getInstanceManager();
         this.difficultyManager = new ScenarioDifficultyManager(this);
 
         this.scenarioConfigs = gameManager.getScenarioConfigs().stream()
@@ -87,14 +88,22 @@ public class ScenarioManager {
     public void start() {
         this.iteration = 0;
         this.scenarioTask.start();
+        System.out.println("start call scenario manager");
     }
 
     public void pause() {
         this.scenarioTask.pause();
+        System.out.println("pause call scenario manager");
     }
 
-    public void restart() {
-        this.scenarioTask.restart();
+    public void resume() {
+        this.scenarioTask.resume();
+        System.out.println("resume call scenario manager");
+    }
+
+    public void reset() {
+        this.scheduler.shutdownNow();
+        System.out.println("reset call scenario manager");
     }
 
     /**
@@ -108,7 +117,6 @@ public class ScenarioManager {
         }
 
         this.iteration += 1;
-        this.gameManager.incrementIter();
 
         this.difficultyManager.increaseDifficulty(this.iteration);
 
@@ -119,11 +127,12 @@ public class ScenarioManager {
 
     private boolean scheduledTask() {
         Scenario next = this.getNextScenario();
+        this.gameManager.increasePointByIter(next.getDifficulty());
         if(next == null) {
             return false;
         }
 
-        next.start(this.collisionManager);
+        next.start(this.instanceManager);
         return true;
     }
 }

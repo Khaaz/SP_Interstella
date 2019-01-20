@@ -1,4 +1,4 @@
-package core.objects.sprites;
+package core.objects.entities;
 
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
@@ -8,20 +8,22 @@ public abstract class AEntity extends Parent {
 
     public ImageView body;
     private Image skin;
+    private double imageWidth;
+    private double imageHeight;
 
-    public AEntity(String skinPath) {
+    public AEntity(String skinPath,double imageWidth, double imageHeight) {
         super();
+        this.imageWidth = imageWidth;
+        this.imageHeight = imageHeight;
         this.createBody(skinPath);
     }
 
     /**
      * Setup default Image format
-     * @param width width
-     * @param height height
      */
-    protected void formatImage(double width, double height) {
-        this.body.setFitWidth(width);
-        this.body.setFitHeight(height);
+    protected void formatImage() {
+        this.body.setFitWidth(this.imageWidth);
+        this.body.setFitHeight(this.imageHeight);
 
         this.body.setPreserveRatio(true);
         this.body.setSmooth(true);
@@ -35,7 +37,8 @@ public abstract class AEntity extends Parent {
     private void createBody(String skin) {
         this.skin = new Image(skin);
         this.body = new ImageView(this.skin);
-        this.formatImage(150, 150);
+        this.formatImage();
+
         this.getChildren().add(this.body);
     }
 

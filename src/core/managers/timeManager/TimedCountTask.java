@@ -1,9 +1,9 @@
-package core.managers;
+package core.managers.timeManager;
 
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class TimeManager implements Runnable {
+public class TimedCountTask implements Runnable {
     private final ScheduledExecutorService scheduler;
     private final Runnable actualTask;
     private final TimeUnit unit;
@@ -13,7 +13,7 @@ public class TimeManager implements Runnable {
 
     private boolean pause;
 
-    public TimeManager(Runnable actualTask, long initialDelay, long delay, TimeUnit unit, ScheduledExecutorService scheduler) {
+    public TimedCountTask(Runnable actualTask, long initialDelay, long delay, TimeUnit unit, ScheduledExecutorService scheduler) {
         this.scheduler = scheduler;
         this.actualTask = actualTask;
         this.initialDelay = initialDelay;
@@ -30,7 +30,7 @@ public class TimeManager implements Runnable {
         this.pause = true;
     }
 
-    protected void restart() {
+    protected void resume() {
         this.pause = false;
     }
 

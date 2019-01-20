@@ -1,4 +1,4 @@
-package core.objects.sprites.entities.enemies;
+package core.objects.entities.sprites.enemies;
 
 import constants.PATH;
 import core.objects.PowerUpRate;

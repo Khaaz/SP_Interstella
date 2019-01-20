@@ -1,8 +1,8 @@
 package core.utility;
 
-import core.objects.sprites.entities.enemies.AEnemy;
-import core.objects.sprites.entities.enemies.Enemy1;
-import core.objects.sprites.entities.enemies.Enemy2;
+import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.sprites.enemies.Enemy1;
+import core.objects.entities.sprites.enemies.Enemy2;
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
 

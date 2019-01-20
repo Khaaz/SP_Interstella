@@ -142,8 +142,8 @@ public class SceneManager {
                 break;
             }
             case GAMESCENE: {
-                this.gameManager = new GameManager();
                 ARoot root = new GameRoot();
+                this.gameManager = new GameManager(root);
                 scene = new GameScene(root, this.gameManager);
                 break;
             }

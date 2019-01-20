@@ -29,7 +29,7 @@ public class PauseScene extends AScene {
             case ESCAPE: {
                 Event e = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.GAMESCENE);
                 this.getRoot().fireEvent(e);
-                this.manager.restart();
+                this.manager.resume();
                 break;
             }
             default: {

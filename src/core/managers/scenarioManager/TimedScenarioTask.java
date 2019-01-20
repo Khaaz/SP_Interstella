@@ -34,7 +34,7 @@ public class TimedScenarioTask implements Runnable {
         this.pause = true;
     }
 
-    protected void restart() {
+    protected void resume() {
         if (this.pause) {
             this.pause = false;
             this.scheduleNextInvocation();

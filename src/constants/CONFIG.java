@@ -9,6 +9,10 @@ public class CONFIG {
     public static final String BGColor = "ff1cb0";
 
 
+    // SIZE
+    public static final long DEFAULT_ENTITY_WIDTH = 300;
+    public static final long DEFAULT_ENTITY_HEIGHT = 300;
+
     // SCENARIOS
     public static final long START_MIN_INTERVAL = 2000;
     public static final long MIN_INTERVAL = 100;

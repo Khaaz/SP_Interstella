@@ -1,6 +1,6 @@
 package core.managers.scenarioManager.scenarios;
 
-import core.objects.sprites.entities.enemies.AEnemy;
+import core.objects.entities.sprites.enemies.AEnemy;
 
 import java.util.List;
 

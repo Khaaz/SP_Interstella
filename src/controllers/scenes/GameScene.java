@@ -4,8 +4,7 @@ import constants.SCENES;
 import core.events.EventCollection;
 import core.events.SceneEvent;
 import core.managers.GameManager;
-import core.objects.sprites.entities.ASprite;
-import core.objects.sprites.entities.Shep;
+import core.objects.entities.sprites.ASprite;
 
 import javafx.event.Event;
 import javafx.scene.Cursor;
@@ -17,8 +16,6 @@ public class GameScene extends AScene {
 
     private GameManager gameManager;
 
-    private ASprite shep;
-
     /**
      * Controller
      * Responsible of events
@@ -27,15 +24,13 @@ public class GameScene extends AScene {
     public GameScene(Parent root, GameManager gameManager) {
         super(root, null);
 
-        this.shep = new Shep();
-
-        this.addElement(this.shep);
 
         this.gameManager = gameManager;
-        this.gameManager.start(this.shep);
+        this.gameManager.start();
+
+        ASprite shep = this.gameManager.getInstanceManager().getShep();
 
         this.setCursor(Cursor.NONE);
-
         this.setOnMouseMoved(event -> this.onMouseMoved(shep, event));
         this.setOnMouseDragged(event -> this.onMouseMoved(shep, event));
     }
@@ -44,10 +39,14 @@ public class GameScene extends AScene {
         this.gameManager.pause();
     }
 
+    /**
+     * If game is paused -> resume
+     * Else -> restart (new game)
+     */
     @Override
     public void refresh() {
-        if (this.gameManager.getRunning()) {
-            this.reset();
+        if (this.gameManager.getPaused()) {
+            this.resume();
         } else {
             this.restart();
         }
@@ -56,12 +55,12 @@ public class GameScene extends AScene {
         this.setCursor(Cursor.NONE);
     }
 
-    public void restart() {
-        this.gameManager.restart();
+    public void resume() {
+        this.gameManager.resume();
     }
 
-    public void reset() {
-        this.gameManager.reset();
+    public void restart() {
+        this.gameManager.restart();
     }
 
     /*

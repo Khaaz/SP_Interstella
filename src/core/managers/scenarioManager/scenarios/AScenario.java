@@ -1,7 +1,7 @@
 package core.managers.scenarioManager.scenarios;
 
-import core.managers.CollisionManager;
-import core.objects.sprites.entities.enemies.AEnemy;
+import core.managers.InstanceManager;
+import core.objects.entities.sprites.enemies.AEnemy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,12 +25,12 @@ public abstract class AScenario {
 
     /**
      * Main method for a scenario
-     * @param collisionManager
+     * @param instanceManager instance manager
      */
-    public void start(CollisionManager collisionManager) {
+    public void start(InstanceManager instanceManager) {
 
-        for(AEnemy e : enemies) {
-
+        for(AEnemy e : this.enemies) {
+            instanceManager.addEnemy(e);
         }
     }
 }

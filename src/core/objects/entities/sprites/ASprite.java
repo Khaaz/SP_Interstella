@@ -1,6 +1,6 @@
-package core.objects.sprites.entities;
+package core.objects.entities.sprites;
 
-import core.objects.sprites.AEntity;
+import core.objects.entities.AEntity;
 
 public abstract class ASprite extends AEntity {
 
@@ -8,8 +8,8 @@ public abstract class ASprite extends AEntity {
     private double damages;
     private double speed;
 
-    public ASprite(String skinPath, double life, double damages, double speed) {
-        super(skinPath);
+    public ASprite(String skinPath, double imageWidth, double imageHeight, double life, double damages, double speed) {
+        super(skinPath, imageWidth, imageHeight);
         this.life = life;
         this.damages = damages;
         this.speed = speed;

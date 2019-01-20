@@ -1,15 +1,18 @@
 package constants;
 
 public class PATH {
-    public static final String asset = "file:assets/";
+    public static final String ASSETS = "file:assets/";
 
 
-    public static final String Shep = PATH.asset + "Shep/5555.png";
-    public static final String enemy = PATH.asset + "Foe/slashturned.png";
+    public static final String SHEP = PATH.ASSETS + "shep/5555.png";
+    public static final String enemy = PATH.ASSETS + "foe/slashturned.png";
 
-    public static final String gameBG = PATH.asset + "backgrounds/BackgroundFull.png";
-    public static final String menuBG = PATH.asset + "backgrounds/MenuBackground.png";
+    public static final String FONT = PATH.ASSETS + "fonts/Daft_Font.TTF";
 
+    public static final String gameBG = PATH.ASSETS + "backgrounds/BackgroundFull.png";
+    public static final String menuBG = PATH.ASSETS + "backgrounds/MenuBackground.png";
+
+    public static final String BULLET = PATH.ASSETS + "bullets/bullet.png";
 
     // VIEWS
     public static final String VIEWS = "/views/resources/fxml/";
