@@ -1,8 +1,9 @@
 package Constants;
 
 public enum SCENES {
-    GAMESCENE,
     MENUSCENE,
+    GAMESCENE,
+    GAMEOVERSCENE,
     SCORESCENE,
     CREDITSCENE,
     EXIT,

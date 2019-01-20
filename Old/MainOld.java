@@ -23,15 +23,15 @@ public class MainOld extends Application {
 
     /*@Override
     public void start2(Stage primaryStage) {
-        double height = 800;
-        double width = 1000;
+        double HEIGHT = 800;
+        double WIDTH = 1000;
         double speed = 1;
-        SpaceShip s = new SpaceShip(width, height, speed);
+        SpaceShip s = new SpaceShip(WIDTH, HEIGHT, speed);
         SpaceShipV2 s2 = new SpaceShipV2();
-        //GameBG d2 = new GameBG(width, height, "0d0852");
+        //GameBG d2 = new GameBG(WIDTH, HEIGHT, "0d0852");
 
         Group root = new Group();
-        Scene scene = new Scene(root, width, height);
+        Scene scene = new Scene(root, WIDTH, HEIGHT);
         Decor d = new Decor(scene.getWidth(), scene.getHeight(), "0d0852");
         scene.setCursor(Cursor.NONE);
 

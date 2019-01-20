@@ -1,0 +1,15 @@
+package Core.objects.sprites.entities.enemies;
+
+import Constants.PATH;
+import Core.objects.PowerUpRate;
+import Core.objects.configObject.EnemyConfig;
+
+public class Enemy3 extends AEnemy {
+    public Enemy3(EnemyConfig conf) {
+        super(PATH.enemy, conf, 10, 10, 10);
+    }
+
+    public Enemy3(EnemyConfig conf, PowerUpRate power) {
+        super(PATH.enemy, conf, 10, 10, 10, power);
+    }
+}

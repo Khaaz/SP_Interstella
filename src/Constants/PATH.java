@@ -11,8 +11,12 @@ public class PATH {
     public static final String menuBG = PATH.asset + "Backgrounds/MenuBackground.png";
 
 
-    public static final String Views = "/Views/Resources/fxml/";
-    public static final String menuViews = PATH.Views + "Menu.fxml";
-    public static final String scoresViews = PATH.Views + "Scores.fxml";
-    public static final String gameoverViews = PATH.Views + "GameOver.fxml";
+    // VIEWS
+    public static final String VIEWS = "/Views/Resources/fxml/";
+    public static final String MENU_VIEWS = PATH.VIEWS + "Menu.fxml";
+    public static final String SCORES_VIEWS = PATH.VIEWS + "Scores.fxml";
+    public static final String GAMEOVER_VIEWS = PATH.VIEWS + "GameOver.fxml";
+
+    // Scenario directory
+    public static final String SCENARIOS = "src/Core/managers/scenarioManager/SCENARIOS/scenariosList/";
 }

@@ -13,7 +13,7 @@ public class ScenarioManager {
     public ScenarioManager(AEntity schep) {
         this.shep = (Shep)schep;
 
-        //this.scenarios = Loader.loadScenarios();
+        //this.SCENARIOS = Loader.loadScenarios();
 
     }
 }

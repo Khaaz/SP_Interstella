@@ -1,6 +1,6 @@
 package Models;
 
-import Core.Class.Score;
+import Core.objects.Score;
 
 public class ScoresModel {
     public static Score getScores(){

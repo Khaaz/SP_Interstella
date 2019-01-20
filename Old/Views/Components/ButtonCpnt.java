@@ -9,12 +9,12 @@ public class ButtonCpnt extends Button implements IResizableElement {
         super(label);
 
         setOnMouseEntered(envent -> {
-            this.setStyle("-fx-border-width: 400%; -fx-background-color: #a6acaf; -fx-border-color: BLACK;");
+            this.setStyle("-fx-border-WIDTH: 400%; -fx-background-color: #a6acaf; -fx-border-color: BLACK;");
             this.setTextFill(Color.BLACK);
         });
 
         setOnMouseExited(envent -> {
-            this.setStyle("-fx-border-width: 400%; -fx-background-color: BLACK; -fx-border-color: #a6acaf;");
+            this.setStyle("-fx-border-WIDTH: 400%; -fx-background-color: BLACK; -fx-border-color: #a6acaf;");
             this.setTextFill(Color.web("#a6acaf"));
         });
 
@@ -23,7 +23,7 @@ public class ButtonCpnt extends Button implements IResizableElement {
         this.setMinHeight(100);
         this.setFont(Font.loadFont("file:assets/Fonts/Daft_Font.TTF", 50));
         this.setTextFill(Color.web("#a6acaf"));
-        this.setStyle("-fx-border-width: 400%; -fx-background-color: BLACK; -fx-border-color: #a6acaf;");
+        this.setStyle("-fx-border-WIDTH: 400%; -fx-background-color: BLACK; -fx-border-color: #a6acaf;");
 
 
         //this.setLayoutX(SceneManager.getCurWidth() / 2 - this.getMinWidth() / 2);

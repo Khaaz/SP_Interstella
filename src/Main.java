@@ -2,7 +2,7 @@ import Constants.CONFIG;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-import Core.Managers.SceneManager;
+import Core.managers.SceneManager;
 
 public class Main extends Application {
 
@@ -12,7 +12,7 @@ public class Main extends Application {
         SceneManager sceneManager = new SceneManager(primaryStage);
         sceneManager.start();
 
-        primaryStage.setTitle(CONFIG.title);
+        primaryStage.setTitle(CONFIG.TITLE);
         primaryStage.show();
     }
 

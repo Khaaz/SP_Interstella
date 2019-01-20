@@ -16,7 +16,7 @@ public abstract class ABackground extends Parent {
 
         this.skin = new Image(imagePath);
         this.body = new ImageView(this.skin);
-        this.formatImage(CONFIG.width, CONFIG.height);
+        this.formatImage(CONFIG.WIDTH, CONFIG.HEIGHT);
 
         this.getChildren().add(this.body);
     }

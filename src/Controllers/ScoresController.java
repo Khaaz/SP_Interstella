@@ -1,5 +1,5 @@
 package Controllers;
-import Core.Class.Score;
+import Core.objects.Score;
 import Models.ScoresModel;
 
 public class ScoresController {

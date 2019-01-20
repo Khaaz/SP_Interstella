@@ -18,7 +18,7 @@
 
         <TextFieldCpnt styleClass="menuButton" />
 
-        <ButtonCpnt styleClass="menuButton" text="Save Core.Class.Score"/>
+        <ButtonCpnt styleClass="menuButton" text="Save Core.objects.Score"/>
 
         <ButtonCpnt styleClass="menuButton" text="Menu"/>
 

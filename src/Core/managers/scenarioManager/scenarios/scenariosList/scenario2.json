@@ -1,0 +1,17 @@
+{
+  "difficulty": 0,
+  "enemies": [
+    {
+      "type": "enemy1",
+      "posX":  0,
+      "posY":  0,
+      "trajectory": "2x+3"
+    },
+    {
+      "type": "enemy1",
+      "posX":  0,
+      "posY":  0,
+      "trajectory": "2x+3"
+    }
+  ]
+}
