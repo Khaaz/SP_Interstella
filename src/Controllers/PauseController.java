@@ -1,11 +1,8 @@
 package Controllers;
 
-import Core.Class.Score;
-import Core.Managers.SceneManager;
-import Models.GameOverModel;
+import Models.PauseModel;
 import Views.Components.ButtonCpnt;
 import Views.Components.LabelCpnt;
-import Views.Components.TextFieldCpnt;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,25 +10,22 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GameOverController implements Initializable {
+public class PauseController implements Initializable {
     @FXML
-    LabelCpnt nbPointsScored;
+    LabelCpnt currPoints;
     @FXML
-    TextFieldCpnt playerName;
-    @FXML
-    ButtonCpnt scoreSaving;
+    ButtonCpnt resume;
     @FXML
     ButtonCpnt menu;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        int nbPoints = GameOverModel.getNbPoints();
+        int nbPoints = PauseModel.getNbPoints();
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
+        currPoints.textProperty().bind(nbpp);
 
+        resume.setOnAction(e -> System.out.println("resume!"));
         menu.setOnAction(e -> System.out.println("menu!"));
-        scoreSaving.setOnAction(e -> GameOverModel.saveScore(new Score(playerName.getText(),nbPoints)));
-        nbPointsScored.textProperty().bind(nbpp);
-
 
     }
 }

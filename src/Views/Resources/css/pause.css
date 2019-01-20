@@ -1,13 +1,13 @@
 #mainPane{
-    -fx-background-image: url("../../../../../../assets/Backgrounds/GameOverBackground.png");
+    -fx-background-image: url("../../../../../../assets/Backgrounds/GamePausedBackground.png");
     -fx-background-size: stretch;
 }
 
-.labelGameOver{
+.labelGamePause{
     -fx-text-fill : WHITE;
 }
 
-#GameOverPoints{
+#Points{
     -fx-text-fill : RED;
 }
 
