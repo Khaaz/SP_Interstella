@@ -21,7 +21,7 @@
 
         <LabelCpnt styleClass="customLabel" text="Points !"/>
 
-        <TextFieldCpnt fx:id="playerName" styleClass="customButton" />
+        <TextFieldCpnt fx:id="playerName" styleClass="customButton" text="Name (min 3 max 20)" />
 
         <ButtonCpnt fx:id="scoreSaving" styleClass="customButton" text="Save Your Score"/>
 

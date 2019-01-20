@@ -164,14 +164,14 @@ public class SceneManager {
                 scene = new ScoreScene(loader.load(), loader.getController());
                 break;
             }
-            /*
+
             case CREDITSCENE: {
                 // load fxml and call new MenuScene
-                this.loader.setLocation(getClass().getResource(PATH.CREDI_VIEWS));
-                scene = new CreditScene(loader.load(), controller);
+                loader.setLocation(getClass().getResource(PATH.CREDITS_VIEWS));
+                scene = new CreditScene(loader.load(), loader.getController());
                 break;
             }
-            */
+
             case EXIT: {
                 scene = null;
                 break;

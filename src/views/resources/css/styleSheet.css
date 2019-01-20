@@ -18,6 +18,11 @@
     -fx-background-size: stretch;
 }
 
+#CreditsPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/CreditsBackground.png");
+    -fx-background-size: stretch;
+}
+
 #redLabel{
     -fx-text-fill : RED;
 }
