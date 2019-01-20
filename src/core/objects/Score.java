@@ -13,8 +13,9 @@ public class Score {
         return playername;
     }
 
-    public int getNbPoints() {
-        return nbPoints;
+    public String getNbPoints() {
+        return String.valueOf(nbPoints);
     }
+
 
 }

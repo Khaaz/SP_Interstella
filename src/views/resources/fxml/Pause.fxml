@@ -7,20 +7,20 @@
 <?import views.components.*?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.PauseController"
-           id="mainPane" stylesheets="@../css/pause.css">
+           id="PausePane" stylesheets="@../css/styleSheet.css">
 
 
     <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
 
         <padding> <Insets bottom="350"/> </padding>
 
-        <LabelCpnt styleClass="labelGamePause" text="Score :"/>
+        <LabelCpnt styleClass="customLabel" text="Current Score :"/>
 
-        <LabelCpnt fx:id="currPoints" styleClass="labelPause" id="Points" text="---"/>
+        <LabelCpnt fx:id="currPoints" id="redLabel" text="---"/>
 
-        <ButtonCpnt fx:id="resume" styleClass="menuButton" text="Resume"/>
+        <ButtonCpnt fx:id="resume" styleClass="customButton" text="Resume"/>
 
-        <ButtonCpnt fx:id="menu" styleClass="menuButton" text="Menu"/>
+        <ButtonCpnt fx:id="menu" styleClass="customButton" text="Menu"/>
 
     </TilePane>
 

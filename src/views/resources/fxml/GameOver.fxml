@@ -7,24 +7,27 @@
 <?import views.components.*?>
 
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.GameOverController"
-           id="mainPane" stylesheets="@../css/gameover.css">
+           id="GameOverPane" stylesheets="@../css/styleSheet.css">
 
 
-    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+    <TilePane vgap="30" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
 
-        <padding> <Insets bottom="180"/> </padding>
+        <padding> <Insets bottom="130"/> </padding>
 
-        <LabelCpnt styleClass="labelGameOver" text="You scored"/>
 
-        <LabelCpnt fx:id="nbPointsScored" styleClass="labelGameOver" id="GameOverPoints" text="---"/>
+        <LabelCpnt styleClass="customLabel" text="You scored"/>
 
-        <LabelCpnt styleClass="labelGameOver" text="Points !"/>
+        <LabelCpnt fx:id="nbPointsScored" id="redLabel" text="---"/>
 
-        <TextFieldCpnt fx:id="playerName" styleClass="menuButton" />
+        <LabelCpnt styleClass="customLabel" text="Points !"/>
 
-        <ButtonCpnt fx:id="scoreSaving" styleClass="menuButton" text="Save Your core"/>
+        <TextFieldCpnt fx:id="playerName" styleClass="customButton" />
 
-        <ButtonCpnt fx:id="menu" styleClass="menuButton" text="Menu"/>
+        <ButtonCpnt fx:id="scoreSaving" styleClass="customButton" text="Save Your Score"/>
+
+        <LabelCpnt fx:id="tooLong" id="redLabel" text="Incorrect Size !"/>
+
+        <ButtonCpnt fx:id="menu" styleClass="customButton" text="Menu"/>
 
     </TilePane>
 
