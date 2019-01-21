@@ -37,10 +37,14 @@ public class ScoresController extends AController implements Initializable {
 
         ArrayList<Score> allScores= ScoresModel.getAllScores();
 
+        int classement =1;
+
         for (Score s :allScores) {
-            String jackie = s.getNbPoints();
-            jackie = jackie +"\t\t" + s.getPlayername();
-            listeScores.add(jackie);
+            String currScore = String.valueOf(classement);
+            currScore = currScore +"\t\t" + s.getPlayername();
+            currScore = currScore +"\t\t" + s.getNbPoints();
+            listeScores.add(currScore);
+            classement++;
         }
 
         bestScores.setItems(listeScores);
