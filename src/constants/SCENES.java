@@ -7,5 +7,7 @@ public enum SCENES {
     GAMEOVERSCENE,
     SCORESCENE,
     CREDITSCENE,
+    HANGARSCENE,
     EXIT,
+    ;
 }

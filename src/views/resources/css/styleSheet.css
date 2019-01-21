@@ -23,6 +23,12 @@
     -fx-background-size: stretch;
 }
 
+#HangarPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/HangarBackground.png");
+    -fx-background-size: stretch;
+}
+}
+
 #redLabel{
     -fx-text-fill : RED;
 }

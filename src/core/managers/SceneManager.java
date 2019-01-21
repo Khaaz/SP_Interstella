@@ -158,6 +158,12 @@ public class SceneManager {
                 scene = new GameOverScene(loader.load(), loader.getController(), this.gameManager);
                 break;
             }
+            case HANGARSCENE: {
+                // load fxml and call new MenuScene
+                loader.setLocation(getClass().getResource(PATH.HANGAR_VIEWS));
+                scene = new HangarScene(loader.load(), loader.getController());
+                break;
+            }
             case SCORESCENE: {
                 // load fxml and call new MenuScene
                 loader.setLocation(getClass().getResource(PATH.SCORES_VIEWS));

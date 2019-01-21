@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<?import views.components.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.HangarController"
+           id="HangarPane" stylesheets="@../css/styleSheet.css">
+
+
+    <TilePane vgap="100" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+
+        <padding> <Insets bottom="200"/> </padding>
+
+        <ButtonCpnt fx:id="atk" styleClass="customButton" text="Upgrade ATK (1.000$)"/>
+
+        <ButtonCpnt fx:id="ship" styleClass="customButton" text="Change Ship (10.000$)"/>
+
+        <ButtonCpnt fx:id="menu" styleClass="customButton" text="Menu"/>
+
+    </TilePane>
+
+</StackPane>
