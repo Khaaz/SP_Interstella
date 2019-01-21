@@ -15,6 +15,8 @@ public class MenuController extends AController implements Initializable {
     @FXML
     ButtonCpnt play;
     @FXML
+    ButtonCpnt hangar;
+    @FXML
     ButtonCpnt scores;
     @FXML
     ButtonCpnt credits;
@@ -26,6 +28,10 @@ public class MenuController extends AController implements Initializable {
 
         play.setOnAction(e -> {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.GAMESCENE);
+            play.fireEvent(eventGame);
+        });
+        hangar.setOnAction(e -> {
+            Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.HANGARSCENE);
             play.fireEvent(eventGame);
         });
         scores.setOnAction(e -> {
