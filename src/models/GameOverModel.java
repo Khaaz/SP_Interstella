@@ -14,8 +14,7 @@ public class GameOverModel {
     public static void saveScore(Score s){
         //Ajout SQL
 
-        System.out.println(s.getNbPoints());
-        System.out.println(s.getPlayername());
+        System.out.println("Ajout du score :" + s.getNbPoints() + s.getPlayername());
     }
 
 }

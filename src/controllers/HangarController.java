@@ -26,13 +26,13 @@ public class HangarController extends AController implements Initializable{
         atk.setOnAction(e -> {
             //Increase ATk
             //Decrease $
-            System.out.print("atk increased, $withdrawn");
+            System.out.println("atk increased, $withdrawn");
         });
 
         ship.setOnAction(e -> {
             //Change Skin
             //Decrease $
-            System.out.print("ship changed, $withdrawn");
+            System.out.println("ship changed, $withdrawn");
         });
 
         menu.setOnAction(e -> {
