@@ -4,12 +4,10 @@ import constants.SCENES;
 import core.events.EventCollection;
 import core.events.SceneEvent;
 import core.managers.GameManager;
-import core.objects.entities.sprites.ASprite;
-
+import core.objects.entities.sprites.ASpaceship;
 
 import javafx.event.Event;
 import javafx.scene.Cursor;
-import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -27,16 +25,15 @@ public class GameScene extends AScene {
         super(root, null);
 
 
-        this.gameManager = new GameManager();
-        this.gameManager.setGetRoot(this::getRoot);
+        this.gameManager = new GameManager(this);
         this.gameManager.start();
 
         this.setCursor(Cursor.NONE);
 
-        ASprite shep = this.gameManager.getInstanceManager().getShep();
+        //ASpaceship shep = this.gameManager.getInstanceManager().getShep();
 
-        this.setOnMouseMoved(event -> this.onMouseMoved(shep, event));
-        this.setOnMouseDragged(event -> this.onMouseMoved(shep, event));
+        this.setOnMouseMoved(event -> this.onMouseMoved(this.gameManager.getInstanceManager().getShep(), event));
+        this.setOnMouseDragged(event -> this.onMouseMoved(this.gameManager.getInstanceManager().getShep(), event));
     }
 
     public GameManager getGameManager() {
@@ -71,18 +68,18 @@ public class GameScene extends AScene {
     }
 
     /*
-    public void removeElement(ASprite e) {
+    public void removeElement(ASpaceship e) {
         ObservableList<Node> list = ((Group)this.getRoot()).getChildren();
         Node n = list
             .stream()
-            .filter(o -> o instanceof ASprite)
-            .filter(o -> ((ASprite)o).getID() == e.getID())
+            .filter(o -> o instanceof ASpaceship)
+            .filter(o -> ((ASpaceship)o).getID() == e.getID())
             .findFirst();
     }*/
 
-    private void onMouseMoved(ASprite shep, MouseEvent event) {
-        shep.body.setX(event.getSceneX() - (shep.body.getFitWidth()/2));
-        shep.body.setY(event.getSceneY() - (shep.body.getFitHeight()/2));
+    private void onMouseMoved(ASpaceship shep, MouseEvent event) {
+        shep.body.setLayoutX(event.getSceneX() - (shep.body.getFitWidth()/2));
+        shep.body.setLayoutY(event.getSceneY() - (shep.body.getFitHeight()/2));
         //System.out.println(shep.body.getX());
         //System.out.println(shep.body.getY());
     }

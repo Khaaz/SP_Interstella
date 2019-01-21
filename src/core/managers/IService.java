@@ -4,5 +4,5 @@ public interface IService {
     void start();
     void pause();
     void resume();
-    void reset();
+    void reset(InstanceManager instanceManager);
 }

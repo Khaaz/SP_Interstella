@@ -13,6 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
 
+        /*
         Media media = new Media(new File("assets/tracks/OneMoreTime.mp3").toURI().toString());
         MediaPlayer player = new MediaPlayer(media);
         player.setVolume(0);
@@ -25,7 +26,7 @@ public class Main extends Application {
             }
         });
         player.play();
-
+        */
         SceneManager sceneManager = new SceneManager(primaryStage);
         sceneManager.start();
 

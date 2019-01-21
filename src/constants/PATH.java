@@ -5,11 +5,11 @@ public class PATH {
 
 
     public static final String SHEP = PATH.ASSETS + "shep/5555.png";
-    public static final String enemy = PATH.ASSETS + "foe/slashturned.png";
+    public static final String ENEMY = PATH.ASSETS + "foe/slashturned.png";
 
     public static final String FONT = PATH.ASSETS + "fonts/Daft_Font.TTF";
 
-    public static final String gameBG = PATH.ASSETS + "backgrounds/BackgroundFull.png";
+    public static final String GAME_BG = PATH.ASSETS + "backgrounds/GameBackground.png";
     public static final String menuBG = PATH.ASSETS + "backgrounds/MenuBackground.png";
 
     public static final String BULLET = PATH.ASSETS + "bullets/bullet.png";

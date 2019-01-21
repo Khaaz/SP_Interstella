@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import views.components.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.MenuController"
+           stylesheets="@../css/styleSheet.css" id="MenuPane">
+
+    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="1920.0">
+
+        <padding> <Insets bottom="150"/> </padding>
+
+        <ButtonCpnt fx:id="play" styleClass="customButton" text="Play"/>
+
+        <ButtonCpnt fx:id="hangar" styleClass="customButton" text="Hangar"/>
+
+        <ButtonCpnt fx:id="scores" styleClass="customButton" text="Scores"/>
+
+        <ButtonCpnt fx:id="credits" styleClass="customButton" text="Credits"/>
+
+        <ButtonCpnt fx:id="quitter" styleClass="customButton" text="Exit"/>
+
+    </TilePane>
+
+
+</StackPane>

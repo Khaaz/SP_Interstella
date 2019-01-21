@@ -9,7 +9,17 @@ public class CONFIG {
     public static final String BGColor = "ff1cb0";
 
 
-    public static final long BULLET_SPEED = 2;
+    // DEFAULT
+    public static final long BULLET_SPEED = 18;
+    public static final long BULLET_RATE = 13;
+
+    public static final long DEFAULT_ENEMY_LIFE = 10;
+    public static final long DEFAULT_ENEMY_DAMAGE = 10;
+    public static final long DEFAULT_ENEMY_SPEED = 3;
+    public static final long DEFAULT_ENEMY_BULLET_SPEED = 10;
+    // + rate => + space between bullets
+    public static final long DEFAULT_ENEMY_BULLET_RATE = 32;
+
     // SIZE
     public static final long DEFAULT_ENTITY_WIDTH = 150;
     public static final long DEFAULT_ENTITY_HEIGHT = 150;

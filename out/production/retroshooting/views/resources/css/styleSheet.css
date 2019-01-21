@@ -1,0 +1,93 @@
+#GameOverPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/GameOverBackground.png");
+    -fx-background-size: stretch;
+}
+
+#MenuPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/MenuBackground.png");
+    -fx-background-size: stretch;
+}
+
+#PausePane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/GamePausedBackground.png");
+    -fx-background-size: stretch;
+}
+
+#ScoresPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/ScoresBackground.png");
+    -fx-background-size: stretch;
+}
+
+#CreditsPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/CreditsBackground.png");
+    -fx-background-size: stretch;
+}
+
+#HangarPane{
+    -fx-background-image: url("../../../../../../assets/backgrounds/HangarBackground.png");
+    -fx-background-size: stretch;
+}
+}
+
+#redLabel{
+    -fx-text-fill : RED;
+}
+
+.customLabel{
+    -fx-text-fill : WHITE;
+}
+
+.customButton{
+    -fx-text-fill : #a6acaf;
+    -fx-border-color : #a6acaf;
+    -fx-background-color: BLACK;
+}
+
+.customButton:hover{
+    -fx-text-fill : BLACK;
+    -fx-border-color : BLACK;
+    -fx-background-color: #a6acaf;
+}
+
+.list-cell:filled:selected:focused, .listScores:filled:selected{
+    -fx-background-color: #a6acaf;
+    -fx-text-fill: RED;
+}
+
+.list-cell{
+    -fx-background-color: BLACK;
+    -fx-text-fill: #a6acaf;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #a6acaf;
+    -fx-text-fill: BLACK;
+}
+
+.listScores .scroll-bar:horizontal ,
+.listScores  .scroll-bar:vertical{
+    -fx-background-color:#a6acaf;
+}
+
+.listScores .scroll-bar:horizontal .thumb ,
+.listScores .scroll-bar:vertical .thumb{
+    -fx-background-color: black;
+    -fx-border-radius: 3em;
+}
+
+.listScores .scroll-bar:horizontal:pressed .thumb ,
+.listScores .scroll-bar:vertical:pressed .thumb{
+    -fx-background-color: RED;
+}
+
+.listScores .increment-button ,.listScores .decrement-button {
+    -fx-background-color:BLACK;
+}
+
+.listScores .increment-button:pressed ,.listScores .decrement-button:pressed {
+    -fx-background-color:RED;
+}
+
+.listScores{
+    -fx-border-color:#a6acaf;
+}

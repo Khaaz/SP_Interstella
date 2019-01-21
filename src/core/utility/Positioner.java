@@ -35,11 +35,21 @@ public class Positioner {
         // Total window width * percentage -> position for top left
         // remove half body -> position for top middle
         //e.setLayoutX((SceneManager.getCurWidth() * percentX) + (e.body.getFitWidth()/2));
-        e.body.setLayoutX(positionX + (e.body.getFitWidth()/2));
+        e.body.setLayoutX(positionX - (e.body.getFitWidth()/2));
     }
 
     public static void setYMiddle(AEntity e, double positionY) {
         //e.setLayoutY((SceneManager.getCurHeight() * percentY) + (e.body.getFitHeight()/2));
         e.body.setLayoutY(positionY + (e.body.getFitHeight()/2));
+    }
+
+    public static void setYTop(AEntity e, double positionY) {
+        //e.setLayoutY((SceneManager.getCurHeight() * percentY) + (e.body.getFitHeight()/2));
+        e.body.setLayoutY(positionY - (e.body.getFitHeight()/2));
+    }
+
+    public static void setYBottom(AEntity e, double positionY) {
+        //e.setLayoutY((SceneManager.getCurHeight() * percentY) + (e.body.getFitHeight()/2));
+        e.body.setLayoutY(positionY);
     }
 }
