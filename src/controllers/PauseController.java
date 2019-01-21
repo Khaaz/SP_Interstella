@@ -5,6 +5,7 @@ import core.events.EventCollection;
 import core.events.SceneEvent;
 import javafx.event.Event;
 import models.PauseModel;
+import models.ScoresModel;
 import views.components.ButtonCpnt;
 import views.components.LabelCpnt;
 import javafx.beans.property.SimpleStringProperty;
@@ -28,7 +29,7 @@ public class PauseController extends AController implements Initializable, IRese
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        int nbPoints = PauseModel.getNbPoints();
+        double nbPoints = ScoresModel.currentScore;
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
         currPoints.textProperty().bind(nbpp);
 
@@ -52,7 +53,7 @@ public class PauseController extends AController implements Initializable, IRese
 
     @Override
     public void refresh() {
-        int nbPoints = PauseModel.getNbPoints();
+        double nbPoints = ScoresModel.currentScore;
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
         currPoints.textProperty().bind(nbpp);
     }

@@ -9,6 +9,7 @@ import core.managers.scenarioManager.ScenarioManager;
 import core.managers.timeManager.TimeManager;
 import core.objects.configObject.ScenarioConfig;
 import core.utility.Loader;
+import models.ScoresModel;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -110,6 +111,7 @@ public class GameManager {
         if (this.paused) {
             return false;
         }
+        ScoresModel.currentScore(this.points);
         this.paused = true;
         this.scenarioManager.pause();
         this.timeManager.pause();
@@ -185,6 +187,7 @@ public class GameManager {
     public void gameOver() {
         ((GameScene)this.scene).gameOver(this.points);
         // modele update points
+        ScoresModel.currentScore(this.points);
         this.pause();
     }
 

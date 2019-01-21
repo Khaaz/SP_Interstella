@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 public class ScoresModel {
 
+    public static double currentScore;
+    public static Score score;
+
     public static ArrayList<Score> getAllScores(){
 
         //Query SQL
@@ -18,8 +21,6 @@ public class ScoresModel {
         Score sixth = new Score("lison",995);
         Score seventh = new Score("leanne",994);
 
-
-
         ArrayList<Score> allScores = new ArrayList<Score>(){{
             add(first);
             add(second);
@@ -31,5 +32,13 @@ public class ScoresModel {
         }
         };
         return(allScores);
+    }
+
+    public static void saveScore(Score s) {
+
+    }
+
+    public static void currentScore(double s) {
+        ScoresModel.currentScore = s;
     }
 }

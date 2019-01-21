@@ -6,6 +6,7 @@ import core.events.SceneEvent;
 import core.objects.Score;
 import javafx.event.Event;
 import models.GameOverModel;
+import models.ScoresModel;
 import views.components.ButtonCpnt;
 import views.components.LabelCpnt;
 import views.components.TextFieldCpnt;
@@ -34,7 +35,7 @@ public class GameOverController extends AController implements Initializable, IR
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        int nbPoints = GameOverModel.getNbPoints();
+        double nbPoints = ScoresModel.currentScore;
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
 
         tooLong.setVisible(false);
@@ -70,7 +71,7 @@ public class GameOverController extends AController implements Initializable, IR
 
     @Override
     public void refresh() {
-        int nbPoints = GameOverModel.getNbPoints();
+        double nbPoints = ScoresModel.currentScore;
         SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
         nbPointsScored.textProperty().bind(nbpp);
     }
