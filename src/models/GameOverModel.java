@@ -1,6 +1,5 @@
 package models;
 
-import controllers.GameOverController;
 import core.objects.Score;
 
 public class GameOverModel {

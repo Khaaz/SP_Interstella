@@ -1,15 +1,19 @@
 package core.managers.collisionManager;
 
+import core.managers.DamageManager;
 import core.managers.IService;
 import core.managers.InstanceManager;
 public class CollisionManager implements IService {
 
     protected InstanceManager instanceManager;
 
+    protected DamageManager damageManager;
+
     private CollisionHandlerLoop collisionHandler;
 
-    public CollisionManager(InstanceManager instanceManager) {
+    public CollisionManager(InstanceManager instanceManager, DamageManager damageManager) {
         this.instanceManager = instanceManager;
+        this.damageManager = damageManager;
         this.collisionHandler = new CollisionHandlerLoop(this);
     }
 

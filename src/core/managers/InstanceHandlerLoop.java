@@ -1,6 +1,5 @@
-package core.managers.showManager;
+package core.managers;
 
-import core.managers.SceneManager;
 import core.objects.entities.Bullet;
 import core.objects.entities.sprites.enemies.AEnemy;
 import core.utility.Positioner;
@@ -8,12 +7,12 @@ import javafx.animation.AnimationTimer;
 
 import java.util.ArrayList;
 
-public class ShowHandlerLoop extends AnimationTimer {
+public class InstanceHandlerLoop extends AnimationTimer {
 
-    private ShowManager showManager;
+    private InstanceManager instanceManager;
 
-    public ShowHandlerLoop(ShowManager showManager) {
-        this.showManager = showManager;
+    public InstanceHandlerLoop(InstanceManager instanceManager) {
+        this.instanceManager = instanceManager;
     }
 
     @Override
@@ -21,7 +20,7 @@ public class ShowHandlerLoop extends AnimationTimer {
 
         // ENEMIES
         ArrayList<AEnemy> enemies = new ArrayList<>();
-        for (AEnemy e : this.showManager.instanceManager.getEnemies()) {
+        for (AEnemy e : this.instanceManager.getEnemies()) {
             if (Positioner.getYTop(e) > SceneManager.getCurHeight()
                     || Positioner.getYBottom(e) < 0
                     || Positioner.getXLeft(e) > SceneManager.getCurWidth()
@@ -32,33 +31,30 @@ public class ShowHandlerLoop extends AnimationTimer {
         }
         // delete
         for (AEnemy e : enemies) {
-            this.showManager.unShow(e);
-            this.showManager.instanceManager.removeEnemy(e);
+            this.instanceManager.removeEnemy(e);
         }
 
         // ENEMY BULLETS
         ArrayList<Bullet> bullets = new ArrayList<>();
-        for (Bullet b : this.showManager.instanceManager.getBulletEnemies()) {
+        for (Bullet b : this.instanceManager.getBulletEnemies()) {
             if (Positioner.getYTop(b) > SceneManager.getCurHeight()) {
                 bullets.add(b);
             }
         }
         // delete
         for (Bullet b : bullets) {
-            this.showManager.unShow(b);
-            this.showManager.instanceManager.removeBulletEnemy(b);
+            this.instanceManager.removeBulletEnemy(b);
         }
 
         //SHEP BULLETS
         bullets = new ArrayList<>();
-        for (Bullet b : this.showManager.instanceManager.getBulletsShep()) {
+        for (Bullet b : this.instanceManager.getBulletsShep()) {
             if (Positioner.getYBottom(b) < 0) {
                 bullets.add(b);
             }
         }
         for (Bullet b : bullets) {
-            this.showManager.unShow(b);
-            this.showManager.instanceManager.removeBulletShep(b);
+            this.instanceManager.removeBulletShep(b);
         }
     }
 }

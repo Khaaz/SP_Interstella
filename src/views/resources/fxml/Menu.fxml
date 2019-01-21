@@ -20,7 +20,7 @@
 
         <ButtonCpnt fx:id="credits" styleClass="customButton" text="Credits"/>
 
-        <ButtonCpnt fx:id="quitter" styleClass="customButton" text="Exit"/>
+        <ButtonCpnt fx:id="exit" styleClass="customButton" text="Exit"/>
 
     </TilePane>
 

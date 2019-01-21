@@ -1,7 +1,5 @@
-package core.managers.showManager;
+package core.managers;
 
-import core.managers.IService;
-import core.managers.InstanceManager;
 import core.objects.entities.AEntity;
 import javafx.application.Platform;
 import javafx.scene.Group;
@@ -19,14 +17,11 @@ public class ShowManager implements IService {
 
     protected InstanceManager instanceManager;
 
-    private ShowHandlerLoop showHandlerLoop;
-
     private Boolean running;
 
     public ShowManager(InstanceManager instanceManager, Supplier<Parent> getRoot) {
         this.instanceManager = instanceManager;
         this.getRoot = getRoot;
-        this.showHandlerLoop = new ShowHandlerLoop(this);
     }
 
     public Group getActualRoot() {
@@ -37,21 +32,18 @@ public class ShowManager implements IService {
     public void start() {
         this.running = true;
         this.show(this.instanceManager.getShep());
-        this.showHandlerLoop.start();
         System.out.println("start call show manager");
     }
 
     @Override
     public void pause() {
         this.running = false;
-        this.showHandlerLoop.stop();
         System.out.println("pause call show manager");
     }
 
     @Override
     public void resume() {
         this.running = true;
-        this.showHandlerLoop.start();
         System.out.println("resume call show manager");
     }
 
@@ -59,7 +51,6 @@ public class ShowManager implements IService {
     public void reset(InstanceManager instanceManager) {
         this.instanceManager = instanceManager;
         this.running = false;
-        this.showHandlerLoop.stop();
         // remove all except background
         Platform.runLater(() -> this.getActualRoot().getChildren().remove(1, this.getActualRoot().getChildren().size()));
         System.out.println("reset call show manager");

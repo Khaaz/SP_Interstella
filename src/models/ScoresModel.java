@@ -1,9 +1,6 @@
 package models;
 
 import core.objects.Score;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
-import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 

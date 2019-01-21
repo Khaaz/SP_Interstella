@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class InstanceManager {
 
     private GameManager gameManager;
-
+    private InstanceHandlerLoop instanceHandlerLoop;
     private BulletManager bulletManager;
 
     private ASpaceship shep;
@@ -32,6 +32,7 @@ public class InstanceManager {
         this.bulletsShep = new ArrayList<>();
         this.bulletEnemies = new ArrayList<>();
 
+        this.instanceHandlerLoop = new InstanceHandlerLoop(this);
         this.bulletManager = new BulletManager(this);
     }
 
@@ -52,20 +53,27 @@ public class InstanceManager {
         return bulletsShep;
     }
 
-
     public void start() {
+        this.instanceHandlerLoop.start();
         this.bulletManager.start();
         System.out.println("start call instance manager");
     }
 
     public void pause() {
+        this.instanceHandlerLoop.stop();
         this.bulletManager.pause();
         System.out.println("pause call instance manager");
     }
 
     public void resume() {
+        this.instanceHandlerLoop.start();
         this.bulletManager.resume();
         System.out.println("resume call instance manager");
+    }
+
+    public void reset() {
+        this.instanceHandlerLoop.stop();
+        this.bulletManager.reset(this);
     }
 
     // SETTER - ADDER - REMOVER
@@ -91,14 +99,17 @@ public class InstanceManager {
 
     // DELETE
     public Boolean removeEnemy(AEnemy e) {
+        this.gameManager.getShowManager().unShow(e);
         return this.enemies.remove(e);
     }
 
     public Boolean removeBulletEnemy(Bullet b) {
+        this.gameManager.getShowManager().unShow(b);
         return this.bulletEnemies.remove(b);
     }
 
     public Boolean removeBulletShep(Bullet b) {
+        this.gameManager.getShowManager().unShow(b);
         return this.bulletsShep.remove(b);
     }
 

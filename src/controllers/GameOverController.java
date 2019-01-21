@@ -42,17 +42,19 @@ public class GameOverController extends AController implements Initializable, IR
         menu.setOnAction(e -> {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
             menu.fireEvent(eventGame);
+            this.resetGameManager.get();
         });
 
         scoreSaving.setOnAction(e -> {
-            if(playerName.getText().length()< 3 || playerName.getText().length()> 20){
+            if (playerName.getText().length() < 3 || playerName.getText().length() > 20){
                 tooLong.setVisible(true);
-            }
-            else{
-                Score s = new Score(playerName.getText(),GameOverModel.getNbPoints());
+            } else {
+                Score s = new Score(playerName.getText(), GameOverModel.getNbPoints());
                 GameOverModel.saveScore(s);
+
                 Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
-                menu.fireEvent(eventGame);
+                scoreSaving.fireEvent(eventGame);
+                this.resetGameManager.get();
             }
 
         });
@@ -68,7 +70,9 @@ public class GameOverController extends AController implements Initializable, IR
 
     @Override
     public void refresh() {
-        //
+        int nbPoints = GameOverModel.getNbPoints();
+        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
+        nbPointsScored.textProperty().bind(nbpp);
     }
 }
 

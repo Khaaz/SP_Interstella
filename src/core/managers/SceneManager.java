@@ -53,7 +53,6 @@ public class SceneManager {
                 System.out.println(err.toString());
             }
         }
-
     }
 
     /**
@@ -69,14 +68,21 @@ public class SceneManager {
         // ADAPTIVE SIZING
         this.stage.widthProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curWidth = (double)newVal;
+            if (this.curScene instanceof GameScene) {
+                this.curScene.resizeWidth(SceneManager.curWidth);
+                this.curScene.onResize();
+            }
             //this.curScene.resizeWidth(SceneManager.curWidth);
             //this.curScene.onResize();
         });
 
         this.stage.heightProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curHeight = (double)newVal;
+            if (this.curScene instanceof GameScene) {
+                this.curScene.resizeHeight(SceneManager.curHeight);
+                this.curScene.onResize();
+            }
             //this.curScene.resizeHeight(SceneManager.curHeight);
-            //this.curScene.onResize();
         });
 
         // DYNAMIC SCENE CHANGE

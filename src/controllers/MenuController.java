@@ -21,7 +21,7 @@ public class MenuController extends AController implements Initializable {
     @FXML
     ButtonCpnt credits;
     @FXML
-    ButtonCpnt quitter;
+    ButtonCpnt exit;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -42,9 +42,9 @@ public class MenuController extends AController implements Initializable {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.CREDITSCENE);
             credits.fireEvent(eventGame);
         });
-        quitter.setOnAction(e -> {
+        exit.setOnAction(e -> {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.EXIT);
-            quitter.fireEvent(eventGame);
+            exit.fireEvent(eventGame);
         });
 
     }

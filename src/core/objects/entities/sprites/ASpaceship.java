@@ -40,4 +40,8 @@ public abstract class ASpaceship extends AEntity {
     public double getBulletRate() {
         return bulletRate;
     }
+
+    public void setLife(double life) {
+        this.life = life;
+    }
 }

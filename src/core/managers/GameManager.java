@@ -6,7 +6,6 @@ import controllers.scenes.GameScene;
 import core.managers.collisionManager.CollisionManager;
 import core.managers.moveManager.MoveManager;
 import core.managers.scenarioManager.ScenarioManager;
-import core.managers.showManager.ShowManager;
 import core.managers.timeManager.TimeManager;
 import core.objects.configObject.ScenarioConfig;
 import core.utility.Loader;
@@ -31,11 +30,12 @@ public class GameManager {
     private MoveManager moveManager;
     private ShowManager showManager;
     private InstanceManager instanceManager;
+    private DamageManager damageManager;
 
 
     private Boolean paused;
 
-    private long points;
+    private double points;
 
     public GameManager(GameScene scene) {
         this.scene = scene;
@@ -46,9 +46,10 @@ public class GameManager {
         this.scenarioManager = new ScenarioManager(this);
         this.timeManager = new TimeManager(this);
 
+        this.damageManager = new DamageManager(this);
         this.moveManager = new MoveManager(this.instanceManager);
         this.showManager = new ShowManager(this.instanceManager, this.scene::getRoot);
-        this.collisionManager = new CollisionManager(this.instanceManager);
+        this.collisionManager = new CollisionManager(this.instanceManager, this.damageManager);
     }
 
     /**
@@ -158,6 +159,7 @@ public class GameManager {
         this.timeManager = null;
 
         // reset external service
+        this.instanceManager.reset();
         this.instanceManager = new InstanceManager(this);
 
         this.collisionManager.reset(this.instanceManager);
@@ -180,14 +182,25 @@ public class GameManager {
         return true;
     }
 
+    public void gameOver() {
+        ((GameScene)this.scene).gameOver(this.points);
+        // modele update points
+        this.pause();
+    }
+
     // POINTS MANAGEMENT
     public void increasePointByTime() {
-        this.points += 1;
+        this.points += 0.1;
         //
     }
 
     public void increasePointByIter(int scenarioDifficulty) {
         this.points += 10 * (scenarioDifficulty + 1);
+        //
+    }
+
+    public void increasePointByKill() {
+        this.points += 20;
         //
     }
 }

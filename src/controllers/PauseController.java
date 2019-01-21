@@ -52,7 +52,9 @@ public class PauseController extends AController implements Initializable, IRese
 
     @Override
     public void refresh() {
-        //
+        int nbPoints = PauseModel.getNbPoints();
+        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
+        currPoints.textProperty().bind(nbpp);
     }
 }
 

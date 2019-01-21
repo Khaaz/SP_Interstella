@@ -18,9 +18,7 @@ import java.util.ResourceBundle;
 
 public class ScoresController extends AController implements Initializable {
 
-    ObservableList<String> listeScores = FXCollections.observableArrayList();
-
-
+    ObservableList<String> listScores = FXCollections.observableArrayList();
 
     @FXML
     ButtonCpnt menu;
@@ -35,25 +33,28 @@ public class ScoresController extends AController implements Initializable {
             menu.fireEvent(eventGame);
         });
 
-        ArrayList<Score> allScores= ScoresModel.getAllScores();
-
-        int classement =1;
-
-        for (Score s :allScores) {
-            String currScore = String.valueOf(classement);
-            currScore = currScore +"\t\t" + s.getPlayername();
-            currScore = currScore +"\t\t" + s.getNbPoints();
-            listeScores.add(currScore);
-            classement++;
-        }
-
-        bestScores.setItems(listeScores);
-
-
+        this.updateScore();
     }
 
     @Override
     public void refresh() {
-        //
+        // update list again
+        this.updateScore();
+    }
+
+    private void updateScore() {
+        ArrayList<Score> allScores = ScoresModel.getAllScores();
+
+        int classement =1;
+
+        for (Score s : allScores) {
+            String currScore = String.valueOf(classement);
+            currScore = currScore +"\t\t" + s.getPlayername();
+            currScore = currScore +"\t\t" + s.getNbPoints();
+            this.listScores.add(currScore);
+            classement++;
+        }
+
+        this.bestScores.setItems(this.listScores);
     }
 }

@@ -84,6 +84,11 @@ public class GameScene extends AScene {
         //System.out.println(shep.body.getY());
     }
 
+    public void gameOver(double points) {
+        System.out.println(points);
+        Event e = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.GAMEOVERSCENE);
+        this.getRoot().fireEvent(e);
+    }
     /**
      * ESCAPE : pause -> PauseScene
      * @param event keyEvent

@@ -9,8 +9,6 @@ import javafx.event.Event;
 import javafx.scene.input.KeyEvent;
 import views.roots.ARoot;
 
-import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
@@ -56,10 +54,6 @@ public abstract class AScene extends Scene {
 
     public void resizeWidth(double width) {
         ((ARoot)this.getRoot()).resizeBackgroundWidth(width);
-    }
-
-    protected void addElement(Node e) {
-        ((Group)this.getRoot()).getChildren().add(e);
     }
 
     public void onResize() {
