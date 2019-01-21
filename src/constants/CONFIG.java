@@ -6,19 +6,21 @@ public class CONFIG {
     public static final double HEIGHT = 1080;
     public static final double WIDTH = 1900;
 
-    public static final String BGColor = "ff1cb0";
-
 
     // DEFAULT
+    public static final long DEFAULT_LIFE = 500;
+    public static final long DEFAULT_DAMAGE = 100;
+
     public static final long BULLET_SPEED = 18;
     public static final long BULLET_RATE = 13;
 
-    public static final long DEFAULT_ENEMY_LIFE = 10;
-    public static final long DEFAULT_ENEMY_DAMAGE = 10;
-    public static final long DEFAULT_ENEMY_SPEED = 3;
-    public static final long DEFAULT_ENEMY_BULLET_SPEED = 10;
+    // DEFAULT_ENEMY
+    public static final long DEFAULT_ENEMY_LIFE = 200;
+    public static final long DEFAULT_ENEMY_DAMAGE = 50;
+    public static final long DEFAULT_ENEMY_SPEED = 2;
+    public static final long DEFAULT_ENEMY_BULLET_SPEED = 7;
     // + rate => + space between bullets
-    public static final long DEFAULT_ENEMY_BULLET_RATE = 32;
+    public static final long DEFAULT_ENEMY_BULLET_RATE = 38;
 
     // SIZE
     public static final long DEFAULT_ENTITY_WIDTH = 150;
