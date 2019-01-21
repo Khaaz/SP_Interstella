@@ -3,13 +3,13 @@
   "enemies": [
     {
       "type": "enemy1",
-      "posX":  0,
+      "posX":  0.2,
       "posY":  0,
       "trajectory": "2x+3"
     },
     {
       "type": "enemy1",
-      "posX":  0,
+      "posX":  0.3,
       "posY":  0,
       "trajectory": "2x+3"
     }

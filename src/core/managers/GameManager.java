@@ -6,12 +6,20 @@ import core.managers.moveManager.MoveManager;
 import core.managers.scenarioManager.ScenarioManager;
 import core.managers.showManager.ShowManager;
 import core.managers.timeManager.TimeManager;
+import core.objects.configObject.EnemyConfig;
 import core.objects.configObject.ScenarioConfig;
+import core.objects.entities.sprites.ASprite;
+import core.objects.entities.sprites.Shep;
+import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.sprites.enemies.Enemy1;
 import core.utility.Loader;
+import javafx.scene.Group;
+import javafx.scene.Parent;
 import views.roots.ARoot;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.function.Supplier;
 
 /**
  * Game engine
@@ -19,7 +27,7 @@ import java.util.ArrayList;
  */
 public class GameManager {
 
-    private ARoot root;
+    private Supplier<Parent> getRoot;
 
     private ArrayList<ScenarioConfig> scenarioConfigs;
 
@@ -36,18 +44,16 @@ public class GameManager {
 
     private long points;
 
-    public GameManager(ARoot root) {
+    public GameManager() {
         this.load();
 
-        this.root = root;
-
-        this.instanceManager = new InstanceManager();
+        this.instanceManager = new InstanceManager(this);
 
         this.scenarioManager = new ScenarioManager(this);
         this.timeManager = new TimeManager(this);
 
         this.moveManager = new MoveManager(this.instanceManager);
-        this.showManager = new ShowManager(this.instanceManager, this.root);
+        this.showManager = new ShowManager(this.instanceManager);
         this.collisionManager = new CollisionManager(this.instanceManager);
 
     }
@@ -70,6 +76,14 @@ public class GameManager {
         return instanceManager;
     }
 
+    public MoveManager getMoveManager() {
+        return moveManager;
+    }
+
+    public ShowManager getShowManager() {
+        return showManager;
+    }
+
     public ArrayList<ScenarioConfig> getScenarioConfigs() {
         return scenarioConfigs;
     }
@@ -78,12 +92,14 @@ public class GameManager {
         return paused;
     }
 
+    public void setGetRoot(Supplier<Parent> getRoot) {
+        this.getRoot = getRoot;
+        this.showManager.setGetRoot(getRoot);
+    }
     /**
      * Start the game Engine
      */
     public void start() {
-        //this.collisionManager = new CollisionManager(shep);
-
         this.paused = false;
         this.points = 0;
 
@@ -150,7 +166,7 @@ public class GameManager {
         this.timeManager = null;
 
         // reset external service
-        this.instanceManager = new InstanceManager();
+        this.instanceManager = new InstanceManager(this);
 
         this.collisionManager.reset();
         this.showManager.reset();

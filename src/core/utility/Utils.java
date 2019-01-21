@@ -50,30 +50,4 @@ public class Utils {
             return fileContents.toString();
         }
     }
-
-    // Y
-    public static double getYCenter(AEntity e) {
-        return e.getLayoutY() - e.body.getFitHeight()/2;
-    }
-
-    public static double getYBottom(AEntity e) {
-        return e.getLayoutY() - e.body.getFitHeight();
-    }
-
-    public static double getYTop(AEntity e) {
-        return e.getLayoutY();
-    }
-
-    // X
-    public static double getXCenter(AEntity e) {
-        return e.getLayoutX() + e.body.getFitWidth()/2;
-    }
-
-    public static double getXRight(AEntity e) {
-        return e.getLayoutX() + e.body.getFitWidth();
-    }
-
-    public static double getXLeft(AEntity e) {
-        return e.getLayoutX();
-    }
 }

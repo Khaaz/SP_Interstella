@@ -2,27 +2,44 @@ package core.managers.showManager;
 
 import core.managers.IService;
 import core.managers.InstanceManager;
-import views.roots.ARoot;
+import core.objects.entities.AEntity;
+import javafx.application.Platform;
+import javafx.scene.Group;
+import javafx.scene.Parent;
 
+import java.util.function.Supplier;
+
+/**
+ * Handle showing entity at the screen
+ * (Add/remove entity from observable list)
+ */
 public class ShowManager implements IService {
+
+    private Supplier<Parent> getRoot;
 
     protected InstanceManager instanceManager;
 
     private ShowHandlerLoop showHandlerLoop;
 
-    protected ARoot root;
-
     private Boolean running;
 
-    public ShowManager(InstanceManager instanceManager, ARoot root) {
+    public ShowManager(InstanceManager instanceManager) {
         this.instanceManager = instanceManager;
-        this.root = root;
         this.showHandlerLoop = new ShowHandlerLoop(this);
+    }
+
+    public void setGetRoot(Supplier<Parent> getRoot) {
+        this.getRoot = getRoot;
+    }
+
+    public Group getActualRoot() {
+        return (Group)(this.getRoot.get());
     }
 
     @Override
     public void start() {
-        this.running = false;
+        this.running = true;
+        this.show(this.instanceManager.getShep());
         this.showHandlerLoop.start();
     }
 
@@ -40,14 +57,26 @@ public class ShowManager implements IService {
 
     @Override
     public void reset() {
-        this.running = true;
+        this.running = false;
         this.showHandlerLoop.stop();
+        // remove all except background
+        this.getActualRoot().getChildren().remove(1, this.getActualRoot().getChildren().size());
     }
 
-    public Boolean show() {
+    public Boolean show(AEntity e) {
         if(!this.running) {
             return false;
         }
+        Platform.runLater(() -> this.getActualRoot().getChildren().add(e));
+
+        return true;
+    }
+
+    public Boolean unShow(AEntity e) {
+        if(!this.running) {
+            return false;
+        }
+        this.getActualRoot().getChildren().remove(e);
         return true;
     }
 }

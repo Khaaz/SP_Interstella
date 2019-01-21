@@ -6,8 +6,10 @@ import core.events.SceneEvent;
 import core.managers.GameManager;
 import core.objects.entities.sprites.ASprite;
 
+
 import javafx.event.Event;
 import javafx.scene.Cursor;
+import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -21,18 +23,24 @@ public class GameScene extends AScene {
      * Responsible of events
      * @param root game root
      */
-    public GameScene(Parent root, GameManager gameManager) {
+    public GameScene(Parent root) {
         super(root, null);
 
 
-        this.gameManager = gameManager;
+        this.gameManager = new GameManager();
+        this.gameManager.setGetRoot(this::getRoot);
         this.gameManager.start();
+
+        this.setCursor(Cursor.NONE);
 
         ASprite shep = this.gameManager.getInstanceManager().getShep();
 
-        this.setCursor(Cursor.NONE);
         this.setOnMouseMoved(event -> this.onMouseMoved(shep, event));
         this.setOnMouseDragged(event -> this.onMouseMoved(shep, event));
+    }
+
+    public GameManager getGameManager() {
+        return gameManager;
     }
 
     public void pause() {
@@ -51,7 +59,6 @@ public class GameScene extends AScene {
             this.restart();
         }
 
-        // ?
         this.setCursor(Cursor.NONE);
     }
 
@@ -73,9 +80,11 @@ public class GameScene extends AScene {
             .findFirst();
     }*/
 
-    private void onMouseMoved(ASprite Shep, MouseEvent event) {
-        Shep.body.setX(event.getSceneX() - (Shep.body.getFitWidth()/2));
-        Shep.body.setY(event.getSceneY() - (Shep.body.getFitHeight()/2));
+    private void onMouseMoved(ASprite shep, MouseEvent event) {
+        shep.body.setX(event.getSceneX() - (shep.body.getFitWidth()/2));
+        shep.body.setY(event.getSceneY() - (shep.body.getFitHeight()/2));
+        //System.out.println(shep.body.getX());
+        //System.out.println(shep.body.getY());
     }
 
     /**

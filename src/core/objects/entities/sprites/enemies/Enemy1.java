@@ -7,10 +7,10 @@ import core.objects.configObject.EnemyConfig;
 
 public class Enemy1 extends AEnemy {
     public Enemy1(EnemyConfig conf) {
-        super(PATH.enemy, CONFIG.DEFAULT_ENTITY_WIDTH, CONFIG.DEFAULT_ENTITY_HEIGHT, conf, 10, 10, 10);
+        super(PATH.enemy, CONFIG.DEFAULT_ENTITY_WIDTH, CONFIG.DEFAULT_ENTITY_HEIGHT, conf, 10, 10, 5);
     }
 
     public Enemy1(EnemyConfig conf, PowerUpRate power) {
-        super(PATH.enemy, CONFIG.DEFAULT_ENTITY_WIDTH, CONFIG.DEFAULT_ENTITY_HEIGHT, conf, 10, 10, 10, power);
+        super(PATH.enemy, CONFIG.DEFAULT_ENTITY_WIDTH, CONFIG.DEFAULT_ENTITY_HEIGHT, conf, 10, 10, 5, power);
     }
 }

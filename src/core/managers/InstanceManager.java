@@ -11,6 +11,8 @@ import java.util.HashMap;
 
 public class InstanceManager {
 
+    private GameManager gameManager;
+
     private ASprite shep;
     private ArrayList<AEnemy> enemies;
 
@@ -19,7 +21,9 @@ public class InstanceManager {
 
     private HashMap<String, AItem> items;
 
-    public InstanceManager() {
+    public InstanceManager(GameManager gameManager) {
+        this.gameManager = gameManager;
+
         this.shep = new Shep();
         this.enemies = new ArrayList<>();
         this.bulletsShep = new ArrayList<>();
@@ -50,7 +54,8 @@ public class InstanceManager {
 
     public void addEnemy(AEnemy e) {
         this.enemies.add(e);
-        System.out.println("add");
+        this.gameManager.getMoveManager().setEnemyBasePos(e);
+        this.gameManager.getShowManager().show(e);
     }
 
     public Boolean removeEnemy(AEnemy e) {

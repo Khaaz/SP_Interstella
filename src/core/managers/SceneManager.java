@@ -143,8 +143,8 @@ public class SceneManager {
             }
             case GAMESCENE: {
                 ARoot root = new GameRoot();
-                this.gameManager = new GameManager(root);
-                scene = new GameScene(root, this.gameManager);
+                scene = new GameScene(root);
+                this.gameManager = ((GameScene)scene).getGameManager();
                 break;
             }
             case PAUSESCENE: {

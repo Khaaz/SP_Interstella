@@ -9,9 +9,10 @@ public class CONFIG {
     public static final String BGColor = "ff1cb0";
 
 
+    public static final long BULLET_SPEED = 2;
     // SIZE
-    public static final long DEFAULT_ENTITY_WIDTH = 300;
-    public static final long DEFAULT_ENTITY_HEIGHT = 300;
+    public static final long DEFAULT_ENTITY_WIDTH = 150;
+    public static final long DEFAULT_ENTITY_HEIGHT = 150;
 
     // SCENARIOS
     public static final long START_MIN_INTERVAL = 2000;
@@ -20,7 +21,7 @@ public class CONFIG {
 
     // DIFFICULTY
     public static final long STEP_TO_REDUCE_MAX_INTERVAL = 10;
-    public static final double MAX_INTERVAL_REDUCER = 0.98;
+    public static final double MAX_INTERVAL_REDUCER = 0.7;
 
     public static final long STEP_TO_INCREASE_SCENARIO_DIFFICULTY = 20;
 
