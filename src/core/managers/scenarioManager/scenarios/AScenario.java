@@ -1,6 +1,6 @@
 package core.managers.scenarioManager.scenarios;
 
-import core.managers.InstanceManager;
+import core.managers.instanceManager.InstanceManager;
 import core.objects.entities.spaceships.enemies.AEnemy;
 
 import java.util.ArrayList;

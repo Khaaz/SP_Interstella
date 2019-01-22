@@ -1,31 +1,30 @@
 package core.objects.entities.spaceships.enemies;
 
-import constants.CONFIG;
-import constants.PATH;
+import constants.ENEMYCONF;
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
 
 public class Enemy2 extends AEnemy {
     public Enemy2(EnemyConfig conf) {
-        super(PATH.ENEMY,
-                CONFIG.DEFAULT_ENTITY_WIDTH,
-                CONFIG.DEFAULT_ENTITY_HEIGHT,
+        super(ENEMYCONF.SKIN_2,
+                ENEMYCONF.WIDTH_2,
+                ENEMYCONF.HEIGHT_2,
                 conf,
-                CONFIG.DEFAULT_ENEMY_LIFE,
-                CONFIG.DEFAULT_ENEMY_DAMAGE,
-                CONFIG.DEFAULT_ENEMY_SPEED,
-                CONFIG.DEFAULT_ENEMY_BULLET_SPEED,
-                CONFIG.DEFAULT_ENEMY_BULLET_RATE);    }
+                ENEMYCONF.LIFE_2,
+                ENEMYCONF.DAMAGE_2,
+                ENEMYCONF.SPEED_2,
+                ENEMYCONF.BULLET_SPEED_2,
+                ENEMYCONF.BULLET_RATE_2);    }
 
     public Enemy2(EnemyConfig conf, PowerUpRate power) {
-        super(PATH.ENEMY,
-                CONFIG.DEFAULT_ENTITY_WIDTH,
-                CONFIG.DEFAULT_ENTITY_HEIGHT,
+        super(ENEMYCONF.SKIN_2,
+                ENEMYCONF.WIDTH_2,
+                ENEMYCONF.HEIGHT_2,
                 conf,
-                CONFIG.DEFAULT_ENEMY_LIFE,
-                CONFIG.DEFAULT_ENEMY_DAMAGE,
-                CONFIG.DEFAULT_ENEMY_SPEED,
-                CONFIG.DEFAULT_ENEMY_BULLET_SPEED,
-                CONFIG.DEFAULT_ENEMY_BULLET_RATE,
+                ENEMYCONF.LIFE_2,
+                ENEMYCONF.DAMAGE_2,
+                ENEMYCONF.SPEED_2,
+                ENEMYCONF.BULLET_SPEED_2,
+                ENEMYCONF.BULLET_RATE_2,
                 power);    }
 }

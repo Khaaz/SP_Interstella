@@ -1,7 +1,7 @@
 package core.managers.moveManager;
 
 import core.managers.IService;
-import core.managers.InstanceManager;
+import core.managers.instanceManager.InstanceManager;
 import core.managers.SceneManager;
 import core.objects.entities.Bullet;
 import core.objects.entities.spaceships.enemies.AEnemy;

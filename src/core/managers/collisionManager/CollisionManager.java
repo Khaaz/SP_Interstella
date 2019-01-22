@@ -2,7 +2,7 @@ package core.managers.collisionManager;
 
 import core.managers.DamageManager;
 import core.managers.IService;
-import core.managers.InstanceManager;
+import core.managers.instanceManager.InstanceManager;
 public class CollisionManager implements IService {
 
     protected InstanceManager instanceManager;

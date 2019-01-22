@@ -94,6 +94,7 @@ public class DatasaveModel {
             }
         }
     }
+
     public void addMoney(int money){
         DS.setMoney(money);
         updateDB();

@@ -46,6 +46,7 @@ public class MoveHandlerLoop {
         for (AEnemy e : this.positionManager.instanceManager.getEnemies()) {
             e.body.relocate(e.body.getLayoutX(), e.body.getLayoutY() + e.getSpeed());
             // move ENEMY regarding their trajectory function
+            // Implement a tree to calculate functions
         }
     }
 }

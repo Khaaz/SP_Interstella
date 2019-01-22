@@ -1,8 +1,7 @@
 package core.managers.scenarioManager;
 
 import constants.CONFIG;
-import core.managers.InstanceManager;
-import core.managers.collisionManager.CollisionManager;
+import core.managers.instanceManager.InstanceManager;
 import core.managers.GameManager;
 import core.managers.factory.ScenarioFactory;
 import core.managers.scenarioManager.scenarios.Scenario;

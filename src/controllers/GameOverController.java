@@ -35,8 +35,7 @@ public class GameOverController extends AController implements Initializable, IR
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        double nbPoints = ScoresModel.currentScore;
-        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
+        this.showScore();
 
         tooLong.setVisible(false);
 
@@ -60,10 +59,12 @@ public class GameOverController extends AController implements Initializable, IR
             }
 
         });
+    }
 
+    private void showScore() {
+        double nbPoints = Math.round(ScoresModel.getCurrentScore());
+        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
         nbPointsScored.textProperty().bind(nbpp);
-
-
     }
 
     @Override
@@ -73,9 +74,7 @@ public class GameOverController extends AController implements Initializable, IR
 
     @Override
     public void refresh() {
-        double nbPoints = ScoresModel.currentScore;
-        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
-        nbPointsScored.textProperty().bind(nbpp);
+        this.showScore();
     }
 }
 

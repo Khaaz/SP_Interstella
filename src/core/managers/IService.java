@@ -1,5 +1,7 @@
 package core.managers;
 
+import core.managers.instanceManager.InstanceManager;
+
 public interface IService {
     void start();
     void pause();

@@ -1,5 +1,6 @@
 package core.managers;
 
+import core.managers.instanceManager.InstanceManager;
 import core.objects.entities.AEntity;
 import javafx.application.Platform;
 import javafx.scene.Group;

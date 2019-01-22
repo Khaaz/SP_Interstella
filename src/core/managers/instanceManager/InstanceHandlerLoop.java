@@ -1,5 +1,6 @@
-package core.managers;
+package core.managers.instanceManager;
 
+import core.managers.SceneManager;
 import core.objects.entities.Bullet;
 import core.objects.entities.spaceships.enemies.AEnemy;
 import core.utility.Positioner;

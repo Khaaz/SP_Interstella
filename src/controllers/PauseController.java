@@ -28,9 +28,7 @@ public class PauseController extends AController implements Initializable, IRese
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        double nbPoints = ScoresModel.currentScore;
-        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
-        currPoints.textProperty().bind(nbpp);
+        this.showScore();
 
         resume.setOnAction(e -> {
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.GAMESCENE);
@@ -45,6 +43,12 @@ public class PauseController extends AController implements Initializable, IRese
 
     }
 
+    private void showScore() {
+        double nbPoints = Math.round(ScoresModel.getCurrentScore());
+        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
+        currPoints.textProperty().bind(nbpp);
+    }
+
     @Override
     public void setResetGameManager(Supplier<Boolean> resetGameManager) {
         this.resetGameManager = resetGameManager;
@@ -52,9 +56,7 @@ public class PauseController extends AController implements Initializable, IRese
 
     @Override
     public void refresh() {
-        double nbPoints = ScoresModel.currentScore;
-        SimpleStringProperty nbpp = new SimpleStringProperty(String.valueOf(nbPoints));
-        currPoints.textProperty().bind(nbpp);
+        this.showScore();
     }
 }
 

@@ -1,5 +1,6 @@
-package core.managers;
+package core.managers.instanceManager;
 
+import core.managers.GameManager;
 import core.managers.bulletManager.BulletManager;
 import core.objects.entities.Bullet;
 import core.objects.entities.spaceships.ASpaceship;

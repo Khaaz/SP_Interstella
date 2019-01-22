@@ -4,6 +4,7 @@ import constants.PATH;
 import controllers.scenes.AScene;
 import controllers.scenes.GameScene;
 import core.managers.collisionManager.CollisionManager;
+import core.managers.instanceManager.InstanceManager;
 import core.managers.moveManager.PositionManager;
 import core.managers.scenarioManager.ScenarioManager;
 import core.managers.timeManager.TimeManager;
@@ -111,7 +112,6 @@ public class GameManager {
         this.positionManager.start();
         this.instanceManager.start();
 
-
         System.out.println("start call gamemanager");
     }
 
@@ -124,7 +124,10 @@ public class GameManager {
         if (this.paused) {
             return false;
         }
-        ScoresModel.currentScore(this.points);
+
+        // update score to access it later
+        ScoresModel.setCurrentScore(this.points);
+
         this.paused = true;
         this.scenarioManager.pause();
         this.timeManager.pause();
@@ -219,8 +222,8 @@ public class GameManager {
      * Call gameOver in the scene (scene change)
      */
     public void gameOver() {
-        // modele update points
-        ScoresModel.currentScore(this.points);
+        // update score to access it later
+        ScoresModel.setCurrentScore(this.points);
 
         ((GameScene)this.scene).gameOver(this.points);
         this.pause();

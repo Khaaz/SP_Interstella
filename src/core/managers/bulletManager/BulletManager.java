@@ -1,7 +1,8 @@
 package core.managers.bulletManager;
 
+import constants.PATH;
 import core.managers.IService;
-import core.managers.InstanceManager;
+import core.managers.instanceManager.InstanceManager;
 import core.objects.entities.Bullet;
 import core.objects.entities.spaceships.enemies.AEnemy;
 
@@ -47,7 +48,7 @@ public class BulletManager implements IService {
      * Call instance manager
      */
     public void addBulletShep() {
-        Bullet b = new Bullet(this.instanceManager.getShep().getDamage(), this.instanceManager.getShep().getBulletSpeed());
+        Bullet b = new Bullet(PATH.SHEP_BULLET, this.instanceManager.getShep().getDamage(), this.instanceManager.getShep().getBulletSpeed());
         this.instanceManager.addBulletShep(b);
     }
 
@@ -57,7 +58,7 @@ public class BulletManager implements IService {
      * @param e Enemy that created the bullet
      */
     public void addBulletEnemy(AEnemy e) {
-        Bullet b = new Bullet(e.getDamage(), e.getBulletSpeed());
+        Bullet b = new Bullet(PATH.ENEMY_BULLET, e.getDamage(), e.getBulletSpeed());
         this.instanceManager.addBulletEnemy(e, b);
     }
 }

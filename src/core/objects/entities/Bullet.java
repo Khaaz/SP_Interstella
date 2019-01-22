@@ -1,6 +1,6 @@
 package core.objects.entities;
 
-import constants.PATH;
+import constants.CONFIG;
 
 /**
  * Bullet
@@ -12,8 +12,8 @@ public class Bullet extends AEntity {
     private double damage;
     private double speed;
 
-    public Bullet(double damage, double speed) {
-        super(PATH.BULLET, 10, 45);
+    public Bullet(String path, double damage, double speed) {
+        super(path, CONFIG.BULLET_WIDTH, CONFIG.BULLET_HEIGHT);
 
         this.damage = damage;
         this.speed = speed;

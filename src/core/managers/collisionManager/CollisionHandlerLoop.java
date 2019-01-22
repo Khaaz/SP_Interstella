@@ -32,7 +32,7 @@ public class CollisionHandlerLoop extends AnimationTimer {
 
             ArrayList<Bullet> bullets = new ArrayList<>();
             for (Bullet bullet : this.collisionManager.instanceManager.getBulletsShep()) {
-                // ENEMY collision SHEP BULLET
+                // ENEMY collision SHEP SHEP_BULLET
                 if (checkCollision(enemy, bullet)) {
                     if(this.collisionManager.damageManager.damageEnemy(enemy, bullet)) {
                         enemies.add(enemy);
@@ -52,7 +52,7 @@ public class CollisionHandlerLoop extends AnimationTimer {
 
         // BULLETS
         ArrayList<Bullet> bullets = new ArrayList<>();
-        // SHEP collision ENEMY BULLET
+        // SHEP collision ENEMY SHEP_BULLET
         for (Bullet enemyBullet : this.collisionManager.instanceManager.getBulletEnemies()) {
             if (checkCollision(enemyBullet, shep)) {
                 this.collisionManager.damageManager.damageShep(shep, enemyBullet);
