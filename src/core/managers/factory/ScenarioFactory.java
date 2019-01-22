@@ -6,8 +6,16 @@ import core.objects.configObject.ScenarioConfig;
 
 import java.util.ArrayList;
 
+/**
+ * Create a Scenario from a Scenario config
+ */
 public class ScenarioFactory {
 
+    /**
+     * Create a scenario without bonus
+     * @param config
+     * @return Scenario
+     */
     public static Scenario createOneScenario(ScenarioConfig config) {
         return new Scenario(
                 config.getDifficulty(),
@@ -15,6 +23,12 @@ public class ScenarioFactory {
         );
     }
 
+    /**
+     * Create a Scenario with a bonus
+     * @param config
+     * @param power
+     * @return Scenario
+     */
     public static Scenario createOneScenario(ScenarioConfig config, PowerUpRate power) {
         return new Scenario(
                 config.getDifficulty(),

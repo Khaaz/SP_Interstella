@@ -1,10 +1,10 @@
 package core.managers;
 
-import core.managers.BulletManager.BulletManager;
+import core.managers.bulletManager.BulletManager;
 import core.objects.entities.Bullet;
-import core.objects.entities.sprites.ASpaceship;
-import core.objects.entities.sprites.Shep;
-import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.spaceships.ASpaceship;
+import core.objects.entities.spaceships.Shep;
+import core.objects.entities.spaceships.enemies.AEnemy;
 import core.objects.entities.items.AItem;
 
 import java.util.ArrayList;
@@ -79,41 +79,79 @@ public class InstanceManager {
     // SETTER - ADDER - REMOVER
 
     // ADD
+
+    /**
+     * Add an enemy to the instance manager
+     * Setup his default position
+     * Add it to the game / show it
+     * @param e AEnemy
+     */
     public void addEnemy(AEnemy e) {
         this.enemies.add(e);
-        this.gameManager.getMoveManager().setEnemyBasePos(e);
+        this.gameManager.getPositionManager().setEnemyBasePos(e);
         this.gameManager.getShowManager().show(e);
     }
 
+    /**
+     * Add a bullet (shep) to the instance manager
+     * Setup his default position
+     * Add it to the game / show it
+     * @param b
+     */
     public void addBulletShep(Bullet b) {
         this.bulletsShep.add(b);
-        this.gameManager.getMoveManager().setShepBulletBasePos(b);
+        this.gameManager.getPositionManager().setShepBulletBasePos(b);
         this.gameManager.getShowManager().show(b);
     }
 
+    /**
+     * Add a bullet (enemy) to the instance manager
+     * Setup his default position
+     * Add it to the game / show it
+     * @param b
+     */
     public void addBulletEnemy(AEnemy e, Bullet b) {
         this.bulletEnemies.add(b);
-        this.gameManager.getMoveManager().setEnemyBulletBasePos(e, b);
+        this.gameManager.getPositionManager().setEnemyBulletBasePos(e, b);
         this.gameManager.getShowManager().show(b);
     }
 
     // DELETE
+
+    /**
+     * Remove an enemy from the instanceManager / game
+     * Destroy all references to the instance =>garbage collected
+     * @param e AEnemy
+     * @return boolean
+     */
     public Boolean removeEnemy(AEnemy e) {
         this.gameManager.getShowManager().unShow(e);
         return this.enemies.remove(e);
     }
 
+    /**
+     * Remove a bullet (enemy) from the instanceManager / game
+     * Destroy all references to the instance =>garbage collected
+     * @param b Bullet
+     * @return boolean
+     */
     public Boolean removeBulletEnemy(Bullet b) {
         this.gameManager.getShowManager().unShow(b);
         return this.bulletEnemies.remove(b);
     }
 
+    /**
+     * Remove a bullet (shep) from the instanceManager / game
+     * Destroy all references to the instance =>garbage collected
+     * @param b Bullet
+     * @return boolean
+     */
     public Boolean removeBulletShep(Bullet b) {
         this.gameManager.getShowManager().unShow(b);
         return this.bulletsShep.remove(b);
     }
 
-    // ITEMS
+    // ITEMS not implemented yet
     public void addItem(AItem i) {
         this.items.put(i.toString(), i);
     }

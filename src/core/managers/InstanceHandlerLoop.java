@@ -1,7 +1,7 @@
 package core.managers;
 
 import core.objects.entities.Bullet;
-import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.spaceships.enemies.AEnemy;
 import core.utility.Positioner;
 import javafx.animation.AnimationTimer;
 

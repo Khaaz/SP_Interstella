@@ -1,11 +1,15 @@
 package core.utility;
 
-import core.objects.entities.sprites.enemies.AEnemy;
-import core.objects.entities.sprites.enemies.Enemy1;
-import core.objects.entities.sprites.enemies.Enemy2;
+import core.objects.entities.spaceships.enemies.AEnemy;
+import core.objects.entities.spaceships.enemies.Enemy1;
+import core.objects.entities.spaceships.enemies.Enemy2;
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
 
+/**
+ * Instantiate enemies regarding their type
+ * Eventually buff them with the given PowerUp
+ */
 public class Instantiator {
 
     /**

@@ -6,6 +6,8 @@ public class CONFIG {
     public static final double HEIGHT = 1080;
     public static final double WIDTH = 1900;
 
+    // 40 => 24 frame/seconds. 1000/24 = 41 // 20 for even more fluent
+    public static final int FRAME_TIME = 20;
 
     // DEFAULT
     public static final long DEFAULT_LIFE = 500;
@@ -17,10 +19,10 @@ public class CONFIG {
     // DEFAULT_ENEMY
     public static final long DEFAULT_ENEMY_LIFE = 200;
     public static final long DEFAULT_ENEMY_DAMAGE = 50;
-    public static final long DEFAULT_ENEMY_SPEED = 2;
-    public static final long DEFAULT_ENEMY_BULLET_SPEED = 7;
+    public static final long DEFAULT_ENEMY_SPEED = 5;
+    public static final long DEFAULT_ENEMY_BULLET_SPEED = 12;
     // + rate => + space between bullets
-    public static final long DEFAULT_ENEMY_BULLET_RATE = 38;
+    public static final long DEFAULT_ENEMY_BULLET_RATE = 30;
 
     // SIZE
     public static final long DEFAULT_ENTITY_WIDTH = 150;
@@ -28,12 +30,14 @@ public class CONFIG {
 
     // SCENARIOS
     public static final long START_MIN_INTERVAL = 2000;
-    public static final long MIN_INTERVAL = 100;
-    public static final long MAX_INTERVAL = 5000;
+    public static final long MIN_INTERVAL = 200;
+    public static final long MAX_INTERVAL = 4000;
 
     // DIFFICULTY
-    public static final long STEP_TO_REDUCE_MAX_INTERVAL = 10;
-    public static final double MAX_INTERVAL_REDUCER = 0.7;
+    public static final long STEP_TO_REDUCE_MAX_INTERVAL = 5;
+    public static final double MAX_INTERVAL_REDUCER = 0.95;
+
+    public static final double CAP_INTERVAL_REDUCER = 500;
 
     public static final long STEP_TO_INCREASE_SCENARIO_DIFFICULTY = 20;
 

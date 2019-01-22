@@ -48,14 +48,25 @@ public abstract class AScene extends Scene {
         }
     }
 
+    /**
+     * Only called if the root instance is type of ARoot
+     * @param height height of the current scene
+     */
     public void resizeHeight(double height) {
         ((ARoot)this.getRoot()).resizeBackgroundHeight(height);
     }
 
+    /**
+     * Only called if the root instance is type of ARoot
+     * @param width width of the current scene
+     */
     public void resizeWidth(double width) {
         ((ARoot)this.getRoot()).resizeBackgroundWidth(width);
     }
 
+    /**
+     * Resize all element in the background / reset position
+     */
     public void onResize() {
         ((ARoot)this.getRoot()).resizeComponents();
     }

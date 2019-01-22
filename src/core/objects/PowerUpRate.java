@@ -1,5 +1,8 @@
 package core.objects;
 
+/**
+ * Class used to add a multiplier when instantiating enemies
+ */
 public class PowerUpRate {
     private double lifeMultiplier;
     private double damageMultiplier;

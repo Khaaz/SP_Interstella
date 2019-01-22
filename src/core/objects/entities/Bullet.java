@@ -2,6 +2,11 @@ package core.objects.entities;
 
 import constants.PATH;
 
+/**
+ * Bullet
+ * Damage = bullet creator's damages
+ * Speed = bullet creator's bullet speed
+ */
 public class Bullet extends AEntity {
 
     private double damage;

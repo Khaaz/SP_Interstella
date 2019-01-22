@@ -120,16 +120,16 @@ public class MainOld extends Application {
             @Override
             public void handle(long now) {
                 if (s.moveDown) {
-                    MoveManager.moveDown(s,scene);
+                    PositionManager.moveDown(s,scene);
                 }
                 else if (s.moveUp) {
-                    MoveManager.moveUp(s,scene);
+                    PositionManager.moveUp(s,scene);
                 }
                 else if (s.moveRight) {
-                    MoveManager.moveRight(s,scene);
+                    PositionManager.moveRight(s,scene);
                 }
                 else if (s.moveLeft) {
-                    MoveManager.moveLeft(s,scene);
+                    PositionManager.moveLeft(s,scene);
                 }
             }
         }.start();

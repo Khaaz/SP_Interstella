@@ -2,10 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controllers/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameOverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PauseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/PauseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Old/MainOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/Old/MainOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/constants/CONFIG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/constants/CONFIG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/AScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/AScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/GameScene$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/GameScene$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/GameScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/controllers/scenes/GameScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/events/SceneEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/events/SceneEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/BulletManager/BulletHandlerLoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/BulletManager/BulletManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/DamageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/DamageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/GameManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/GameManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/InstanceHandlerLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/InstanceHandlerLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/InstanceManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/InstanceManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/SceneManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/SceneManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/SceneManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/SceneManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/ShowManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/ShowManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/collisionManager/CollisionHandlerLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/collisionManager/CollisionHandlerLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/collisionManager/CollisionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/collisionManager/CollisionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/factory/EnemyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/factory/EnemyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/factory/ScenarioFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/factory/ScenarioFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/moveManager/MoveHandlerLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/moveManager/MoveHandlerLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/moveManager/MoveManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/ScenarioDifficultyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/ScenarioDifficultyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/ScenarioManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/ScenarioManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/AScenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/AScenario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/Scenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/Scenario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/managers/timeManager/TimeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/managers/timeManager/TimeManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/PowerUpRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/objects/PowerUpRate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/AEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/AEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/Bullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/ASpaceship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/Shep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/enemies/AEnemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/enemies/Enemy1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/enemies/Enemy2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/objects/entities/sprites/enemies/Enemy3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Instantiator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Instantiator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Positioner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/core/utility/Positioner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/views/roots/GameRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/views/roots/GameRoot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/CONFIG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/CONFIG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/scenes/AScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/scenes/AScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/scenes/GameScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/scenes/GameScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/events/SceneEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/events/SceneEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/BulletManager/BulletHandlerLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/BulletManager/BulletManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/bulletManager/BulletManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/DamageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/DamageManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/managers/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ScoresModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ScoresModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/InstanceHandlerLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/InstanceHandlerLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/InstanceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/InstanceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/ShowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/ShowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/factory/EnemyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/factory/EnemyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/factory/ScenarioFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/factory/ScenarioFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/moveManager/MoveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/moveManager/PositionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioDifficultyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioDifficultyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/AScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/AScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/managers/timeManager/TimeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/managers/timeManager/TimeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/PowerUpRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/PowerUpRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/AEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/AEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/ASpaceship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/ASpaceship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/Shep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/Shep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/AEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/AEnemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/utility/Instantiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utility/Instantiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/utility/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utility/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/utility/Positioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utility/Positioner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/roots/GameRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/roots/GameRoot.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,36 +136,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/managers/GameManager.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="186" column="28" lean-forward="true" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
+            <state relative-caret-position="422">
+              <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/PauseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="51" />
-              <folding>
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1499#1500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controllers/GameOverController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -135,34 +187,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/views/components/ButtonCpnt.java" />
-        <option value="$PROJECT_DIR$/src/views/components/LabelCpnt.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/AEntity.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/ASprite.java" />
-        <option value="$PROJECT_DIR$/src/views/resources/css/gameover.css" />
-        <option value="$PROJECT_DIR$/src/views/resources/css/styleSheet.css" />
-        <option value="$PROJECT_DIR$/src/views/components/TextFieldCpnt.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/items/AItem.java" />
-        <option value="$PROJECT_DIR$/src/core/utility/Utils.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" />
-        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario2.json" />
-        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario3.json" />
-        <option value="$PROJECT_DIR$/src/views/backgrounds/ABackground.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/constants/PATH.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/IService.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/showManager/ShowHandlerLoop.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/AEnemy.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/BulletManager/BulletHandlerLoop.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/BulletManager/BulletManager.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy1.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy2.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy3.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/Bullet.java" />
         <option value="$PROJECT_DIR$/src/core/managers/moveManager/MoveManager.java" />
-        <option value="$PROJECT_DIR$/src/core/utility/Positioner.java" />
-        <option value="$PROJECT_DIR$/src/controllers/scenes/AScene.java" />
         <option value="$PROJECT_DIR$/src/controllers/IRefreshable.java" />
         <option value="$PROJECT_DIR$/src/controllers/IResetManager.java" />
         <option value="$PROJECT_DIR$/src/controllers/MenuController.java" />
@@ -171,21 +196,48 @@
         <option value="$PROJECT_DIR$/src/models/GameOverModel.java" />
         <option value="$PROJECT_DIR$/src/core/managers/showManager/InstanceHandlerLoop.java" />
         <option value="$PROJECT_DIR$/src/core/managers/showManager/ShowManager.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/ShowManager.java" />
         <option value="$PROJECT_DIR$/src/core/managers/InstanceHandlerLoop.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java" />
-        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/ASpaceship.java" />
-        <option value="$PROJECT_DIR$/src/controllers/scenes/GameScene.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/SceneManager.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/InstanceManager.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/DamageManager.java" />
-        <option value="$PROJECT_DIR$/src/constants/CONFIG.java" />
         <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/Shep.java" />
         <option value="$PROJECT_DIR$/src/models/ScoresModel.java" />
-        <option value="$PROJECT_DIR$/src/core/managers/GameManager.java" />
         <option value="$PROJECT_DIR$/src/controllers/PauseController.java" />
         <option value="$PROJECT_DIR$/src/controllers/GameOverController.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy1.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop2.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/BulletManager/MoveHandlerLoop.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json" />
+        <option value="$PROJECT_DIR$/src/core/managers/moveManager/PositionManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/BulletManager/BulletHandlerLoop.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioManager.java" />
+        <option value="$PROJECT_DIR$/src/constants/CONFIG.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioDifficultyManager.java" />
+        <option value="$PROJECT_DIR$/src/controllers/scenes/AScene.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/SceneManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/ShowManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/InstanceManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/BulletManager/BulletManager.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/factory/ScenarioFactory.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/factory/EnemyFactory.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/Scenario.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/AScenario.java" />
+        <option value="$PROJECT_DIR$/src/core/events/SceneEvent.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/PowerUpRate.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/Bullet.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/AEntity.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/ASpaceship.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/AEnemy.java" />
+        <option value="$PROJECT_DIR$/src/core/utility/Loader.java" />
+        <option value="$PROJECT_DIR$/src/core/utility/Instantiator.java" />
+        <option value="$PROJECT_DIR$/src/core/utility/Positioner.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/timeManager/TimeManager.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/Shep.java" />
+        <option value="$PROJECT_DIR$/src/controllers/scenes/GameScene.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/GameManager.java" />
+        <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/ASpaceship.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/DamageManager.java" />
+        <option value="$PROJECT_DIR$/src/views/roots/GameRoot.java" />
+        <option value="$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java" />
       </list>
     </option>
   </component>
@@ -205,6 +257,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="retroshooting" type="58d84e3e:PackageViewProjectNode" />
+              <item name="retroshooting" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,12 +280,6 @@
               <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
               <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
@@ -240,19 +298,17 @@
               <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
               <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="managers" type="462c0819:PsiDirectoryNode" />
+              <item name="collisionManager" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="retroshooting" type="58d84e3e:PackageViewProjectNode" />
-              <item name="retroshooting" type="616d4139:PackageViewModuleNode" />
+              <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="managers" type="462c0819:PsiDirectoryNode" />
+              <item name="moveManager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,7 +326,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548050833546" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548186149919" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gson-2.8.5.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -282,24 +338,24 @@
     <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Core/managers/scenarioManager/scenarios/scenariosList" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/assets" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="core.managers.BulletManager" />
-      <recent name="core.managers.showManager" />
-      <recent name="controllers.scenes" />
-      <recent name="Core.managers.scenarioManager" />
-      <recent name="Controllers.Scenes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/bullets" />
       <recent name="$PROJECT_DIR$/src/Views/Resources/css" />
       <recent name="$PROJECT_DIR$/src/Views/Resources/fxml" />
       <recent name="$PROJECT_DIR$/src/Views/Roots" />
       <recent name="$PROJECT_DIR$/Old" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="core.managers.BulletManager" />
+      <recent name="core.managers.moveManager" />
+      <recent name="core.managers.showManager" />
+      <recent name="controllers.scenes" />
+      <recent name="Core.managers.scenarioManager" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Core/managers/scenarioManager/scenarios/scenariosList" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,11 +475,13 @@
       <workItem from="1547897676201" duration="34615000" />
       <workItem from="1547989092580" duration="14964000" />
       <workItem from="1548011658333" duration="37482000" />
+      <workItem from="1548096571873" duration="4638000" />
+      <workItem from="1548157215731" duration="18126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221493000" />
+    <option name="totallyTimeSpent" value="244257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +496,7 @@
     <frame x="0" y="0" width="1920" height="1062" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.27991453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2863248" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32995737" />
       <window_info id="Designer" order="3" />
@@ -447,7 +505,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25396827" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3058201" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4973545" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,7 +516,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.04761905" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.2984127" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.08994709" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32910052" />
@@ -487,42 +545,149 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/managers/timeManager/TimeManager.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/TimedScenarioTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="522">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/PATH.java">
+    <entry file="file://$PROJECT_DIR$/assets/foe/slashturned.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shep/5555.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/bulletManager/BulletHandlerLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario2.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/scenariosList/scenario3.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/TimedScenarioTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/CONFIG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="56" lean-forward="true" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioDifficultyManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/backgrounds/GameBG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/backgrounds/ABackground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/AScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+            <element signature="e#1779#1780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/PositionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/roots/ARoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/SceneManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="181" column="13" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/InstanceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2150">
+          <caret line="143" column="46" selection-start-line="143" selection-start-column="46" selection-end-line="143" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/InstanceHandlerLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -533,301 +698,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="656">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/BulletManager/BulletManager.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/bulletManager/BulletHandlerLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/foe/slashturned.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/MoveManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+        <state relative-caret-position="738">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/utility/Positioner.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/bulletManager/BulletManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="584">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/AEnemy.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/factory/ScenarioFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy2.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/factory/EnemyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="396">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/enemies/Enemy3.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/Scenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/scenarios/AScenario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/events/EventCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/events/SceneEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/objects/PowerUpRate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/objects/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/objects/entities/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/BulletManager/BulletHandlerLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/AEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/AEnemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/CreditScene.java">
+    <entry file="file://$PROJECT_DIR$/src/core/utility/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/utility/Instantiator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/utility/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/utility/Positioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/utility/jsonDeserialiser/JsonDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/timeManager/TimedCountTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/ScoreScene.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/scenarioManager/ScenarioManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/SCENES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/HangarScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/IRefreshable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/resources/fxml/Menu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/ScoresController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/CreditsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/GameOverModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/PauseModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/ASpaceship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/MenuScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/PauseScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/InstanceHandlerLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/IResetManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/collisionManager/CollisionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/GameScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="87" column="32" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/GameOverScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/AScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/AController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/InstanceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="84" column="50" lean-forward="true" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="146">
+          <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/managers/ShowManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="58" column="31" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/timeManager/TimeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/scenes/GameScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/spaceships/Shep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/spaceships/ASpaceship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/managers/GameManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/components/LabelCpnt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/roots/GameRoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -836,82 +951,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/core/managers/DamageManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        <state relative-caret-position="-93">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/HangarController.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/collisionManager/CollisionHandlerLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/CONFIG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/configObject/EnemyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/objects/entities/sprites/Shep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="268">
+          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/ScoresModel.java">
+    <entry file="file://$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/managers/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="186" column="28" lean-forward="true" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
+        <state relative-caret-position="422">
+          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/PauseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="51" />
-          <folding>
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/GameOverController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
         </state>
       </provider>
     </entry>

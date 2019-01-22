@@ -1,12 +1,12 @@
-package core.objects.entities.sprites.enemies;
+package core.objects.entities.spaceships.enemies;
 
 import constants.CONFIG;
 import constants.PATH;
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
 
-public class Enemy1 extends AEnemy {
-    public Enemy1(EnemyConfig conf) {
+public class Enemy3 extends AEnemy {
+    public Enemy3(EnemyConfig conf) {
         super(PATH.ENEMY,
                 CONFIG.DEFAULT_ENTITY_WIDTH,
                 CONFIG.DEFAULT_ENTITY_HEIGHT,
@@ -15,10 +15,9 @@ public class Enemy1 extends AEnemy {
                 CONFIG.DEFAULT_ENEMY_DAMAGE,
                 CONFIG.DEFAULT_ENEMY_SPEED,
                 CONFIG.DEFAULT_ENEMY_BULLET_SPEED,
-                CONFIG.DEFAULT_ENEMY_BULLET_RATE);
-    }
+                CONFIG.DEFAULT_ENEMY_BULLET_RATE);    }
 
-    public Enemy1(EnemyConfig conf, PowerUpRate power) {
+    public Enemy3(EnemyConfig conf, PowerUpRate power) {
         super(PATH.ENEMY,
                 CONFIG.DEFAULT_ENTITY_WIDTH,
                 CONFIG.DEFAULT_ENTITY_HEIGHT,
@@ -28,6 +27,5 @@ public class Enemy1 extends AEnemy {
                 CONFIG.DEFAULT_ENEMY_SPEED,
                 CONFIG.DEFAULT_ENEMY_BULLET_SPEED,
                 CONFIG.DEFAULT_ENEMY_BULLET_RATE,
-                power);
-    }
+                power);    }
 }

@@ -9,8 +9,11 @@ public class ScenarioDifficultyManager {
 
     private ScenarioManager scenarioManager;
 
+    private Boolean capped;
+
     public ScenarioDifficultyManager(ScenarioManager scenarioManager) {
         this.scenarioManager = scenarioManager;
+        this.capped = false;
     }
 
     /**
@@ -18,10 +21,18 @@ public class ScenarioDifficultyManager {
      */
     protected void increaseDifficulty(int iteration) {
         // Reduce maxInterval (scenario happens more often)
-        if(iteration % CONFIG.STEP_TO_REDUCE_MAX_INTERVAL == 0) {
+        if(!this.capped && iteration % CONFIG.STEP_TO_REDUCE_MAX_INTERVAL == 0) {
 
-            this.scenarioManager.maxInterval = (long)(this.scenarioManager.maxInterval * CONFIG.MAX_INTERVAL_REDUCER);
-            this.scenarioManager.scenarioTask.updateIntervals(this.scenarioManager.minInterval, this.scenarioManager.maxInterval);
+            long maxInterval = (long)(this.scenarioManager.maxInterval * CONFIG.MAX_INTERVAL_REDUCER);
+
+            System.out.println(maxInterval);
+            if (maxInterval > CONFIG.CAP_INTERVAL_REDUCER) {
+                this.scenarioManager.maxInterval = maxInterval;
+                this.scenarioManager.scenarioTask.updateIntervals(this.scenarioManager.minInterval, this.scenarioManager.maxInterval);
+            } else {
+                this.capped = true;
+                System.out.println("capped");
+            }
         }
 
         // Increase scenario difficulty (add scenario of the next difficulty level in the total SCENARIOS)

@@ -24,6 +24,10 @@ public class ShowManager implements IService {
         this.getRoot = getRoot;
     }
 
+    /**
+     * Get the root as a Group and not as a Parent
+     * @return Group (root)
+     */
     public Group getActualRoot() {
         return (Group)(this.getRoot.get());
     }
@@ -56,6 +60,11 @@ public class ShowManager implements IService {
         System.out.println("reset call show manager");
     }
 
+    /**
+     * Add the entity to the root
+     * @param e AEntity
+     * @return boolean
+     */
     public Boolean show(AEntity e) {
         if(!this.running) {
             return false;
@@ -65,6 +74,11 @@ public class ShowManager implements IService {
         return true;
     }
 
+    /**
+     * Remove the entity from the Root
+     * @param e AEntity
+     * @return boolean
+     */
     public Boolean unShow(AEntity e) {
         if(!this.running) {
             return false;

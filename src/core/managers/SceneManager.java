@@ -24,6 +24,7 @@ public class SceneManager {
     private GameManager gameManager;
 
     private AScene curScene;
+    // Cache all scenes so we don't need to instantiate it over and over
     private HashMap<SCENES, AScene> scenes;
 
     private static double curHeight = CONFIG.HEIGHT;
@@ -68,21 +69,18 @@ public class SceneManager {
         // ADAPTIVE SIZING
         this.stage.widthProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curWidth = (double)newVal;
-            if (this.curScene instanceof GameScene) {
+            if (this.curScene.getRoot() instanceof ARoot) {
                 this.curScene.resizeWidth(SceneManager.curWidth);
                 this.curScene.onResize();
             }
-            //this.curScene.resizeWidth(SceneManager.curWidth);
-            //this.curScene.onResize();
         });
 
         this.stage.heightProperty().addListener((obs, oldVal, newVal) -> {
             SceneManager.curHeight = (double)newVal;
-            if (this.curScene instanceof GameScene) {
+            if (this.curScene.getRoot() instanceof ARoot) {
                 this.curScene.resizeHeight(SceneManager.curHeight);
                 this.curScene.onResize();
             }
-            //this.curScene.resizeHeight(SceneManager.curHeight);
         });
 
         // DYNAMIC SCENE CHANGE
@@ -176,14 +174,12 @@ public class SceneManager {
                 scene = new ScoreScene(loader.load(), loader.getController());
                 break;
             }
-
             case CREDITSCENE: {
                 // load fxml and call new MenuScene
                 loader.setLocation(getClass().getResource(PATH.CREDITS_VIEWS));
                 scene = new CreditScene(loader.load(), loader.getController());
                 break;
             }
-
             case EXIT: {
                 scene = null;
                 break;

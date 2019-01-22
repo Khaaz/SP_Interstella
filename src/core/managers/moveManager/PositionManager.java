@@ -4,7 +4,7 @@ import core.managers.IService;
 import core.managers.InstanceManager;
 import core.managers.SceneManager;
 import core.objects.entities.Bullet;
-import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.spaceships.enemies.AEnemy;
 import core.utility.Positioner;
 
 /**
@@ -12,13 +12,13 @@ import core.utility.Positioner;
  * Bullets permanent mouvement
  * Enemies automatic movements
  */
-public class MoveManager implements IService {
+public class PositionManager implements IService {
 
     protected InstanceManager instanceManager;
 
     private MoveHandlerLoop moveHandleLoop;
 
-    public MoveManager(InstanceManager instanceManager) {
+    public PositionManager(InstanceManager instanceManager) {
         this.instanceManager = instanceManager;
         this.moveHandleLoop = new MoveHandlerLoop(this);
     }
@@ -50,7 +50,7 @@ public class MoveManager implements IService {
 
     public void setEnemyBasePos(AEnemy e) {
         Positioner.setXMiddle(e, SceneManager.getCurWidth() * e.getStartPosX());
-        Positioner.setYMiddle(e, SceneManager.getCurHeight() * e.getStartPosY());
+        Positioner.setYMiddle(e, SceneManager.getCurHeight() * e.getStartPosY() - e.body.getFitHeight());
     }
 
     public void setEnemyBulletBasePos(AEnemy e, Bullet b) {

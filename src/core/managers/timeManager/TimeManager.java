@@ -47,5 +47,8 @@ public class TimeManager {
     private void incrementTime() {
         this.time += 1;
         this.manager.increasePointByTime();
+        if (this.time % 500 == 0) {
+            this.manager.updateDisplayedTime(this.time);
+        }
     }
 }

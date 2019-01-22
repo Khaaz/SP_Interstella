@@ -1,13 +1,9 @@
-package core.managers.BulletManager;
+package core.managers.bulletManager;
 
-import constants.CONFIG;
 import core.managers.IService;
 import core.managers.InstanceManager;
-import core.managers.SceneManager;
-import core.managers.moveManager.MoveHandlerLoop;
 import core.objects.entities.Bullet;
-import core.objects.entities.sprites.enemies.AEnemy;
-import core.utility.Positioner;
+import core.objects.entities.spaceships.enemies.AEnemy;
 
 public class BulletManager implements IService {
 
@@ -42,16 +38,26 @@ public class BulletManager implements IService {
     public void reset(InstanceManager instanceManager) {
         this.instanceManager = instanceManager;
         this.bulletHandlerLoop.stop();
+        this.bulletHandlerLoop.resetCount();
         System.out.println("reset call bullet manager");
     }
 
+    /**
+     * Create a bullet with the damage of the Shep and the bulletSpeed of the schep
+     * Call instance manager
+     */
     public void addBulletShep() {
-        Bullet b = new Bullet(this.instanceManager.getShep().getDamages(), this.instanceManager.getShep().getBulletSpeed());
+        Bullet b = new Bullet(this.instanceManager.getShep().getDamage(), this.instanceManager.getShep().getBulletSpeed());
         this.instanceManager.addBulletShep(b);
     }
 
+    /**
+     * Create a bullet with the enemy damages and the enemy bullet speed
+     * Call instance manager
+     * @param e Enemy that created the bullet
+     */
     public void addBulletEnemy(AEnemy e) {
-        Bullet b = new Bullet(e.getDamages(), e.getBulletSpeed());
+        Bullet b = new Bullet(e.getDamage(), e.getBulletSpeed());
         this.instanceManager.addBulletEnemy(e, b);
     }
 }

@@ -2,8 +2,8 @@ package core.managers.collisionManager;
 
 import core.objects.entities.AEntity;
 import core.objects.entities.Bullet;
-import core.objects.entities.sprites.ASpaceship;
-import core.objects.entities.sprites.enemies.AEnemy;
+import core.objects.entities.spaceships.ASpaceship;
+import core.objects.entities.spaceships.enemies.AEnemy;
 import core.utility.Positioner;
 import javafx.animation.AnimationTimer;
 
@@ -27,7 +27,6 @@ public class CollisionHandlerLoop extends AnimationTimer {
             // SHEP collision ENEMY
             if (checkCollision(enemy, shep)) {
                 this.collisionManager.damageManager.collisionEnemyShep(enemy, shep);
-                System.out.println("collision");
                 enemies.add(enemy);
             }
 
@@ -39,7 +38,6 @@ public class CollisionHandlerLoop extends AnimationTimer {
                         enemies.add(enemy);
                     }
                     bullets.add(bullet);
-                    System.out.println("collision");
                 }
             }
             // Remove all instances
@@ -59,7 +57,6 @@ public class CollisionHandlerLoop extends AnimationTimer {
             if (checkCollision(enemyBullet, shep)) {
                 this.collisionManager.damageManager.damageShep(shep, enemyBullet);
                 bullets.add(enemyBullet);
-                System.out.println("collision");
             }
         }
         // Remove all instances
@@ -68,6 +65,12 @@ public class CollisionHandlerLoop extends AnimationTimer {
         }
     }
 
+    /**
+     * Check exact match if the first entity body (imageView) is in contact with the second entity body (image view)
+     * @param a
+     * @param b
+     * @return
+     */
     private Boolean checkCollision(AEntity a, AEntity b) {
         return (Positioner.getXRight(a) > Positioner.getXLeft(b)
                 && Positioner.getXLeft(a) < Positioner.getXRight(b)

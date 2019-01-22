@@ -1,4 +1,4 @@
-package core.objects.entities.sprites.enemies;
+package core.objects.entities.spaceships.enemies;
 
 import constants.CONFIG;
 import constants.PATH;

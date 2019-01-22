@@ -2,6 +2,10 @@ package core.utility;
 
 import core.objects.entities.AEntity;
 
+/**
+ * Set of utility methods to get a specific position
+ * Get exactly the position using the imageView using the original position (top left of the object)
+ */
 public class Positioner {
 
     // GET Y

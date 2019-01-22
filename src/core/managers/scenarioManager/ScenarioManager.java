@@ -111,7 +111,7 @@ public class ScenarioManager {
      * @return Scenario
      */
     private Scenario getNextScenario() {
-        if (this.iteration > 0) {
+        if (this.iteration == 1) {
             this.minInterval = CONFIG.MIN_INTERVAL;
             this.scenarioTask.updateIntervals(this.minInterval, this.maxInterval);
         }

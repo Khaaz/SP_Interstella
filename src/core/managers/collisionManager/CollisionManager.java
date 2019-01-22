@@ -41,17 +41,4 @@ public class CollisionManager implements IService {
         this.collisionHandler.stop();
         System.out.println("reset call collision manager");
     }
-
-
-    public Boolean checkShepCollision() {
-        return true;
-    }
-
-    public Boolean checkItemCollision() {
-        return true;
-    }
-
-    public Boolean checkBulletsCollision() {
-        return true;
-    }
 }

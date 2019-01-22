@@ -1,9 +1,13 @@
-package core.objects.entities.sprites.enemies;
+package core.objects.entities.spaceships.enemies;
 
-import core.objects.entities.sprites.ASpaceship;
+import core.objects.entities.spaceships.ASpaceship;
 import core.objects.PowerUpRate;
 import core.objects.configObject.EnemyConfig;
 
+/**
+ * Abstract class for all enemies
+ * trajectory, starting posX, starting posY
+ */
 public abstract class AEnemy extends ASpaceship {
     private double startPosX;
     private double startPosY;

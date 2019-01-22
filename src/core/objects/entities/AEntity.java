@@ -4,6 +4,9 @@ import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+/**
+ * General class for all objects showable in the game
+ */
 public abstract class AEntity extends Parent {
 
     public ImageView body;
