@@ -12,6 +12,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuController extends AController implements Initializable {
+
+
     @FXML
     ButtonCpnt play;
     @FXML

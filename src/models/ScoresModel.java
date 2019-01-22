@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class ScoresModel {
 
     public static double currentScore;
-    public static Score score;
 
     public static ArrayList<Score> getAllScores(){
 
@@ -35,7 +34,7 @@ public class ScoresModel {
     }
 
     public static void saveScore(Score s) {
-
+        System.out.println("Ajout du score :" + s.getPlayername()+ "\t" +s.getNbPoints());
     }
 
     public static void currentScore(double s) {

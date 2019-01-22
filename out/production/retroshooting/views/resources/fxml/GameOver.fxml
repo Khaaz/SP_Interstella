@@ -17,15 +17,15 @@
 
         <LabelCpnt styleClass="customLabel" text="You scored"/>
 
-        <LabelCpnt fx:id="nbPointsScored" id="redLabel" text="---"/>
+        <LabelCpnt fx:id="nbPointsScored" styleClass="redLabel"/>
 
         <LabelCpnt styleClass="customLabel" text="Points !"/>
 
-        <TextFieldCpnt fx:id="playerName" styleClass="customButton" text="Name (min 3 max 20)" />
+        <TextFieldCpnt fx:id="playerName" styleClass="customButton" id="customTextField" promptText="Name (min 3 max 20)"/>
 
         <ButtonCpnt fx:id="scoreSaving" styleClass="customButton" text="Save Your Score"/>
 
-        <LabelCpnt fx:id="tooLong" id="redLabel" text="Incorrect Size !"/>
+        <LabelCpnt fx:id="tooLong" styleClass="redLabel" text="Incorrect Size !"/>
 
         <ButtonCpnt fx:id="menu" styleClass="customButton" text="Menu"/>
 

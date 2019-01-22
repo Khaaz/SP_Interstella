@@ -4,9 +4,8 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 <?import views.components.*?>
-
 <?import javafx.scene.control.ListView?>
-<?import java.lang.String?>
+
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ScoresController"
            stylesheets="@../css/styleSheet.css" id="ScoresPane">
 
