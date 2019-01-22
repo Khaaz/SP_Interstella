@@ -5,7 +5,7 @@ import core.events.EventCollection;
 import core.events.SceneEvent;
 import core.objects.Score;
 import javafx.event.Event;
-import models.GameOverModel;
+//import models.GameOverModel;
 import models.ScoresModel;
 import views.components.ButtonCpnt;
 import views.components.LabelCpnt;
@@ -50,8 +50,9 @@ public class GameOverController extends AController implements Initializable, IR
             if (playerName.getText().length() < 3 || playerName.getText().length() > 20){
                 tooLong.setVisible(true);
             } else {
-                Score s = new Score(playerName.getText(), GameOverModel.getNbPoints());
-                GameOverModel.saveScore(s);
+                int templatescore = 1000;
+                Score s = new Score(playerName.getText(), templatescore);
+                ScoresModel.saveScore(s);
 
                 Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
                 scoreSaving.fireEvent(eventGame);
@@ -59,6 +60,7 @@ public class GameOverController extends AController implements Initializable, IR
             }
 
         });
+
         nbPointsScored.textProperty().bind(nbpp);
 
 

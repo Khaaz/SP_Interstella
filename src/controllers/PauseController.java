@@ -4,7 +4,6 @@ import constants.SCENES;
 import core.events.EventCollection;
 import core.events.SceneEvent;
 import javafx.event.Event;
-import models.PauseModel;
 import models.ScoresModel;
 import views.components.ButtonCpnt;
 import views.components.LabelCpnt;

@@ -16,7 +16,7 @@
 
         <LabelCpnt styleClass="customLabel" text="Current Score :"/>
 
-        <LabelCpnt fx:id="currPoints" id="redLabel" text="---"/>
+        <LabelCpnt fx:id="currPoints" styleClass="redLabel" text="---"/>
 
         <ButtonCpnt fx:id="resume" styleClass="customButton" text="Resume"/>
 

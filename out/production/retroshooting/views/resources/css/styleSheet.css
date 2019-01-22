@@ -27,41 +27,48 @@
     -fx-background-image: url("../../../../../../assets/backgrounds/HangarBackground.png");
     -fx-background-size: stretch;
 }
+
+#customTextField{
+    -fx-prompt-text-fill: red;
 }
 
-#redLabel{
-    -fx-text-fill : RED;
+.redLabel{
+    -fx-text-fill : red;
+}
+
+.greenLabel{
+    -fx-text-fill : greenyellow;
 }
 
 .customLabel{
-    -fx-text-fill : WHITE;
+    -fx-text-fill : white;
 }
 
 .customButton{
     -fx-text-fill : #a6acaf;
     -fx-border-color : #a6acaf;
-    -fx-background-color: BLACK;
+    -fx-background-color: black;
 }
 
 .customButton:hover{
-    -fx-text-fill : BLACK;
-    -fx-border-color : BLACK;
+    -fx-text-fill : black;
+    -fx-border-color : black;
     -fx-background-color: #a6acaf;
 }
 
 .list-cell:filled:selected:focused, .listScores:filled:selected{
     -fx-background-color: #a6acaf;
-    -fx-text-fill: RED;
+    -fx-text-fill: red;
 }
 
 .list-cell{
-    -fx-background-color: BLACK;
+    -fx-background-color: black;
     -fx-text-fill: #a6acaf;
 }
 
 .list-cell:filled:hover {
     -fx-background-color: #a6acaf;
-    -fx-text-fill: BLACK;
+    -fx-text-fill: black;
 }
 
 .listScores .scroll-bar:horizontal ,
@@ -77,15 +84,15 @@
 
 .listScores .scroll-bar:horizontal:pressed .thumb ,
 .listScores .scroll-bar:vertical:pressed .thumb{
-    -fx-background-color: RED;
+    -fx-background-color: red;
 }
 
 .listScores .increment-button ,.listScores .decrement-button {
-    -fx-background-color:BLACK;
+    -fx-background-color:black;
 }
 
 .listScores .increment-button:pressed ,.listScores .decrement-button:pressed {
-    -fx-background-color:RED;
+    -fx-background-color:red;
 }
 
 .listScores{
