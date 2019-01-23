@@ -11,7 +11,7 @@ public class PATH {
 
     public static final String GAME_BG = PATH.ASSETS + "backgrounds/GameBackground.png";
 
-    public static final String ENEMY_BULLET = PATH.ASSETS + "bullets/bullet.png";
+    public static final String ENEMY_BULLET = PATH.ASSETS + "bullets/ennemyBullet.png";
     public static final String SHEP_BULLET = PATH.ASSETS + "bullets/bullet.png";
 
     // VIEWS

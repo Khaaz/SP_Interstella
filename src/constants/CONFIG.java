@@ -14,8 +14,8 @@ public class CONFIG {
     public static final long DEFAULT_SHEP_WIDTH = 80;
     public static final long DEFAULT_SHEP_HEIGHT = 150;
     // BULLET SIZE
-    public static final long BULLET_WIDTH = 10;
-    public static final long BULLET_HEIGHT = 45;
+    public static final long BULLET_WIDTH = 15;
+    public static final long BULLET_HEIGHT = 60;
 
     // DEFAULT SHEP
     public static final long DEFAULT_LIFE = 1000;

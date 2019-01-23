@@ -24,9 +24,12 @@ public class DatasaveModel {
             if (resultSet.next()){
                 this.DS = new Datasave(resultSet.getString(1),resultSet.getInt(2),resultSet.getInt(3),resultSet.getInt(4),resultSet.getInt(5),resultSet.getInt(6));
             }
+            preparedStatement.close();
+            resultSet.close();
         }catch (Exception e) {
             e.printStackTrace();
         }
+
 
         if (connection == null) {
             System.out.println("DB CONNECTION ERROR");
@@ -47,7 +50,7 @@ public class DatasaveModel {
         return this.DS;
     }
 
-    public void updateDB(){
+    private void updateDB(){
         String query ="UPDATE TDATASAVE SET SKIN =?, MONEY =?, LIFE =?, DAMAGE =?, BULLETSPEED =?, FIRERATE =?;";
         try {
             preparedStatement = connection.prepareStatement(query);
@@ -96,7 +99,7 @@ public class DatasaveModel {
     }
 
     public void addMoney(int money){
-        DS.setMoney(money);
+        DS.setMoney(DS.getMoney()+money);
         updateDB();
     }
 
