@@ -9,25 +9,24 @@
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.HangarController"
            id="HangarPane" stylesheets="@../css/styleSheet.css">
 
-
-    <TilePane vgap="10" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
+    <TilePane vgap="20" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="800.0" prefWidth="1000.0">
 
         <padding> <Insets bottom="200" top ="170"/> </padding>
 
-        <ButtonCpnt fx:id="life" styleClass="customButton" text="Upgrade HEALTH(+20)"/>
-        <LabelCpnt styleClass="customLabel" text="cost : 1000$"/>
+        <ButtonCpnt fx:id="life" styleClass="customButton" text="Upgrade HEALTH(20)"/>
+        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
         <LabelCpnt fx:id="currlife" styleClass="redLabel"/>
 
-        <ButtonCpnt fx:id="atk" styleClass="customButton" text="Upgrade ATK (+10)"/>
-        <LabelCpnt styleClass="customLabel" text="cost : 1000$"/>
+        <ButtonCpnt fx:id="atk" styleClass="customButton" text="Upgrade ATK (10)"/>
+        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
         <LabelCpnt fx:id="curratk" styleClass="redLabel"/>
 
-        <ButtonCpnt fx:id="bulletspeed" styleClass="customButton" text="Upgrade BULLET SPEED (+1)"/>
-        <LabelCpnt styleClass="customLabel" text="cost : 1000$"/>
+        <ButtonCpnt fx:id="bulletspeed" styleClass="customButton" text="Upgrade BULLET SPEED (1)"/>
+        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
         <LabelCpnt fx:id="currbs" styleClass="redLabel"/>
 
-        <ButtonCpnt fx:id="firerate" styleClass="customButton" text="Upgrade FIRERATE (+1)"/>
-        <LabelCpnt styleClass="customLabel" text="cost : 1000$"/>
+        <ButtonCpnt fx:id="firerate" styleClass="customButton" text="Upgrade FIRERATE (1)"/>
+        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
         <LabelCpnt fx:id="currfr" styleClass="redLabel"/>
 
         <ButtonCpnt fx:id="ship" styleClass="customButton" text="Change Ship (10.000$)"/>

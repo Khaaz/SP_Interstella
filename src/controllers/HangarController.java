@@ -41,21 +41,21 @@ public class HangarController extends AController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        int health = DataSaveModel.getDS().getLife();
-        SimpleStringProperty hp = new SimpleStringProperty("Current Health : " + health);
-        int damages = DataSaveModel.getDS().getDamage();
-        SimpleStringProperty dmg = new SimpleStringProperty("Current Damages : " + damages);
-        int bls = DataSaveModel.getDS().getBulletspeed();
-        SimpleStringProperty bs = new SimpleStringProperty("Current Bullet Speed : " + bls);
-        int firer = DataSaveModel.getDS().getFirerate();
-        SimpleStringProperty fr = new SimpleStringProperty("Current Firerate : " + firer);
-
         if(DataSaveModel.isDBConnected()){
             System.out.println("DATABASE CONNECTED");
         }
         else {
             System.out.println("DATABASE NOT CONNECTED");
         }
+
+        int health = DataSaveModel.getDS().getLife();
+        SimpleStringProperty hp = new SimpleStringProperty("> Current Health : " + health);
+        int damages = DataSaveModel.getDS().getDamage();
+        SimpleStringProperty dmg = new SimpleStringProperty("> Current Damages : " + damages);
+        int bls = DataSaveModel.getDS().getBulletspeed();
+        SimpleStringProperty bs = new SimpleStringProperty("> Current Bullet Speed : " + bls);
+        int firer = DataSaveModel.getDS().getFirerate();
+        SimpleStringProperty fr = new SimpleStringProperty("> Current Firerate : " + firer);
 
         life.setOnAction(e -> {
             DataSaveModel.upgradeLife();
@@ -98,19 +98,19 @@ public class HangarController extends AController implements Initializable{
     @Override
     public void refresh() {
         int health = DataSaveModel.getDS().getLife();
-        SimpleStringProperty hp = new SimpleStringProperty("Current Health : " + health);
+        SimpleStringProperty hp = new SimpleStringProperty("> Current Health : " + health);
         currlife.textProperty().bind(hp);
 
         int damages = DataSaveModel.getDS().getDamage();
-        SimpleStringProperty dmg = new SimpleStringProperty("Current Damages : " + damages);
+        SimpleStringProperty dmg = new SimpleStringProperty("> Current Damages : " + damages);
         curratk.textProperty().bind(dmg);
 
         int bls = DataSaveModel.getDS().getBulletspeed();
-        SimpleStringProperty bs = new SimpleStringProperty("Current BulletSpeed : " + bls);
+        SimpleStringProperty bs = new SimpleStringProperty("> Current BulletSpeed : " + bls);
         currbs.textProperty().bind(bs);
 
         int firer = DataSaveModel.getDS().getFirerate();
-        SimpleStringProperty fr = new SimpleStringProperty("Current Bullet Speed : " + firer);
+        SimpleStringProperty fr = new SimpleStringProperty("> Current Bullet Speed : " + firer);
         currfr.textProperty().bind(fr);
 
     }

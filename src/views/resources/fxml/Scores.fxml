@@ -9,9 +9,13 @@
 <StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ScoresController"
            stylesheets="@../css/styleSheet.css" id="ScoresPane">
 
-    <TilePane vgap="40" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="1920.0">
+    <TilePane vgap="1" orientation="VERTICAL" alignment="BOTTOM_CENTER" prefHeight="1080.0" prefWidth="1920.0">
 
-        <padding> <Insets bottom="250"/> </padding>
+        <padding> <Insets top="150" bottom="250"/> </padding>
+
+        <ButtonCpnt fx:id="croissant" styleClass="customButton" text="ascending ranking"/>
+
+        <ButtonCpnt fx:id="decroissant" styleClass="customButton" text="descending ranking"/>
 
         <ListView fx:id="bestScores" minWidth="500" maxHeight="150" styleClass="listScores"/>
 

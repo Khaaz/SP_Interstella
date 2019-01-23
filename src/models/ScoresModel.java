@@ -1,40 +1,87 @@
 package models;
 
 import core.objects.Score;
+import core.utility.SqliteConnection;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class ScoresModel {
 
     private static double currentScore = 0;
+    private Connection connection;
+    private PreparedStatement preparedStatement;
+    private ResultSet resultSet;
 
-    public static ArrayList<Score> getAllScores(){
-
-        //Query SQL
-
-        Score first = new Score("louis",1000);
-        Score second = new Score("louison",999);
-        Score third = new Score("maxime",998);
-        Score fourth = new Score("dorian",997);
-        Score fifth = new Score("neness",996);
-        Score sixth = new Score("lison",995);
-        Score seventh = new Score("leanne",994);
-
-        ArrayList<Score> allScores = new ArrayList<Score>(){{
-            add(first);
-            add(second);
-            add(third);
-            add(fourth);
-            add(fifth);
-            add(sixth);
-            add(seventh);
+    public ScoresModel(){
+        connection = SqliteConnection.Connector();
+        if (connection == null) {
+            System.out.println("DB CONNECTION ERROR");
+            System.exit(-1);
         }
-        };
-        return(allScores);
+
+    }
+    public boolean isDBConnected(){
+        try {
+            return !connection.isClosed();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
-    public static void saveScore(Score s) {
-        System.out.println("Ajout du score :" + s.getPlayername()+ "\t" +s.getNbPoints());
+    public ArrayList<Score> getAllScoresDecroissant() {
+        ArrayList<Score> allScores = new ArrayList<>();
+        String query ="SELECT * FROM TSCORES ORDER BY NBPOINTS DESC;";
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                Score s = new Score(resultSet.getString(1),resultSet.getInt(2));
+                allScores.add(s);
+            }
+            preparedStatement.close();
+            resultSet.close();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return allScores;
+    }
+
+    public ArrayList<Score> getAllScoresCroissant() {
+        ArrayList<Score> allScores = new ArrayList<>();
+        String query ="SELECT * FROM TSCORES ORDER BY NBPOINTS;";
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                Score s = new Score(resultSet.getString(1),resultSet.getInt(2));
+                allScores.add(s);
+            }
+            preparedStatement.close();
+            resultSet.close();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return allScores;
+    }
+
+    public void saveScore(Score s) {
+        String query ="INSERT INTO TSCORES VALUES (?,?);";
+        try {
+            preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1,s.getPlayername());
+            preparedStatement.setInt(2,Integer.valueOf(s.getNbPoints()));
+            preparedStatement.execute();
+            System.out.println("INSERT CORRECTEMENT EFFECTUE");
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void setCurrentScore(double score) {
