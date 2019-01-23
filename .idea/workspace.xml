@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bec60e8-81a7-400c-aa96-5b64dc96f54c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/shep/Template.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dB/interstellaDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/dB/interstellaDB.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/CONFIG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/CONFIG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/ENEMYCONF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ENEMYCONF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +25,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/ENEMYCONF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+            <state relative-caret-position="620">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#1078#1079#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/controllers/HangarController.java" />
         <option value="$PROJECT_DIR$/src/constants/CONFIG.java" />
         <option value="$PROJECT_DIR$/src/constants/ENEMYCONF.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -270,7 +282,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548210610301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548235780314" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -343,7 +355,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20545000" />
+    <option name="totallyTimeSpent" value="20773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -394,13 +406,6 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/scenes/GameScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -654,8 +659,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/constants/ENEMYCONF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        <state relative-caret-position="620">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
