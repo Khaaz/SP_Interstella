@@ -14,4 +14,8 @@ public class Shep extends ASpaceship {
                 CONFIG.DEFAULT_BULLET_SPEED,
                 CONFIG.DEFAULT_BULLET_RATE);
     }
+
+    public Shep(String path, double width, double height, long life, long damage, long speed, int bulletSpeed, int bulletRate) {
+        super(path, width, height, life, damage, speed, bulletSpeed, bulletRate);
+    }
 }

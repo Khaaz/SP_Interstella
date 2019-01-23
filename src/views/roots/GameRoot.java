@@ -35,13 +35,13 @@ public class GameRoot extends ARoot {
      */
     public void positionDisplayer() {
         this.timeDisplay.setLayoutX(SceneManager.getCurWidth() * 0.92);
-        this.timeDisplay.setLayoutY(SceneManager.getCurHeight() * 0.92);
+        this.timeDisplay.setLayoutY(SceneManager.getCurHeight() * 0.9);
 
-        this.scoreDisplay.setLayoutX(SceneManager.getCurWidth() * 0.8);
-        this.scoreDisplay.setLayoutY(SceneManager.getCurHeight() * 0.92);
+        this.scoreDisplay.setLayoutX(SceneManager.getCurWidth() * 0.83);
+        this.scoreDisplay.setLayoutY(SceneManager.getCurHeight() * 0.9);
 
         this.lifeDisplay.setLayoutX(SceneManager.getCurWidth() * 0.02);
-        this.lifeDisplay.setLayoutY(SceneManager.getCurHeight() * 0.92);
+        this.lifeDisplay.setLayoutY(SceneManager.getCurHeight() * 0.9);
     }
 
     public void updateTime(double time) {

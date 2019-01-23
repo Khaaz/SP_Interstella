@@ -1,12 +1,16 @@
 package core.managers.instanceManager;
 
+import constants.CONFIG;
+import constants.PATH;
 import core.managers.GameManager;
 import core.managers.bulletManager.BulletManager;
+import core.objects.Datasave;
 import core.objects.entities.Bullet;
 import core.objects.entities.spaceships.ASpaceship;
 import core.objects.entities.spaceships.Shep;
 import core.objects.entities.spaceships.enemies.AEnemy;
 import core.objects.entities.items.AItem;
+import models.DatasaveModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,7 +32,11 @@ public class InstanceManager {
     public InstanceManager(GameManager gameManager) {
         this.gameManager = gameManager;
 
-        this.shep = new Shep();
+        DatasaveModel model = new DatasaveModel();
+        Datasave ds = model.getDS();
+        this.shep = new Shep(PATH.SHEP, CONFIG.DEFAULT_SHEP_WIDTH, CONFIG.DEFAULT_SHEP_HEIGHT, ds.getLife(), ds.getDamage(), CONFIG.DEFAULT_SPEED, ds.getBulletspeed(), ds.getFirerate());
+
+
         this.enemies = new ArrayList<>();
         this.bulletsShep = new ArrayList<>();
         this.bulletEnemies = new ArrayList<>();
