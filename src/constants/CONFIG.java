@@ -25,14 +25,6 @@ public class CONFIG {
     // + rate => + space between bullets
     public static final long DEFAULT_BULLET_RATE = 13;
 
-    // DEFAULT_ENEMY
-    public static final long DEFAULT_ENEMY_LIFE = 200;
-    public static final long DEFAULT_ENEMY_DAMAGE = 50;
-    public static final long DEFAULT_ENEMY_SPEED = 5;
-    public static final long DEFAULT_ENEMY_BULLET_SPEED = 12;
-    public static final long DEFAULT_ENEMY_BULLET_RATE = 30;
-
-
     // SCENARIOS
     public static final long START_MIN_INTERVAL = 2000;
     public static final long MIN_INTERVAL = 200;
@@ -51,6 +43,7 @@ public class CONFIG {
     public static final double POWERUP_SPEED_MULTIPLIER = 1.001;
     public static final double POWERUP_DAMAGE_MULTIPLIER = 1.01;
 
+    //SHOP PRICES CONF
     public static final int PRICE_LIFE_UPGRADE = 1000;
     public static final int PRICE_DAMAGE_UPGRADE = 1000;
     public static final int PRICE_BULLETSPEED_UPGRADE = 1000;
