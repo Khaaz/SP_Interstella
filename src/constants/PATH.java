@@ -10,7 +10,6 @@ public class PATH {
     public static final String FONT = PATH.ASSETS + "fonts/Daft_Font.TTF";
 
     public static final String GAME_BG = PATH.ASSETS + "backgrounds/GameBackground.png";
-    public static final String menuBG = PATH.ASSETS + "backgrounds/MenuBackground.png";
 
     public static final String ENEMY_BULLET = PATH.ASSETS + "bullets/bullet.png";
     public static final String SHEP_BULLET = PATH.ASSETS + "bullets/bullet.png";
@@ -23,8 +22,6 @@ public class PATH {
     public static final String GAMEOVER_VIEWS = PATH.VIEWS + "GameOver.fxml";
     public static final String CREDITS_VIEWS = PATH.VIEWS + "Credits.fxml";
     public static final String HANGAR_VIEWS = PATH.VIEWS + "Hangar.fxml";
-
-
 
     // Scenario directory
     public static final String SCENARIOS = "src/core/managers/scenarioManager/scenarios/scenariosList/";
