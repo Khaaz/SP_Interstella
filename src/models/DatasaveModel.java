@@ -8,6 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import static constants.CONFIG.*;
+
 public class DatasaveModel {
 
     private Connection connection;
@@ -62,34 +64,36 @@ public class DatasaveModel {
             preparedStatement.setInt(6,DS.getFirerate());
             preparedStatement.execute();
             System.out.println("UPDATE CORRECTEMENT EFFECTUE");
+            preparedStatement.close();
+            resultSet.close();
         }catch (Exception e) {
             e.printStackTrace();
         }
 
     }
     public void upgradeLife(){
-        if (DS.getMoney()>=1000){
+        if (DS.getMoney() >= PRICE_LIFE_UPGRADE){
             DS.setMoney(DS.getMoney()-1000);
             DS.setLife(DS.getLife()+20);
             updateDB();
         }
     }
     public void upgradeDamages(){
-        if (DS.getMoney()>=1000){
+        if (DS.getMoney() >= PRICE_DAMAGE_UPGRADE){
             DS.setMoney(DS.getMoney()-1000);
             DS.setDamage(DS.getDamage()+10);
             updateDB();
         }
     }
     public void upgradeBulletspeed(){
-        if (DS.getMoney()>=1000){
+        if (DS.getMoney() >= PRICE_BULLETSPEED_UPGRADE){
             DS.setMoney(DS.getMoney()-1000);
             DS.setBulletspeed(DS.getBulletspeed()+1);
             updateDB();
         }
     }
     public void upgradeFirerate(){
-        if(DS.getFirerate()>1) {
+        if(DS.getFirerate() > PRICE_FIRERATE_UPGRADE) {
             if (DS.getMoney() >= 1000) {
                 DS.setMoney(DS.getMoney() - 1000);
                 DS.setFirerate(DS.getFirerate() - 1);

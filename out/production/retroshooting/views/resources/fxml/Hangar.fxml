@@ -14,19 +14,19 @@
         <padding> <Insets bottom="200" top ="170"/> </padding>
 
         <ButtonCpnt fx:id="life" styleClass="customButton" text="Upgrade HEALTH(20)"/>
-        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
+        <LabelCpnt fx:id="lifeprice" styleClass="customLabel"/>
         <LabelCpnt fx:id="currlife" styleClass="redLabel"/>
 
         <ButtonCpnt fx:id="atk" styleClass="customButton" text="Upgrade ATK (10)"/>
-        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
+        <LabelCpnt fx:id="atkprice" styleClass="customLabel"/>
         <LabelCpnt fx:id="curratk" styleClass="redLabel"/>
 
         <ButtonCpnt fx:id="bulletspeed" styleClass="customButton" text="Upgrade BULLET SPEED (1)"/>
-        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
+        <LabelCpnt fx:id="bsprice" styleClass="customLabel"/>
         <LabelCpnt fx:id="currbs" styleClass="redLabel"/>
 
         <ButtonCpnt fx:id="firerate" styleClass="customButton" text="Upgrade FIRERATE (1)"/>
-        <LabelCpnt styleClass="customLabel" text="> cost : 1000$"/>
+        <LabelCpnt fx:id="frprice" styleClass="customLabel"/>
         <LabelCpnt fx:id="currfr" styleClass="redLabel"/>
 
         <ButtonCpnt fx:id="ship" styleClass="customButton" text="Change Ship (10.000$)"/>
