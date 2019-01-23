@@ -50,4 +50,10 @@ public class CONFIG {
     public static final double POWERUP_LIFE_MULTIPLIER = 1.1;
     public static final double POWERUP_SPEED_MULTIPLIER = 1.001;
     public static final double POWERUP_DAMAGE_MULTIPLIER = 1.01;
+
+    public static final int PRICE_LIFE_UPGRADE = 1000;
+    public static final int PRICE_DAMAGE_UPGRADE = 1000;
+    public static final int PRICE_BULLETSPEED_UPGRADE = 1000;
+    public static final int PRICE_FIRERATE_UPGRADE = 1000;
+
 }

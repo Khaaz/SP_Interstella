@@ -52,7 +52,7 @@ public class GameOverController extends AController implements Initializable, IR
             System.out.println("DATABASE NOT CONNECTED");
         }
 
-        System.out.println(Math.round(ScoresModel.getCurrentScore()));
+        //System.out.println(Math.round(ScoresModel.getCurrentScore()*0.1));
         DataSaveModel.addMoney((int)Math.round((ScoresModel.getCurrentScore())*0.1));
 
         this.showScore();

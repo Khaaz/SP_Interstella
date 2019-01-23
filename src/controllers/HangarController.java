@@ -14,6 +14,8 @@ import views.components.LabelCpnt;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static constants.CONFIG.*;
+
 public class HangarController extends AController implements Initializable{
 
     public DatasaveModel DataSaveModel = new DatasaveModel();
@@ -21,19 +23,31 @@ public class HangarController extends AController implements Initializable{
     @FXML
     ButtonCpnt life;
     @FXML
+    LabelCpnt lifeprice;
+    @FXML
     LabelCpnt currlife;
+
     @FXML
     ButtonCpnt atk;
     @FXML
+    LabelCpnt atkprice;
+    @FXML
     LabelCpnt curratk;
+
     @FXML
     ButtonCpnt bulletspeed;
     @FXML
+    LabelCpnt bsprice;
+    @FXML
     LabelCpnt currbs;
+
     @FXML
     ButtonCpnt firerate;
     @FXML
+    LabelCpnt frprice;
+    @FXML
     LabelCpnt currfr;
+
     @FXML
     ButtonCpnt ship;
     @FXML
@@ -87,6 +101,12 @@ public class HangarController extends AController implements Initializable{
             Event eventGame = new SceneEvent(EventCollection.SCENE_CHANGE, SCENES.MENUSCENE);
             menu.fireEvent(eventGame);
         });
+
+        lifeprice.textProperty().setValue("> price : "+PRICE_LIFE_UPGRADE+"$");
+        atkprice.textProperty().setValue("> price : "+PRICE_DAMAGE_UPGRADE+"$");
+        bsprice.textProperty().setValue("> price : "+PRICE_BULLETSPEED_UPGRADE+"$");
+        frprice.textProperty().setValue("> price : "+PRICE_FIRERATE_UPGRADE+"$");
+
 
         currlife.textProperty().bind(hp);
         curratk.textProperty().bind(dmg);

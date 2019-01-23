@@ -78,7 +78,9 @@ public class ScoresModel {
             preparedStatement.setString(1,s.getPlayername());
             preparedStatement.setInt(2,Integer.valueOf(s.getNbPoints()));
             preparedStatement.execute();
-            System.out.println("INSERT CORRECTEMENT EFFECTUE");
+            System.out.println("INSERT DU SCORE CORRECTEMENT EFFECTUE");
+            preparedStatement.close();
+            resultSet.close();
         }catch (Exception e) {
             e.printStackTrace();
         }
