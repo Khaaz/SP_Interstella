@@ -13,7 +13,7 @@ public class ENEMYCONF {
     public static final long BULLET_RATE_1 = 0;
 
     // ENEMY_2
-    public static final String SKIN_2 = PATH.ASSETS + "foe/slashturned.png";
+    public static final String SKIN_2 = PATH.ASSETS + "foe/tmpturned.png";
     public static final long WIDTH_2 = 150;
     public static final long HEIGHT_2 = 150;
     public static final long LIFE_2 = 500;

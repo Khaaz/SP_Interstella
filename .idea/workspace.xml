@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bec60e8-81a7-400c-aa96-5b64dc96f54c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/retroshooting/controllers/GameOverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/retroshooting/controllers/GameOverController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shep/Template.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dB/interstellaDB.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/dB/interstellaDB.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/CONFIG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/CONFIG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GameOverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameOverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/HangarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/HangarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/DatasaveModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/DatasaveModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ScoresModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ScoresModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/resources/fxml/Hangar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/resources/fxml/Hangar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/ENEMYCONF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ENEMYCONF.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +22,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/CONFIG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="198">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/constants/ENEMYCONF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -54,11 +59,11 @@
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/HangarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="107" column="80" lean-forward="true" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
+            <state relative-caret-position="478">
+              <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +90,6 @@
         <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy1.java" />
         <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy2.java" />
         <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy3.java" />
-        <option value="$PROJECT_DIR$/src/constants/ENEMYCONF.java" />
         <option value="$PROJECT_DIR$/src/core/managers/GameManager.java" />
         <option value="$PROJECT_DIR$/src/core/managers/moveManager/MoveHandlerLoop.java" />
         <option value="$PROJECT_DIR$/src/controllers/PauseController.java" />
@@ -100,10 +104,11 @@
         <option value="$PROJECT_DIR$/src/core/objects/entities/spaceships/Shep.java" />
         <option value="$PROJECT_DIR$/src/controllers/GameOverController.java" />
         <option value="$PROJECT_DIR$/src/models/ScoresModel.java" />
-        <option value="$PROJECT_DIR$/src/constants/CONFIG.java" />
         <option value="$PROJECT_DIR$/src/models/DatasaveModel.java" />
         <option value="$PROJECT_DIR$/src/views/resources/fxml/Hangar.fxml" />
         <option value="$PROJECT_DIR$/src/controllers/HangarController.java" />
+        <option value="$PROJECT_DIR$/src/constants/CONFIG.java" />
+        <option value="$PROJECT_DIR$/src/constants/ENEMYCONF.java" />
       </list>
     </option>
   </component>
@@ -136,6 +141,18 @@
               <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="bullets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="foe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retroshooting" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="shep" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="retroshooting" type="b2602c69:ProjectViewProjectNode" />
@@ -326,7 +343,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19658000" />
+    <option name="totallyTimeSpent" value="20545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -411,9 +428,6 @@
     <entry file="file://$PROJECT_DIR$/assets/foe/slash.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/shep/Template.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/objects/entities/spaceships/enemies/Enemy2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -487,13 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/ENEMYCONF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -617,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/CONFIG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/resources/fxml/Hangar.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -634,11 +634,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/HangarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="107" column="80" lean-forward="true" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
+        <state relative-caret-position="478">
+          <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/CONFIG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shep/Template.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/ENEMYCONF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
         </state>
       </provider>
     </entry>
