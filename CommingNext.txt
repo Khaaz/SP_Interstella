@@ -1,5 +1,6 @@
-- Plus de trajectoire (tree pour utiliser les fonctions)
-- Musique a ranger correctement + adapter linux/windows, sons
--healthbar
--gamebalance
--skinchange
+- Plus de trajectoires (tree pour utiliser les fonctions)
+- Musique à ranger correctement (class) + adapter linux/windows + sons (tir,crash,kill)
+- annimated background
+- healthbar
+- gamebalance
+- skinchange
