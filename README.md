@@ -29,7 +29,8 @@ However, the project as it is right now could need a lot of improvement.
 + Java
 + Java FX
 + FXML
-+ JSON ([geson](https://github.com/google/gson))
++ Threads
++ JSON ([gson](https://github.com/google/gson))
 + SQLite
 + OOP Principles
 
